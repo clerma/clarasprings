@@ -1,0 +1,67 @@
+<div class="news2-sidebar row">
+                        <div class="col-md-12">
+                            <div class="widget search">
+                                <form>
+                                    <input type="text" name="search" placeholder="Type here ...">
+                                    <button type="submit"><i class="ti-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h6>Recent Posts</h6>
+                                </div>
+                                <ul class="recent">
+        {% for post in site.posts limit:5 %}
+        <li class="">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h6>Archives</h6>
+                                </div>
+                                <ul>
+        {% assign postsByMonth = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
+        {% for month in postsByMonth limit:12 %}
+        <li class="">
+          <a href="/archives/#{{ month.name | slugify }}">{{ month.name }} ({{ month.items.size }})</a>
+        </li>
+        {% endfor %}
+      </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h6>Categories</h6>
+                                </div>
+                                <ul>
+        {% for category in site.categories %}
+        <li class="">
+          <a href="/categories/#{{ category[0] | slugify }}">{{ category[0] }} ({{ category[1].size }})</a>
+        </li>
+        {% endfor %}
+      </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h6>Tags</h6>
+                                </div>
+                                <ul class="tags">
+        {% for tag in site.tags %}
+        <li class="">
+          <a href="/tags/#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+                            </div>
+                        </div>
+                    </div>

@@ -1,0 +1,17 @@
+---
+- name: Parallax Image
+  url: /
+- name: Slider
+  url: /2
+- name: Video
+  url: /3
+- name: Slideshow
+  url: /4
+- name: Onepage
+  url: /onepage
+- name: About
+  url: /about
+- name: Accommodation
+  url: /accommodations
+- name: Activities
+  url: /activities

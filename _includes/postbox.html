@@ -1,0 +1,14 @@
+<!-- begin post -->
+<div class="item">
+                                <div class="post-img">
+                                    <a href="{{ post.url | absolute_url }}"> {% if post.image %}<img class="" src="{{ post.image | relative_url }}" alt="{{ post.title }}">{% endif %} </a>
+                                    <div class="date">
+                                        <a href="{{ post.url | absolute_url }}"> <span>Dec</span> <i>27</i> </a>
+                                    </div>
+                                </div>
+                                <div class="post-cont"> <a href="{{ post.url | absolute_url }}"><span class="tag">Camping</span></a>
+                                    <h5>{{ post.title }}</h5>
+                                    <p>{{ post.excerpt | strip_html | truncatewords: 10 }}</p>
+                                    <div class="butn-1"> <a href="{{ post.url | absolute_url }}"><span>Read More</span></a> </div>
+                                </div>
+                            </div>

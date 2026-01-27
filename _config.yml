@@ -1,0 +1,91 @@
+# Core Site Settings
+title: camp
+name: camp
+description: ""
+author: Site Author
+baseurl: ""
+url: ""
+timezone: America/Chicago
+permalink: pretty
+relative_permalinks: false
+
+# Technical Settings
+markdown: kramdown
+highlighter: rouge
+locale: en_US
+
+# SEO & Analytics
+favicon: /assets/favicon/favicon.ico
+logo: 
+og_image: 
+google_analytics: 
+google_site_verification: 
+bing_site_verification: 
+
+# Contact Information
+phone: 
+email: 
+
+# Location Data
+latitude: 
+longitude: 
+location: 
+local_keywords: 
+
+# Services Integration
+disqus: 
+social:
+  name: 
+  links:
+    - ""
+twitter:
+  username: 
+address:
+  street: 
+  city: 
+  region: 
+  zip: 
+  country: 
+alt_location:
+  - location: ""
+    url: ""
+include: ['_pages', '_data','login.html','login','_vendors', '_plugins']
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+permalink: pretty
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Post permalink format - just title, no date
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/blog/:title/"
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: "/:basename/"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
