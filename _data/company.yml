@@ -1,5 +1,5 @@
 ---
-name: "The Cappa Camping Hotel"
+name: "Clara Springs Camp and Conference"
 logo_image: "/assets/img/img/logo-light.png"
 phone: "{{ site.phone | default: '' }}"
 email: "{{ site.email | default: '' }}"

@@ -5,7 +5,7 @@
 01. ScrollIt
 02. Navbar scrolling background
 03. Close navbar-collapse when a  clicked
-04. Sections background image from data background 
+04. Sections background image from data background
 05. Animations
 06. YouTubePopUp
 07. Testimonials owlCarousel
@@ -28,7 +28,7 @@
 $(function () {
     "use strict";
     var wind = $(window);
-    
+
     // ScrollIt
     $.scrollIt({
         upKey: 38, // key code to navigate to the next section
@@ -39,7 +39,7 @@ $(function () {
         onPageChange: null, // function(pageIndex) that is called when page is changed
         topOffset: -70 // offste (in px) for fixed top navigation
     });
-    
+
     // Navbar scrolling background
     wind.on("scroll", function () {
         var bodyScroll = wind.scrollTop(),
@@ -47,18 +47,18 @@ $(function () {
             logo = $(".navbar .logo> img");
         if (bodyScroll > 100) {
             navbar.addClass("nav-scroll");
-            logo.attr('src', '../img/logo.png');
+            logo.attr('src', '..assets/img/logo.png');
         } else {
             navbar.removeClass("nav-scroll");
-            logo.attr('src', '../img/logo-light.png');
+            logo.attr('src', '..assets/img/logo-light.png');
         }
     });
-    
+
     // Close navbar-collapse when a  clicked
     $(".navbar-nav .dropdown-item a").on('click', function () {
         $(".navbar-collapse").removeClass("show");
     });
-    
+
     // Sections background image from data background
     var pageSection = $(".bg-img, section");
     pageSection.each(function (indx) {
@@ -100,10 +100,10 @@ $(function () {
     $(function () {
         contentWayPoint();
     });
-     
+
     // YouTubePopUp
     $("a.vid").YouTubePopUp();
-    
+
     // Testimonials owlCarousel *
     $('.testimonials .owl-carousel').owlCarousel({
         loop: true,
@@ -127,7 +127,7 @@ $(function () {
             }
         }
     });
-    
+
     // Accommodations owlCarousel *
     $('.accommodations .owl-carousel').owlCarousel({
         loop: true,
@@ -152,7 +152,7 @@ $(function () {
             }
         }
     });
-    
+
     // Pricing owlCarousel *
     $('.pricing .owl-carousel').owlCarousel({
         loop: true,
@@ -177,7 +177,7 @@ $(function () {
             }
         }
     });
-    
+
     // News owlCarousel *
     $('.news .owl-carousel').owlCarousel({
         loop: true,
@@ -205,7 +205,7 @@ $(function () {
             }
         }
     });
-    
+
     // Team owlCarousel *
     $('.team .owl-carousel').owlCarousel({
         loop: true,
@@ -230,7 +230,7 @@ $(function () {
             }
         }
     });
-    
+
     // Clients owlCarousel *
     $('.clients .owl-carousel').owlCarousel({
         loop: true,
@@ -275,7 +275,7 @@ $(function () {
             }
         });
     }
-    
+
     // MagnificPopup Gallery
     $('.gallery').magnificPopup({
         delegate: '.popimg',
@@ -302,7 +302,7 @@ $(function () {
         preloader: false,
         fixedContentPos: false
     });
-    
+
     // Smooth Scrolling
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -333,19 +333,19 @@ $(function () {
             }
         }
     });
-    
+
     // Select2
     $('.select2').select2({
         minimumResultsForSearch: Infinity,
     });
-    
+
     // Datapicker
     $(".datepicker").datepicker({
         orientation: "top"
-    });  
+    });
 });
 
-// Slider  
+// Slider
 $(document).ready(function () {
     var owl = $('.header .owl-carousel');
     // Slider owlCarousel - (Inner Page Slider)
@@ -489,5 +489,4 @@ var form = $('.contact__form'),
         }, duration);
         return false;
     })
-    
- 
+
