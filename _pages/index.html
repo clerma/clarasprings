@@ -1,17 +1,94 @@
 ---
 layout: default
-title: "Home"
+title: "Clara Springs"
 description: "{{ site.description }}"
 keywords: "{{ site.local_keywords }}"
-image: /assets/img/default-og-image.jpg
+image: /assets/img/gallery/slides/63cd7bea-f139-439e-a2d9-8ba21367637d.jpg
 banner:
-  image: /assets/img/hero-bg.jpg
+  image: /assets/img/gallery/slides/63cd7bea-f139-439e-a2d9-8ba21367637d.jpg
   preheading: "Welcome to"
-  title: "{{ site.title }}"
-  subtext: "{{ site.description }}"
+  title: "Clara Springs"
+  subtext: >
+    Clara Springs is more than just a summer camp — it’s a ministry
+    created over 70 years ago to serve churches and groups through
+    camps, retreats, and conferences.
   cta_link: "#content"
   cta_text: "Learn More"
-pagename: index
+
+hero_box:
+  heading: "Quick Links"
+  links:
+    - label: "Conference & Retreats"
+      url: "/conference-retreats/"
+    - label: "Camp Grounds"
+      url: "/camp-grounds/"
+    - label: "Dorms"
+      url: "/camp-grounds/dorms/"
+    - label: "Recreation"
+      url: "/camp-grounds/recreation/"
+    - label: "Volunteers"
+      url: "/volunteers/"
+
+about:
+  subtitle: "Clara Springs Baptist Camp"
+  title: "A Place Set Apart for Churches & Groups"
+  paragraphs:
+    - "Clara Springs is not just another summer camp. We are a ministry serving people and churches throughout the year."
+    - "Our goal is to provide a welcoming place for rest, growth, and meaningful connection through camps, retreats, and conferences."
+  image: "/assets/img/gallery/slides/3cf9f2e6-e36b-4e61-8a26-99485d9b792b.jpg"
+
+offers:
+  subtitle: "What We Offer"
+  title: "Explore Clara Springs"
+  items:
+    - icon: "flaticon-021-cottage-1"
+      title: "Dorms & Lodging"
+      text: "Six dorms that sleep 24 campers each, with centrally located restrooms and showers."
+      url: "/camp-grounds/dorms/"
+    - icon: "flaticon-024-camping"
+      title: "Facilities"
+      text: "Spaces designed to support worship, teaching, meals, and fellowship."
+      url: "/camp-grounds/facilities/"
+    - icon: "flaticon-009-caravan"
+      title: "Worship Center"
+      text: "A dedicated space for large group worship and teaching sessions."
+      url: "/camp-grounds/worship-center/"
+
+accommodations:
+  subtitle: "Camp Grounds"
+  title: "Key Areas"
+  items:
+    - image: "/assets/img/gallery/slides/17785c87-811a-420a-8d15-f8959d1cd8b5@2x.jpg"
+      tag: "Dorms"
+      title: "Dorms & Lodging"
+      url: "/camp-grounds/dorms/"
+      icons:
+        - "flaticon-010-bedding"
+        - "flaticon-011-bath"
+    - image: "/assets/img/gallery/slides/68db6eca-2ffc-4f87-97e5-289f89947c79@2x.jpeg"
+      tag: "Recreation"
+      title: "Recreation & Activities"
+      url: "/camp-grounds/recreation/"
+      icons:
+        - "flaticon-023-hiking-1"
+        - "flaticon-029-swimming-pool"
+    - image: "/assets/img/gallery/slides/27a505d0-e19e-4d5a-b65f-f154d8e6f6b6@2x.jpg"
+      tag: "Facilities"
+      title: "Facilities & Spaces"
+      url: "/camp-grounds/facilities/"
+      icons:
+        - "flaticon-024-camping"
+        - "flaticon-030-camping-gas"
+
+testimonials_section:
+  background: "/assets/img/gallery/slides/f2bd8e92-577a-4676-aa3d-a6acc0469b1c.JPG"
+  heading: "What People Are Saying"
+  subheading: "Testimonials"
+
+blog_section:
+  subtitle: "News & Updates"
+  title: "Latest News and Events"
+  limit: 3
 permalink: /
 ---
 
@@ -23,742 +100,236 @@ permalink: /
     <!-- Navbar -->
 
     <!-- Parallax Image -->
-    <div class="banner-header full-height section-padding valign bg-img bg-fixed" data-overlay-dark="5" data-background="{{ '/assets/img/slider/5.jpg' | relative_url }}">
+    <div class="banner-header full-height section-padding valign bg-img bg-fixed"
+         data-overlay-dark="5"
+         data-background="{{ page.banner.image | relative_url }}">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-lg-6 col-md-12 text-left">
                     <div class="v-middle caption">
-                        <h4>Camping &amp; Nature</h4>
-                        <h3>Spend your time in the nature</h3>
-                        <div class="butn-1 mt-30 mb-30"> <a href="#"><span>Discover More</span></a> </div>
+                        <h4>{{ page.banner.preheading }}</h4>
+                        <h3>{{ page.banner.title }}</h3>
+                        <p>{{ page.banner.subtext }}</p>
+                        <div class="butn-1 mt-30 mb-30">
+                          <a href="{{ page.banner.cta_link }}"><span>{{ page.banner.cta_text }}</span></a>
+                        </div>
                     </div>
                 </div>
-                <!-- Booking form -->
+
+                <!-- Right box (repurposed from booking form; structure preserved) -->
                 <div class="col-lg-5 offset-lg-1 col-md-12">
                     <div class="booking-box">
                         <div class="head-box">
-                            <h6>Camping Booking Form</h6>
+                            <h6>{{ page.hero_box.heading }}</h6>
                         </div>
                         <div class="booking-inner clearfix">
-                            <form action="rooms.html" class="form1 clearfix">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="input1_wrapper">
-                                            <label>Check in</label>
-                                            <div class="input1_inner">
-                                                <input type="text" class="form-control input datepicker" placeholder="Check in" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="input1_wrapper">
-                                            <label>Check out</label>
-                                            <div class="input1_inner">
-                                                <input type="text" class="form-control input datepicker" placeholder="Check out" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="select1_wrapper">
-                                            <label>Adults</label>
-                                            <div class="select1_inner">
-                                                <select class="select2 select" style="width: 100%">
-                                                    <option value="0">Adults</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="select1_wrapper">
-                                            <label>Children</label>
-                                            <div class="select1_inner">
-                                                <select class="select2 select" style="width: 100%">
-                                                    <option value="0">Children</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button type="submit" class="btn-form1-submit mt-15">Check Availability</button>
-                                    </div>
-                                </div>
-                            </form>
+                            <ul class="list-unstyled mb-0">
+                              {% for link in page.hero_box.links %}
+                                <li class="mb-2">
+                                  <a href="{{ link.url }}">{{ link.label }}</a>
+                                </li>
+                              {% endfor %}
+                            </ul>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+
     <!-- About -->
-    <section class="about section-padding" data-scroll-index="1">
+    <section class="about section-padding" id="content" data-scroll-index="1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-30 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
-                    <div class="section-subtitle">Camping Ground</div>
-                    <div class="section-title">Relax In Our Camping Ground</div>
-                    <p>Welcome to the best camping hotel in New York. Hotel elemen sesue the can vestibulum aliquam justo in sapien rutrum in the fermen.</p>
-                    <p class="mb-60">Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the miss ligulation. Orci varius natoque penatibus et magnis sarturien monte nascete ridiculus in the miss nellentes drana duru fermen.</p>
+                    <div class="section-subtitle">{{ page.about.subtitle }}</div>
+                    <div class="section-title">{{ page.about.title }}</div>
+
+                    {% for para in page.about.paragraphs %}
+                      <p{% if forloop.last %} class="mb-60"{% endif %}>{{ para }}</p>
+                    {% endfor %}
+
                     <div class="row">
+                        {% for item in page.about.icons %}
                         <div class="col col-md-4">
-                            <div class="icon"> <span class="flaticon-007-tent-1"></span>
-                                <h5>Tents Rent</h5>
+                            <div class="icon">
+                              <span class="{{ item.icon }}"></span>
+                              <h5>{{ item.label }}</h5>
                             </div>
                         </div>
-                        <div class="col col-md-4">
-                            <div class="icon"> <span class="flaticon-023-hiking-1"></span>
-                                <h5>Activities</h5>
-                            </div>
-                        </div>
-                        <div class="col col-md-4">
-                            <div class="icon"> <span class="flaticon-005-firewood"></span>
-                                <h5>Firewoods</h5>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
+
                 <div class="col-lg-6 col-md-12 animate-box fadeInUp animated" data-animate-effect="fadeInUp">
                     <div class="img-exp">
                         <div class="about-img">
-                            <div class="img"> <img src="{{ '/assets/img/about.jpg' | relative_url }}" class="img-fluid" alt=""> </div>
+                            <div class="img">
+                              <img src="{{ page.about.image | relative_url }}" class="img-fluid" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
     <!-- Services Box -->
     <section class="services-box section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-30 text-center">
-                    <div class="section-subtitle">What We Offer</div>
-                    <div class="section-title">Where To Stay</div>
+                    <div class="section-subtitle">{{ page.offers.subtitle }}</div>
+                    <div class="section-title">{{ page.offers.title }}</div>
                 </div>
             </div>
             <div class="row">
+                {% for item in page.offers.items %}
                 <div class="col-md-4">
-                    <div class="item"> <span class="icon flaticon-021-cottage-1"></span>
-                        <div class="cont">
-                            <h5>Private Cottages</h5>
-                            <p>Lorem ipsum varius natosuen miss magnis sarturien monte nascete ridiculus in the fermens.</p>
-                        </div>
+                    <div class="item">
+                      <span class="icon {{ item.icon }}"></span>
+                      <div class="cont">
+                          <h5><a href="{{ item.url }}">{{ item.title }}</a></h5>
+                          <p>{{ item.text }}</p>
+                      </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="item"> <span class="icon flaticon-007-tent-1"></span>
-                        <div class="cont">
-                            <h5>Tents With Territory</h5>
-                            <p>Lorem ipsum varius natosuen miss magnis sarturien monte nascete ridiculus in the fermens.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item"> <span class="icon flaticon-048-van"></span>
-                        <div class="cont">
-                            <h5>Compact Trailers</h5>
-                            <p>Lorem ipsum varius natosuen miss magnis sarturien monte nascete ridiculus in the fermens.</p>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
+
     <!-- Accommodations -->
     <section class="accommodations section-padding bg-darkbrown" data-scroll-index="2">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-30 text-center">
-                    <div class="section-subtitle">Camping Hotel</div>
-                    <div class="section-title"><span>Accommodations</span></div>
+                    <div class="section-subtitle">{{ page.accommodations.subtitle }}</div>
+                    <div class="section-title"><span>{{ page.accommodations.title }}</span></div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
+                        {% for card in page.accommodations.items %}
                         <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/1.jpg' | relative_url }}" alt=""> </div> <span class="category"><a href="/rooms/">50$ <i>/ Night</i></a></span>
+                            <div class="position-re o-hidden">
+                              <img src="{{ card.image | relative_url }}" alt="">
+                            </div>
+
+                            <span class="category">
+                              <a href="{{ card.url }}">{{ card.tag }}</a>
+                            </span>
+
                             <div class="con">
-                                <h5><a href="/page/">Small Tent</a> </h5>
+                                <h5><a href="{{ card.url }}">{{ card.title }}</a></h5>
                                 <div class="row facilities">
                                     <div class="col col-md-7">
                                         <ul>
-                                            <li><i class="flaticon-007-tent-1"></i></li>
-                                            <li><i class="flaticon-005-firewood"></i></li>
-                                            <li><i class="flaticon-030-camping-gas"></i></li>
-                                            <li><i class="flaticon-031-pot"></i></li>
-                                            <li><i class="flaticon-010-bedding"></i></li>
+                                            {% for ic in card.icons %}
+                                              <li><i class="{{ ic }}"></i></li>
+                                            {% endfor %}
                                         </ul>
                                     </div>
-                                    <div class="col col-md-5 text-end">
-                                        <div class="permalink"><a href="/page/">Details <i class="ti-arrow-right"></i></a></div>
+                                    <div class="col col-md-5 text-right">
+                                      <div class="butn-light mt-10">
+                                        <a href="{{ card.url }}"><span>Learn More</span></a>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/2.jpg' | relative_url }}" alt=""> </div> <span class="category"><a href="/rooms/">70$ <i>/ Night</i></a></span>
-                            <div class="con">
-                                <h5><a href="/page/">Large Tent</a></h5>
-                                <div class="row facilities">
-                                    <div class="col col-md-7">
-                                        <ul>
-                                            <li><i class="flaticon-009-tent-2"></i></li>
-                                            <li><i class="flaticon-005-firewood"></i></li>
-                                            <li><i class="flaticon-030-camping-gas"></i></li>
-                                            <li><i class="flaticon-031-pot"></i></li>
-                                            <li><i class="flaticon-010-bedding"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-5 text-end">
-                                        <div class="permalink"><a href="/page/">Details <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/8.jpg' | relative_url }}" alt=""> </div> <span class="category"><a href="/rooms/">90$ <i>/ Night</i></a></span>
-                            <div class="con">
-                                <h5><a href="/page/">Mini Cabins</a></h5>
-                                <div class="row facilities">
-                                    <div class="col col-md-7">
-                                        <ul>
-                                            <li><i class="flaticon-021-cottage-1"></i></li>
-                                            <li><i class="flaticon-005-firewood"></i></li>
-                                            <li><i class="flaticon-030-camping-gas"></i></li>
-                                            <li><i class="flaticon-031-pot"></i></li>
-                                            <li><i class="flaticon-010-bedding"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-5 text-end">
-                                        <div class="permalink"><a href="/page/">Details <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/9.jpg' | relative_url }}" alt=""> </div> <span class="category"><a href="/rooms/">120$ <i>/ Night</i></a></span>
-                            <div class="con">
-                                <h5><a href="/page/">Studio Cabin</a></h5>
-                                <div class="row facilities">
-                                    <div class="col col-md-7">
-                                        <ul>
-                                            <li><i class="flaticon-021-cottage-1"></i></li>
-                                            <li><i class="flaticon-005-firewood"></i></li>
-                                            <li><i class="flaticon-030-camping-gas"></i></li>
-                                            <li><i class="flaticon-031-pot"></i></li>
-                                            <li><i class="flaticon-010-bedding"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-5 text-end">
-                                        <div class="permalink"><a href="/page/">Details <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/7.jpg' | relative_url }}" alt=""> </div> <span class="category"><a href="/rooms/">150$ <i>/ Night</i></a></span>
-                            <div class="con">
-                                <h5><a href="/page/">Family Caravan</a></h5>
-                                <div class="row facilities">
-                                    <div class="col col-md-7">
-                                        <ul>
-                                            <li><i class="flaticon-048-van"></i></li>
-                                            <li><i class="flaticon-005-firewood"></i></li>
-                                            <li><i class="flaticon-030-camping-gas"></i></li>
-                                            <li><i class="flaticon-031-pot"></i></li>
-                                            <li><i class="flaticon-010-bedding"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-5 text-end">
-                                        <div class="permalink"><a href="/page/">Details <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/10.jpg' | relative_url }}" alt=""> </div> <span class="category"><a href="/rooms/">180$ <i>/ Night</i></a></span>
-                            <div class="con">
-                                <h5><a href="/page/">Large Cabin</a></h5>
-                                <div class="row facilities">
-                                    <div class="col col-md-7">
-                                        <ul>
-                                            <li><i class="flaticon-021-cottage-1"></i></li>
-                                            <li><i class="flaticon-005-firewood"></i></li>
-                                            <li><i class="flaticon-030-camping-gas"></i></li>
-                                            <li><i class="flaticon-031-pot"></i></li>
-                                            <li><i class="flaticon-010-bedding"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col col-md-5 text-end">
-                                        <div class="permalink"><a href="/page/">Details <i class="ti-arrow-right"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
-    <!-- Promo Video -->
-    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="5" data-background="{{ '/assets/img/slider/10.jpg' | relative_url }}">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-center"> <span><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></span>
-                    <div class="section-subtitle"><span>Camping Hotel</span></div>
-                    <div class="section-title"><span>Promotional Video</span></div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-center">
-                    <a class="vid" href="https://youtu.be/mtc2IHdyz4s">
-                        <div class="vid-butn"> <span class="icon"><i class="ti-control-play"></i></span> </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Pricing -->
-    <section class="pricing section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-30 text-center">
-                    <div class="section-subtitle">Best Prices</div>
-                    <div class="section-title">Pricing Plan</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="pricing-card">
-                            <div class="img"><img src="{{ '/assets/img/slider/1.jpg' | relative_url }}" alt=""></div>
-                            <div class="desc">
-                                <div class="name">Tent</div>
-                                <div class="amount">$50<span>/ per day</span></div>
-                                <ul class="list-unstyled list">
-                                    <li><i class="ti-check"></i> Tent ut nisan the duru</li>
-                                    <li><i class="ti-check"></i> Orci miss natoque vasa incesu</li>
-                                    <li><i class="ti-close unavailable"></i>Tent sorem ipsum in the morbin</li>
-                                </ul>
-                                <div class="butn-1 mt-20"> <a href="#"><span>See Deal</span></a> </div>
-                            </div>
-                        </div>
-                        <div class="pricing-card">
-                            <div class="img"><img src="{{ '/assets/img/slider/7.jpg' | relative_url }}" alt=""></div>
-                            <div class="desc">
-                                <div class="name">Caravan</div>
-                                <div class="amount">$70<span>/ per day</span></div>
-                                <ul class="list-unstyled list">
-                                    <li><i class="ti-check"></i> Caravan rides nisan the duru</li>
-                                    <li><i class="ti-check"></i> Orci miss natoque vasa ince</li>
-                                    <li><i class="ti-close unavailable"></i>Caravan sorem ipsum morbin</li>
-                                </ul>
-                                <div class="butn-1 mt-20"> <a href="#"><span>See Deal</span></a> </div>
-                            </div>
-                        </div>
-                        <div class="pricing-card">
-                            <div class="img"><img src="{{ '/assets/img/slider/2.jpg' | relative_url }}" alt=""></div>
-                            <div class="desc">
-                                <div class="name">Small Tent</div>
-                                <div class="amount">$40<span>/ per day</span></div>
-                                <ul class="list-unstyled list">
-                                    <li><i class="ti-check"></i> Tent ut nisan the duru</li>
-                                    <li><i class="ti-check"></i> Orci miss natoque vasa incesu</li>
-                                    <li><i class="ti-close unavailable"></i>Tent sorem ipsum in the morbin</li>
-                                </ul>
-                                <div class="butn-1 mt-20"> <a href="#"><span>See Deal</span></a> </div>
-                            </div>
-                        </div>
-                        <div class="pricing-card">
-                            <div class="img"><img src="{{ '/assets/img/slider/7.jpg' | relative_url }}" alt=""></div>
-                            <div class="desc">
-                                <div class="name">Family Caravan</div>
-                                <div class="amount">$90<span>/ per day</span></div>
-                                <ul class="list-unstyled list">
-                                    <li><i class="ti-check"></i> Caravan rides nisan the duru</li>
-                                    <li><i class="ti-check"></i> Orci miss natoque vasa ince</li>
-                                    <li><i class="ti-close unavailable"></i>Caravan sorem ipsum morbin</li>
-                                </ul>
-                                <div class="butn-1 mt-20"> <a href="#"><span>See Deal</span></a> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services -->
-    <section class="services section-padding bg-darkbrown">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-30 text-center">
-                    <div class="section-subtitle">What We Do</div>
-                    <div class="section-title"><span>Experiences</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="/restaurant/"><img src="{{ '/assets/img/slider/12.jpg' | relative_url }}" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-darkbrown valign animate-box fadeInRight animated" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <h4>Scout Courses</h4>
-                            <p>Courses inilla duiman at elit finibus viverra nec a lacus miss the nesun seneoice misuscipit non sagie the fermen ziverra tristiue duru the iviten onen nivami acsestion augue in the miss artine.</p>
-                            <div class="butn-1"> <a href="#"><span>Read More</span></a> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 bg-darkbrown p-0 order2 valign animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <h4>Bonfire Pitch</h4>
-                            <p>Bonfire Pitch duiman at elit finibus viverra nec a lacus miss the nesuna seneoice misuscipit non sagie the fermen ziverra tristiue duru the iviten onen nivami acsestion augue in the miss artine.</p>
-                            <div class="butn-1"> <a href="#"><span>Read More</span></a> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="/activities/"><img src="{{ '/assets/img/slider/5.jpg' | relative_url }}" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="/activities/"><img src="{{ '/assets/img/slider/1.jpg' | relative_url }}" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-darkbrown valign animate-box fadeInRight animated" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <h4>Wild Experience</h4>
-                            <p>Wild Experience inilla duiman at elit finibus viverra nec a lacus miss nesun seneoice misuscipit non sagie the fermen ziverra tristiue duru the iviten onen nivami acsestion augue in the miss artine.</p>
-                            <div class="butn-1"> <a href="#"><span>Read More</span></a> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Activities -->
-    <section class="facilties section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-30 text-center">
-                    <div class="section-subtitle">What We’re Offering</div>
-                    <div class="section-title">Our Activities</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-014-tent-4"></span>
-                        <h5>Camping</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-014-tent-4"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-045-bicycle"></span>
-                        <h5>Adventure</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-045-bicycle"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-054-hiking-2"></span>
-                        <h5>Climbing</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-054-hiking-2"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-015-sports"></span>
-                        <h5>Sports</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-015-sports"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-053-sea-waves"></span>
-                        <h5>Diving</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-053-sea-waves"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-042-guitar"></span>
-                        <h5>Music</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-042-guitar"></span> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!-- Testiominals -->
-    <section class="background bg-img bg-fixed section-padding pb-0" data-background="{{ '/assets/img/slider/5.jpg' | relative_url }}" data-overlay-dark="5">
+    <section class="background bg-img bg-fixed section-padding pb-0"
+             data-background="{{ page.testimonials_section.background | relative_url }}"
+             data-overlay-dark="5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-12 text-center">
+                    <div class="section-subtitle">{{ page.testimonials_section.subheading }}</div>
+                    <div class="section-title">{{ page.testimonials_section.heading }}</div>
+
                     <div class="testimonials">
                         <div class="testimonials-box">
                             <div class="owl-carousel owl-theme">
-                                <div class="item"> <span>
+                                {% for t in site.data.testimonials %}
+                                <div class="item">
+                                    <span>
                                         <i class="star-rating"></i>
                                         <i class="star-rating"></i>
                                         <i class="star-rating"></i>
                                         <i class="star-rating"></i>
                                         <i class="star-rating"></i>
                                     </span>
-                                    <h5>Highly recommended!</h5>
-                                    <p>Lorem dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante viventa miss sapien silver on the duiman lorem ipsum amet silver miss rana duru at finibus viverra neca the sene on satien.</p>
+                                    <h5>{{ t.title | default: "Highly recommended!" }}</h5>
+                                    <p>{{ t.quote }}</p>
                                     <div class="info">
-                                        <div class="author-img"> <img src="{{ '/assets/img/team/1.jpg' | relative_url }}" alt=""> </div>
+                                        <div class="author-img">
+                                          {% if t.image %}
+                                            <img src="{{ t.image | relative_url }}" alt="">
+                                          {% endif %}
+                                        </div>
                                         <div class="cont">
-                                            <h6>Micheal Karla</h6> <span>Blogger</span>
+                                            <h6>{{ t.name }}</h6>
+                                            <span>{{ t.organization }}</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item"> <span>
-                                        <i class="star-rating"></i>
-                                        <i class="star-rating"></i>
-                                        <i class="star-rating"></i>
-                                        <i class="star-rating"></i>
-                                        <i class="star-rating"></i>
-                                    </span>
-                                    <h5>A Unique Camping Hotel!</h5>
-                                    <p>Lorem dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante viventa miss sapien silver on the duiman lorem ipsum amet silver miss rana duru at finibus viverra neca the sene on satien.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="{{ '/assets/img/team/3.jpg' | relative_url }}" alt=""> </div>
-                                        <div class="cont">
-                                            <h6>Oliva Martin</h6> <span>Vlogger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item"> <span>
-                                        <i class="star-rating"></i>
-                                        <i class="star-rating"></i>
-                                        <i class="star-rating"></i>
-                                        <i class="star-rating"></i>
-                                        <i class="star-rating"></i>
-                                    </span>
-                                    <h5>Highly recommended!</h5>
-                                    <p>Lorem dapibus asue metus the nec feusiate eraten miss hendreri net ve ante the lemon sanleo nectan feugiat erat hendrerit necuis ve ante viventa miss sapien silver on the duiman lorem ipsum amet silver miss rana duru at finibus viverra neca the sene on satien.</p>
-                                    <div class="info">
-                                        <div class="author-img"> <img src="{{ '/assets/img/team/4.jpg' | relative_url }}" alt=""> </div>
-                                        <div class="cont">
-                                            <h6>Robert Dan</h6> <span>Traveler</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Blog -->
-    <section class="news section-padding">
+    <section class="blog section-padding" data-scroll-index="6">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 mb-30 text-center">
-                    <div class="section-subtitle"><span>Camping Blog</span></div>
-                    <div class="section-title">Latest News and Events</div>
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-subtitle">{{ page.blog_section.subtitle }}</div>
+                    <div class="section-title">{{ page.blog_section.title }}</div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/11.jpg' | relative_url }}" alt="">
-                                <div class="date"> <a href="/post/">Camping</a> </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="/blog/">27 Dec 2025</a>
-                                </span>
-                                <h5><a href="/post/">8 Tips &amp; Hacks to Keep Your Tent Cool During Summer</a></h5>
-                            </div>
+                {% for post in site.posts limit: page.blog_section.limit %}
+                <div class="col-md-4">
+                    <div class="item">
+                        <div class="post-img">
+                            <a href="{{ post.url }}">
+                              {% if post.image %}
+                                <img src="{{ post.image | relative_url }}" alt="">
+                              {% else %}
+                                <img src="{{ '/assets/img/blog/1.jpg' | relative_url }}" alt="">
+                              {% endif %}
+                            </a>
                         </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/6.jpg' | relative_url }}" alt="">
-                                <div class="date"> <a href="/post/">Wild Camp</a> </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="/blog/">25 Dec 2025</a>
-                                </span>
-                                <h5><a href="/post/">Can You Wild Camp in the Lake District? Everything You Need To Know</a></h5>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/1.jpg' | relative_url }}" alt="">
-                                <div class="date"> <a href="/post/">Camping</a> </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="/blog/">23 Dec 2025</a>
-                                </span>
-                                <h5><a href="/post/">6 Essential Tips If You are Camping Dolo for the First Time</a></h5>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ '/assets/img/slider/12.jpg' | relative_url }}" alt="">
-                                <div class="date"> <a href="/post/">Camping</a> </div>
-                            </div>
-                            <div class="con"> <span class="category">
-                                    <a href="/blog/">21 Dec 2025</a>
-                                </span>
-                                <h5><a href="/post/">The Ultimate Guide to Stealth Camping: Tips and Essential Gear</a></h5>
+                        <div class="cont">
+                            <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                            <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                            <div class="butn-light mt-10">
+                              <a href="{{ post.url }}"><span>Read More</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
+
         </div>
     </section>
-    <!-- Reservation & Booking Form -->
-    <section class="reservation">
-        <div class="background bg-img bg-fixed section-padding pb-0" data-background="{{ '/assets/img/slider/5.jpg' | relative_url }}" data-overlay-dark="5">
-            <div class="container">
-                <div class="row">
-                    <!-- Reservation -->
-                    <div class="col-lg-5 col-md-12 mb-30 mt-30">
-                        <p><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></p>
-                        <h5>Enjoy The Better Adventure Life Tent Camping</h5>
-                        <p>Create memories that will last a lifetime - camping in the heart of the New York.</p>
-                        <div class="reservations">
-                            <div class="icon color-1"><span class="ti-headphone-alt"></span></div>
-                            <div class="text">
-                                <p class="color-1">Reservation</p> <a class="color-1" href="tel:855-100-4444">855 100 4444</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Booking From -->
-                    <div class="col-lg-5 offset-lg-2 col-md-12">
-                        <div class="booking-box">
-                            <div class="head-box text-center">
-                                <h4>Camping Booking Form</h4>
-                            </div>
-                            <div class="booking-inner clearfix">
-                                <form action="rooms.html" class="form1 clearfix">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="input1_wrapper">
-                                                <label>Check in</label>
-                                                <div class="input1_inner">
-                                                    <input type="text" class="form-control input datepicker" placeholder="Check in">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="input1_wrapper">
-                                                <label>Check out</label>
-                                                <div class="input1_inner">
-                                                    <input type="text" class="form-control input datepicker" placeholder="Check out">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="select1_wrapper">
-                                                <label>Adults</label>
-                                                <div class="select1_inner">
-                                                    <select class="select2 select" style="width: 100%">
-                                                        <option value="0">Adults</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="select1_wrapper">
-                                                <label>Children</label>
-                                                <div class="select1_inner">
-                                                    <select class="select2 select" style="width: 100%">
-                                                        <option value="0">Children</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <button type="submit" class="btn-form1-submit mt-15">Check Availability</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Clients -->
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/1.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/2.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/3.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/4.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/5.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/6.png' | relative_url }}" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-
-    <!-- jQuery -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body></html>
