@@ -1,39 +1,128 @@
-<!-- Navigation preserved from original template -->
 <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo-wrapper">
-                <a class="logo" href="/"> <img src="{{ '/assets/img/logo-light.png' | relative_url }}" class="logo-img" alt=""> </a>
-            </div>
-            <!-- Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Home <i class="ti-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/" class="dropdown-item"><span>Parallax Image</span></a></li>
-                            <li><a href="/2" class="dropdown-item"><span>Slider</span></a></li>
-                            <li><a href="/3" class="dropdown-item"><span>Video</span></a></li>
-                            <li><a href="/4" class="dropdown-item"><span>Slideshow</span></a></li>
-                            <li><a href="/onepage" class="dropdown-item"><span>Onepage</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/accommodations">Accommodation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/activities">Activities</a></li>
-                    <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages <i class="ti-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/gallery" class="dropdown-item"><span>Gallery</span></a></li>
-                            <li><a href="/team" class="dropdown-item"><span>Team</span></a></li>
-                            <li><a href="/pricing" class="dropdown-item"><span>Pricing</span></a></li>
-                            <li><a href="/faq" class="dropdown-item"><span>Faq</span></a></li>
-                            <li><a href="/404" class="dropdown-item active"><span>404 Page</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-                </ul>
-            </div>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-wrapper">
+            <a class="logo" href="/"> <img src="/assets/img/logo-light.png" class="logo-img" alt=""> </a>
         </div>
-    </nav>
+        <!-- Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbar">
+           <ul class="navbar-nav ms-auto">
+             {% assign current = page.url | replace: "index.html", "" | append: "/" | replace: "//", "/" %}
+
+             {%- assign main_items = site.data.navigation.main | where_exp: "i", "i.more != true" -%}
+             {%- assign more_items = site.data.navigation.main | where_exp: "i", "i.more == true" -%}
+
+             {%- comment -%} MAIN ITEMS {%- endcomment -%}
+             {% for item in main_items %}
+               {% assign item_url = item.url | append: "/" | replace: "//", "/" %}
+
+               {% if item.children %}
+                 {% assign is_active = false %}
+                 {% if current == item_url %}
+                   {% assign is_active = true %}
+                 {% endif %}
+                 {% for child in item.children %}
+                   {% assign child_url = child.url | append: "/" | replace: "//", "/" %}
+                   {% if current == child_url %}
+                     {% assign is_active = true %}
+                   {% endif %}
+                 {% endfor %}
+
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle{% if is_active %} active{% endif %}"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                      aria-expanded="false">
+                     {{ item.label }} <i class="ti-angle-down"></i>
+                   </a>
+                   <ul class="dropdown-menu">
+                     {% for child in item.children %}
+                       {% assign child_url = child.url | append: "/" | replace: "//", "/" %}
+                       <li>
+                         <a href="{{ child.url }}" class="dropdown-item{% if current == child_url %} active{% endif %}">
+                           <span>{{ child.label }}</span>
+                         </a>
+                       </li>
+                     {% endfor %}
+                   </ul>
+                 </li>
+
+               {% else %}
+                 <li class="nav-item">
+                   <a class="nav-link{% if current == item_url %} active{% endif %}" href="{{ item.url }}">
+                     {{ item.label }}
+                   </a>
+                 </li>
+               {% endif %}
+             {% endfor %}
+
+             {%- comment -%} MORE DROPDOWN (single level, matches new markup) {%- endcomment -%}
+             {% if more_items and more_items.size > 0 %}
+               {% assign more_active = false %}
+               {% for item in more_items %}
+                 {% assign item_url = item.url | append: "/" | replace: "//", "/" %}
+                 {% if current == item_url %}
+                   {% assign more_active = true %}
+                 {% endif %}
+                 {% if item.children %}
+                   {% for child in item.children %}
+                     {% assign child_url = child.url | append: "/" | replace: "//", "/" %}
+                     {% if current == child_url %}
+                       {% assign more_active = true %}
+                     {% endif %}
+                   {% endfor %}
+                 {% endif %}
+               {% endfor %}
+
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle{% if more_active %} active{% endif %}"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">
+                   More <i class="ti-angle-down"></i>
+                 </a>
+
+                 <ul class="dropdown-menu">
+                   {% for item in more_items %}
+                     {% assign item_url = item.url | append: "/" | replace: "//", "/" %}
+
+                     {% if item.children %}
+                       {%- comment -%}
+                       New template supports only one dropdown level.
+                       Flatten children under More.
+                       {%- endcomment -%}
+                       <li>
+                         <a href="{{ item.url }}" class="dropdown-item{% if current == item_url %} active{% endif %}">
+                           <span>{{ item.label }}</span>
+                         </a>
+                       </li>
+                       {% for child in item.children %}
+                         {% assign child_url = child.url | append: "/" | replace: "//", "/" %}
+                         <li>
+                           <a href="{{ child.url }}" class="dropdown-item{% if current == child_url %} active{% endif %}">
+                             <span>&nbsp;&nbsp;{{ child.label }}</span>
+                           </a>
+                         </li>
+                       {% endfor %}
+                     {% else %}
+                       <li>
+                         <a href="{{ item.url }}" class="dropdown-item{% if current == item_url %} active{% endif %}">
+                           <span>{{ item.label }}</span>
+                         </a>
+                       </li>
+                     {% endif %}
+                   {% endfor %}
+                 </ul>
+               </li>
+             {% endif %}
+           </ul>
+
+        </div>
+    </div>
+</nav>

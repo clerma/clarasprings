@@ -1,17 +1,84 @@
----
-- name: Parallax Image
-  url: /
-- name: Slider
-  url: /2
-- name: Video
-  url: /3
-- name: Slideshow
-  url: /4
-- name: Onepage
-  url: /onepage
-- name: About
-  url: /about
-- name: Accommodation
-  url: /accommodations
-- name: Activities
-  url: /activities
+main:
+- label: "Home"
+  url: "/"
+  more: false
+
+- label: "Meet The Staff"
+  url: "/meet-the-staff/"
+  more: false
+
+- label: "Camp Summer Ministry Team"
+  url: "/camp-summer-ministry-team/"
+  more: false
+
+- label: "Donate"
+  url: "/donate/"
+  more: false
+
+- label: "2026 Events"
+  url: "/2026-events/"
+  more: false
+  children:
+    - label: "Kids Winter Retreat"
+      url: "/2026-events/kids-winter-retreat/"
+    - label: "Fourth Friday Fish Fry"
+      url: "/2026-events/fourth-friday-fish-fry/"
+    - label: "GROW Women's Conference"
+      url: "/2026-events/grow-womens-conference/"
+    - label: "2025 Adult Day"
+      url: "/2026-events/2025-adult-day/"
+
+- label: "2026 Summer Camp Info"
+  url: "/2026-summer-camp-info/"
+  more: false
+  children:
+    - label: "Bloom (Girls) Camp"
+      url: "/2026-summer-camp-info/bloom-girls-camp/"
+    - label: "PreCamp"
+      url: "/2026-summer-camp-info/precamp/"
+    - label: "Kids Camp"
+      url: "/2026-summer-camp-info/kids-camp/"
+    - label: "YAC (Young Adult Camp)"
+      url: "/2026-summer-camp-info/yac-young-adult-camp/"
+    - label: "Kids on Mission Camp"
+      url: "/2026-summer-camp-info/kids-on-mission-camp/"
+    - label: "Journey Youth Camp"
+      url: "/2026-summer-camp-info/journey-youth-camp/"
+    - label: "Impact Youth Camp"
+      url: "/2026-summer-camp-info/impact-youth-camp/"
+
+# Items that were hidden in main nav and surfaced in "More"
+- label: "Volunteers"
+  url: "/volunteers/"
+  more: true
+
+- label: "Camp Grounds"
+  url: "/camp-grounds/"
+  more: true
+  children:
+    - label: "Facilities"
+      url: "/camp-grounds/facilities/"
+    - label: "Dining Hall"
+      url: "/camp-grounds/dining-hall/"
+    - label: "Worship Center"
+      url: "/camp-grounds/worship-center/"
+    - label: "Dorms"
+      url: "/camp-grounds/dorms/"
+    - label: "Eagle & Whitetail Lodges"
+      url: "/camp-grounds/eagle-whitetail-lodges/"
+    - label: "Cabins & The Buffalo"
+      url: "/camp-grounds/cabins-the-buffalo/"
+    - label: "Recreation"
+      url: "/camp-grounds/recreation/"
+
+- label: "Conference & Retreats"
+  url: "/conference-retreats/"
+  more: true
+
+- label: "Summer Staff Adoption"
+  url: "/summer-staff-adoption/"
+  more: true
+
+- label: "Beyond the Camp Fire"
+  url: "/beyond-the-camp-fire/"
+  more: true
