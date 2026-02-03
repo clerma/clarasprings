@@ -2,7 +2,7 @@
 
  01. Basics style
  02. Helper style
- 03. Selection style 
+ 03. Selection style
  04. Preloader style
  05. Owl-Theme custom style
  06. Section style
@@ -35,7 +35,7 @@
  33. toTop Button style
  34. Overlay Effect Bg image style
  35. Responsive (Media Query)
- 
+
 ------------------------------------------------------- */
 
 
@@ -162,7 +162,7 @@ select {
 }
 table, th, tr, td {
     border: 1px solid #ecefed;
-} 
+}
 th,
 tr,
 td {
@@ -264,7 +264,7 @@ blockquote cite:before {
     bottom: 5px;
     width: 45px;
     height: 1px;
-    border-top: 1px solid; 
+    border-top: 1px solid;
     border-color:inherit;
     color: #fff;
 }
@@ -1005,7 +1005,7 @@ color: #344831;
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
-    }    
+    }
 }
 @media screen and (max-width: 991px) {
     .navbar {
@@ -1072,7 +1072,7 @@ color: #344831;
     }
     .nav-scroll .navbar-collapse .active {
         color: #FF911B !important;
-    } 
+    }
     .navbar .dropdown-menu .dropdown-item {
         padding: 0 15px;
         font-size: 15px;
@@ -1378,14 +1378,14 @@ hr {
     font-size: 12px;
     line-height: 1.75em;
     margin-top: 15px;
-} 
+}
 .header div.reservation .call span {
     font-family: 'Outfit', sans-serif;
     font-size: 24px;
     color: #fff;
     font-weight: 600;
     letter-spacing: 1;
-} 
+}
 .header div.reservation .icon {
     position: absolute;
     left: -1px;
@@ -1553,7 +1553,7 @@ hr {
 @media screen and (max-width: 767px) {
 .kenburns-inner .caption h4 {
     font-size: 12px;
-}   
+}
 .kenburns-inner .caption h1 {
     font-size: 45px;
 }
@@ -1593,13 +1593,13 @@ hr {
     font-size: 12px;
     line-height: 1.75em;
     margin-top: 15px;
-} 
+}
 .kenburns-section div.reservation .call span {
        font-family: 'Outfit', sans-serif;
     font-size: 24px;
     color: #344831;
     letter-spacing: 1px;
-} 
+}
 .kenburns-section div.reservation .icon {
     position: absolute;
     left: -1px;
@@ -1873,7 +1873,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: right;
-    
+
 }
 .video-lauch-wrapper {
   border: none;
@@ -1892,7 +1892,7 @@ hr {
   height: 100%;
   margin: 0;
   box-sizing: border-box;
-  text-align: center; 
+  text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2097,6 +2097,8 @@ hr {
 .accommodations .item img {
     -webkit-transition: all .5s;
     transition: all .5s;
+    height: 22em;
+    object-fit: cover;
 }
 .accommodations .item .category {
     position: absolute;
@@ -2293,7 +2295,7 @@ hr.border-2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #344831;
-    margin-bottom: 5px;   
+    margin-bottom: 5px;
 }
 .reservations .text a {
     font-size: 24px;
@@ -2515,7 +2517,7 @@ hr.border-2 {
   left: 0px;
 }
 .services .content .cont .more:hover {
-   color: #222; 
+   color: #222;
 }
 .services .content .info h6 {
     font-size: 12px;
@@ -2540,7 +2542,7 @@ hr.border-2 {
     -webkit-box-ordinal-group: 2 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important;
-  }  
+  }
 }
 @media screen and (max-width: 480px) {
     .services .content .date {
@@ -3409,7 +3411,7 @@ button.mfp-arrow {
 }
 .pricing-card .desc {
     padding: 40px 30px;
-} 
+}
 .pricing-card .name {
     font-family: "Zilla Slab", serif;
     font-weight: 700;
@@ -3474,7 +3476,7 @@ button.mfp-arrow {
 .pricing-card .img img {
     width: 100%;
     -webkit-transition: all .5s;
-    transition: all .5s;  
+    transition: all .5s;
 }
 .pricing-card:hover .img img {
      -webkit-filter: none;
@@ -3956,7 +3958,7 @@ position: absolute;
     font-size: 27px;
     color: #000;
 }
-.map {	
+.map {
 /*
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -4717,8 +4719,8 @@ select {
     .header {
         background-attachment: scroll !important;
         background-position: 50% 0% !important;
-    }  
-    .banner-header.full-height h3 { 
+    }
+    .banner-header.full-height h3 {
         font-size: 45px;
     }
     .banner-header p {

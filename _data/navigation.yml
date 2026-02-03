@@ -3,20 +3,13 @@ main:
   url: "/"
   more: false
 
-- label: "Meet The Staff"
+- label: "Staff"
   url: "/meet-the-staff/"
   more: false
 
-- label: "Camp Summer Ministry Team"
-  url: "/camp-summer-ministry-team/"
-  more: false
 
-- label: "Donate"
-  url: "/donate/"
-  more: false
-
-- label: "2026 Events"
-  url: "/2026-events/"
+- label: "Events"
+  url: "/events/"
   more: false
   children:
     - label: "Kids Winter Retreat"
@@ -28,8 +21,8 @@ main:
     - label: "2025 Adult Day"
       url: "/2026-events/2025-adult-day/"
 
-- label: "2026 Summer Camp Info"
-  url: "/2026-summer-camp-info/"
+- label: "Camps"
+  url: "/camp-info/"
   more: false
   children:
     - label: "Bloom (Girls) Camp"
@@ -46,7 +39,9 @@ main:
       url: "/2026-summer-camp-info/journey-youth-camp/"
     - label: "Impact Youth Camp"
       url: "/2026-summer-camp-info/impact-youth-camp/"
-
+- label: "Donate"
+  url: "/donate/"
+  more: false
 # Items that were hidden in main nav and surfaced in "More"
 - label: "Volunteers"
   url: "/volunteers/"
