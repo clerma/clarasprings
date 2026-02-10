@@ -1,6 +1,7 @@
 ---
 layout: camp
-title: "Small Tent"
+title: "Pre-Camp"
+name: "Pre-Camp"
 
 slider:
   overlay: 3
@@ -10,51 +11,61 @@ slider:
     - /assets/img/site-images/slider-3.jpg
 
 description:
-  - "Hotel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc volutpat miss sapien vel conseyen turpeutionyer masin libero sevenion vusetion viventa augue sit amet hendrerit vestibulum."
-  - "Interdum et malesu they adamale fames ac anteipsu pimsine faucibus curabitur arcu site feugiat in tortor in, volutpat sollicitudin libero."
+  - "Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026. This one-night introductory camp is designed to give young campers a fun and safe first camp experience."
+  - "Pre-Camp offers a full schedule of age-appropriate activities, worship, and time with trained camp staff. It is a great way for first-time campers to get comfortable with Clara Springs before attending longer summer camps."
 
 checkin:
   title: "Check-in"
   items:
-    - "Check-in from 9:00 AM - anytime"
-    - "Early check-in subject to availability"
+    - "Check-in begins at 5:00 PM on July 3, 2026"
+    - "Early check-in is not available for Pre-Camp"
+    - "Parents must check in campers in person"
 
 checkout:
   title: "Check-out"
   items:
-    - "Check-out before noon"
-    - "Express check-out"
+    - "Check-out is at 1:00 PM on July 4, 2026"
+    - "Parents must present ID to check out a camper"
 
+# You said you prefer a centralized policy page, so we include only required structure.
 policies:
-  - title: "Special check-in instructions"
-    text: "Guests will receive an email 5 days before arrival with check-in instructions; front desk staff will greet guests on arrival."
-  - title: "Pets"
-    text: "Pets are allowed."
-  - title: "Children and extra beds"
-    text: "Children are welcome. Kids stay free when using existing bedding."
+  - title: "General Policy"
+    text: "Campers and parents will receive complete instructions by email before arrival."
 
 amenities:
   - icon: "flaticon-007-tent-1"
-    text: "1-3 Person Tents"
+    text: "Age-Appropriate Activities"
   - icon: "flaticon-005-firewood"
-    text: "Free Campfire"
+    text: "Worship & Small Group Time"
   - icon: "flaticon-030-camping-gas"
-    text: "Camping Gas"
+    text: "Camp Staff Leadership"
   - icon: "flaticon-031-pot"
-    text: "Kitchen Tools"
+    text: "Meals Included"
   - icon: "flaticon-010-bedding"
-    text: "Pillow and Blanket"
+    text: "Indoor Lodging Provided"
+
+tickets:
+  - name: "Pre-Camp Registration"
+    price: 60
+    features:
+      - "Early Registration Rate: $60 (before May 1)"
+      - "Regular Rate: $70 (after May 1)"
+      - "Includes all meals and activities"
+      - "One-night camp experience"
 
 faqs:
-  - question: "Do I have to pay right away?"
-    answer: "Lorem ut nisl quam nestibulum ac quam nec odio elementum."
-  - question: "Do you have waiting lists for cancellations?"
-    answer: "Lorem ut nisl quam nestibulum ac quam nec odio elementum."
-  - question: "At what time can I arrive?"
-    answer: "Lorem ut nisl quam nestibulum ac quam nec odio elementum."
-  - question: "Can I bring my dog?"
-    answer: "Lorem ut nisl quam nestibulum ac quam nec odio elementum."
+  - question: "What ages can attend Pre-Camp?"
+    answer: "Pre-Camp is designed as an introductory camp for younger children who are not yet ready for week-long summer camps."
+  - question: "What should my camper bring?"
+    answer: "A packing list will be emailed to parents prior to camp."
+  - question: "Is financial assistance available?"
+    answer: "Contact the Clara Springs office to inquire about available assistance."
+  - question: "Can parents stay on campus during Pre-Camp?"
+    answer: "Pre-Camp is a drop-off program; parents are not required to stay overnight."
+
+nav_hide: false
 ---
+
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
