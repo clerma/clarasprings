@@ -16,41 +16,44 @@ locale: en_US
 
 # SEO & Analytics
 favicon: /assets/favicon/favicon.ico
-logo: 
-og_image: 
-google_analytics: 
-google_site_verification: 
-bing_site_verification: 
+logo:
+og_image:
+google_analytics:
+google_site_verification:
+bing_site_verification:
 
 # Contact Information
-phone: 
-email: 
+phone:
+email:
 
 # Location Data
-latitude: 
-longitude: 
-location: 
-local_keywords: 
+latitude:
+longitude:
+location:
+local_keywords:
 
 # Services Integration
-disqus: 
+disqus:
 social:
-  name: 
+  name:
   links:
     - ""
 twitter:
-  username: 
+  username:
 address:
-  street: 
-  city: 
-  region: 
-  zip: 
-  country: 
+  street:
+  city:
+  region:
+  zip:
+  country:
 alt_location:
   - location: ""
     url: ""
-include: ['_pages', '_data','login.html','login','_vendors', '_plugins']
-
+include: ['_pages', '_data','login.html','login','_vendors', '_plugins','_camps']
+collections:
+  camps:
+    output: true
+    permalink: /camps/:name/
 plugins:
   - jekyll-feed
   - jekyll-sitemap

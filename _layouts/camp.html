@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include nav.html %}
+  <header class="header slider">
+    <div class="owl-carousel owl-theme">
+      {% for image in page.slider.images %}
+        <div class="text-center item bg-img"
+             data-overlay-dark="{{ page.slider.overlay }}"
+             data-background="{{ image }}">
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="arrow bounce text-center">
+      <a href="#" data-scroll-nav="1"><i class="ti-arrow-down"></i></a>
+    </div>
+  </header>
+  {{ content }}
+
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>

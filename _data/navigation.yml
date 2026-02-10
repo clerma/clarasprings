@@ -4,7 +4,7 @@ main:
   more: false
 
 - label: "Staff"
-  url: "/meet-the-staff/"
+  url: "/staff/"
   more: false
 
 
@@ -25,23 +25,16 @@ main:
   url: "/camp-info/"
   more: false
   children:
-    - label: "Bloom (Girls) Camp"
-      url: "/2026-summer-camp-info/bloom-girls-camp/"
-    - label: "PreCamp"
-      url: "/2026-summer-camp-info/precamp/"
-    - label: "Kids Camp"
-      url: "/2026-summer-camp-info/kids-camp/"
-    - label: "YAC (Young Adult Camp)"
-      url: "/2026-summer-camp-info/yac-young-adult-camp/"
-    - label: "Kids on Mission Camp"
-      url: "/2026-summer-camp-info/kids-on-mission-camp/"
-    - label: "Journey Youth Camp"
-      url: "/2026-summer-camp-info/journey-youth-camp/"
-    - label: "Impact Youth Camp"
-      url: "/2026-summer-camp-info/impact-youth-camp/"
-- label: "Donate"
-  url: "/donate/"
-  more: false
+    - _collection: camps            # <- magic placeholder
+      where:
+      published: true
+      sort_by: title
+      order: asc
+      limit: 12
+      map:                             # optional: map doc fields to your data shape
+        label: title
+        url: url
+
 # Items that were hidden in main nav and surfaced in "More"
 - label: "Volunteers"
   url: "/volunteers/"
@@ -77,3 +70,6 @@ main:
 - label: "Beyond the Camp Fire"
   url: "/beyond-the-camp-fire/"
   more: true
+- label: "Donate"
+  url: "/donate/"
+  more: false
