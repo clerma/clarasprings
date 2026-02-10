@@ -1,29 +1,169 @@
 collections_config:
-  # No collections detected
-
-_editor:
-  default_path: /
-  
+  Pages:
+    path: _pages
+    glob:
+    name: Pages
+    singular_name:
+    icon: sticky_note_2
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+  Data:
+    path: _data
+    glob:
+    name:
+    singular_name:
+    icon: database
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+  Posts:
+    path: _posts
+    glob:
+    name:
+    singular_name:
+    icon: edit_note
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+  Camps:
+    path: _camps
+    glob:
+    name:
+    singular_name:
+    icon: camping
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+  Events:
+    path: _events
+    glob:
+    name:
+    singular_name:
+    icon: calendar_month
+    url:
+    disable_url: false
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
 _inputs:
   title:
     type: text
     label: Title
+    cascade: true
   description:
     type: textarea
     label: Description
+    cascade: true
   image:
     type: image
     label: Featured Image
+    cascade: true
   date:
     type: date
     label: Date
+    cascade: true
   tags:
     type: multiselect
     label: Tags
+    cascade: true
   featured:
     type: checkbox
     label: Featured Item
-  
+    cascade: true
 _select_data:
   colors:
     - Red
@@ -33,6 +173,8 @@ _select_data:
     - News
     - Updates
     - Events
-
+timezone: Etc/UTC
+_editor:
+  default_path: /
 uploads:
   path: uploads/:title/:year/:month/:day/:categories
