@@ -49,11 +49,14 @@ address:
 alt_location:
   - location: ""
     url: ""
-include: ['_pages', '_data','login.html','login','_vendors', '_plugins','_camps']
+include: ['_pages', '_data','login.html','login','_events', '_plugins','_camps']
 collections:
   camps:
     output: true
     permalink: /camps/:name/
+  events:
+    output: true
+    permalink: /events/:name/
 plugins:
   - jekyll-feed
   - jekyll-sitemap

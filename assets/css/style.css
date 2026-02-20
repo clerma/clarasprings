@@ -1011,7 +1011,7 @@ color: #344831;
     .navbar {
         padding-left: 0px;
         padding-right: 0px;
-        background: transparent;
+        background: #344831;
         padding-top: 0px;
         padding-bottom: 0px;
         height: 90px;
@@ -4722,6 +4722,9 @@ select {
     .header {
         background-attachment: scroll !important;
         background-position: 50% 0% !important;
+    }
+    .banner-header{
+      min-height: 50vh !important;
     }
     .banner-header.full-height h3 {
         font-size: 45px;

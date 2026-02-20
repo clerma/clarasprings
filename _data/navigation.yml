@@ -1,48 +1,35 @@
-main:
-- label: "Home"
-  url: "/"
-  more: false
 
 - label: "Staff"
   url: "/staff/"
-  more: false
-
 
 - label: "Events"
   url: "/events/"
-  more: false
   children:
-    - label: "Kids Winter Retreat"
-      url: "/2026-events/kids-winter-retreat/"
-    - label: "Fourth Friday Fish Fry"
-      url: "/2026-events/fourth-friday-fish-fry/"
-    - label: "GROW Women's Conference"
-      url: "/2026-events/grow-womens-conference/"
-    - label: "2025 Adult Day"
-      url: "/2026-events/2025-adult-day/"
-
-- label: "Camps"
-  url: "/camp-info/"
-  more: false
-  children:
-    - _collection: camps            # <- magic placeholder
+    - _collection: events
       where:
       published: true
       sort_by: title
       order: asc
       limit: 12
-      map:                             # optional: map doc fields to your data shape
+      map:
         label: title
         url: url
 
-# Items that were hidden in main nav and surfaced in "More"
-- label: "Volunteers"
-  url: "/volunteers/"
-  more: true
+- label: "Camps"
+  url: "/camp-info/"
+  children:
+    - _collection: camps
+      where:
+      published: true
+      sort_by: title
+      order: asc
+      limit: 12
+      map:
+        label: title
+        url: url
 
-- label: "Camp Grounds"
-  url: "/camp-grounds/"
-  more: true
+- label: "Facilities"
+  url: "#"
   children:
     - label: "Facilities"
       url: "/camp-grounds/facilities/"
@@ -59,17 +46,16 @@ main:
     - label: "Recreation"
       url: "/camp-grounds/recreation/"
 
-- label: "Conference & Retreats"
-  url: "/conference-retreats/"
-  more: true
+- label: "Information"
+  url: "#"
+  children:
+    - label: "Conference & Retreats"
+      url: "/conference-retreats/"
+    - label: "Summer Staff Adoption"
+      url: "/summer-staff-adoption/"
+    - label: "Beyond the Camp Fire"
+      url: "/beyond-the-camp-fire/"
 
-- label: "Summer Staff Adoption"
-  url: "/summer-staff-adoption/"
-  more: true
-
-- label: "Beyond the Camp Fire"
-  url: "/beyond-the-camp-fire/"
-  more: true
 - label: "Donate"
   url: "/donate/"
   more: false
