@@ -5,9 +5,9 @@ name: "Bloom Girls Camp"
 slider:
   overlay: 3
   images:
-    - /assets/img/site-images/slider-1.jpg
-    - /assets/img/site-images/slider-2.jpg
-    - /assets/img/site-images/slider-3.jpg
+    - image: /assets/img/site-images/slider-1.jpg
+    - image: /assets/img/site-images/slider-2.jpg
+    - image: /assets/img/site-images/slider-3.jpg
 
 description: "Hotel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc volutpat miss sapien vel conseyen turpeutionyer masin libero sevenion vusetion viventa augue sit amet hendrerit vestibulum."
 
