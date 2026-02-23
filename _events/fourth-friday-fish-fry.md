@@ -6,9 +6,9 @@ name: "Fourth Friday Fish Fry"
 slider:
   overlay: 3
   images:
-    - /assets/img/site-images/slider-1.jpg
-    - /assets/img/site-images/slider-2.jpg
-    - /assets/img/site-images/slider-3.jpg
+    - image: /assets/img/site-images/slider-1.jpg
+    - image: /assets/img/site-images/slider-2.jpg
+    - image: /assets/img/site-images/slider-3.jpg
 
 description: "Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026. This one-night introductory camp is designed to give young campers a fun and safe first camp experience.Pre-Camp offers a full schedule of age-appropriate activities, worship, and time with trained camp staff. It is a great way for first-time campers to get comfortable with Clara Springs before attending longer summer camps."
 
