@@ -1,57 +1,54 @@
 ---
 layout: camp
-title: "Bloom Girls Camp"
-name: "Bloom Girls Camp"
+title: Bloom Girls Camp
+name: Bloom Girls Camp
 slider:
   overlay: 3
   images:
-    - image: /assets/img/site-images/slider-1.jpg
-    - image: /assets/img/site-images/slider-2.jpg
-    - image: /assets/img/site-images/slider-3.jpg
-
-description: "Hotel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc volutpat miss sapien vel conseyen turpeutionyer masin libero sevenion vusetion viventa augue sit amet hendrerit vestibulum."
-
+    - image: /assets/img/site-images/5333fdbe-caaf-4201-8e94-572c481988a8@2x.jpg
+description: >-
+  Hotel non lorem ac erat suscipit bibendum nulla facilisi. Sedeuter nunc
+  volutpat miss sapien vel conseyen turpeutionyer masin libero sevenion vusetion
+  viventa augue sit amet hendrerit vestibulum.
 checkin:
-  title: "Check-in"
+  title: Check-in
   items:
-    - "Check-in from 9:00 AM - anytime"
-    - "Early check-in subject to availability"
-
+    - Check-in from 9:00 AM - anytime
+    - Early check-in subject to availability
 checkout:
-  title: "Check-out"
+  title: Check-out
   items:
-    - "Check-out before noon"
-    - "Express check-out"
-
+    - Check-out before noon
+    - Express check-out
 policies:
-  - title: "Special check-in instructions"
-    text: "Guests will receive an email 5 days before arrival with check-in instructions; front desk staff will greet guests on arrival."
-  - title: "Pets"
-    text: "Pets are allowed."
-  - title: "Children and extra beds"
-    text: "Children are welcome. Kids stay free when using existing bedding."
-
+  - title: Special check-in instructions
+    text: >-
+      Guests will receive an email 5 days before arrival with check-in
+      instructions; front desk staff will greet guests on arrival.
+  - title: Pets
+    text: Pets are allowed.
+  - title: Children and extra beds
+    text: Children are welcome. Kids stay free when using existing bedding.
 amenities:
-  - icon: "flaticon-007-tent-1"
-    text: "1-3 Person Tents"
-  - icon: "flaticon-005-firewood"
-    text: "Free Campfire"
-  - icon: "flaticon-030-camping-gas"
-    text: "Camping Gas"
-  - icon: "flaticon-031-pot"
-    text: "Kitchen Tools"
-  - icon: "flaticon-010-bedding"
-    text: "Pillow and Blanket"
-
+  - icon: flaticon-007-tent-1
+    text: 1-3 Person Tents
+  - icon: flaticon-005-firewood
+    text: Free Campfire
+  - icon: flaticon-030-camping-gas
+    text: Camping Gas
+  - icon: flaticon-031-pot
+    text: Kitchen Tools
+  - icon: flaticon-010-bedding
+    text: Pillow and Blanket
 faqs:
-  - question: "Do I have to pay right away?"
-    answer: "Lorem ut nisl quam nestibulum ac quam nec odio elementum."
-  - question: "Do you have waiting lists for cancellations?"
-    answer: "Lorem ut nisl quam nestibulum ac quam nec odio elementum."
-  - question: "At what time can I arrive?"
-    answer: "Lorem ut nisl quam nestibulum ac quam nec odio elementum."
-  - question: "Can I bring my dog?"
-    answer: "Lorem ut nisl quam nestibulum ac quam nec odio elementum."
+  - question: Do I have to pay right away?
+    answer: Lorem ut nisl quam nestibulum ac quam nec odio elementum.
+  - question: Do you have waiting lists for cancellations?
+    answer: Lorem ut nisl quam nestibulum ac quam nec odio elementum.
+  - question: At what time can I arrive?
+    answer: Lorem ut nisl quam nestibulum ac quam nec odio elementum.
+  - question: Can I bring my dog?
+    answer: Lorem ut nisl quam nestibulum ac quam nec odio elementum.
 nav_hide: false
 ---
 <section class="pages section-padding" data-scroll-index="1">
