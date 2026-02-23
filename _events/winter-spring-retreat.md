@@ -5,7 +5,7 @@ name: 2026 Kids Winter-Spring Retreat
 slider:
   overlay: 3
   images:
-    - image: /assets/img/site-images/slider-1.jpg
+    - image: /assets/img/site-images/c01ead41-f0cc-47ed-94dd-df59c563ea0d@2x.png
 description: >-
   Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
   This one-night introductory camp is designed to give young campers a fun and
