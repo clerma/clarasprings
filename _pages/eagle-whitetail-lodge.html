@@ -4,7 +4,18 @@ title: "Eagle & Whitetail Lodges"
 description: "{{ site.description }}"
 keywords: "{{ site.local_keywords }}"
 image: /assets/img/default-og-image.jpg
-
+gallery:
+  subtitle: Images
+  title: Image Gallery
+  images:
+    - src: /assets/img/slider/1.jpg
+    - src: /assets/img/slider/2.jpg
+    - src: /assets/img/slider/4.jpg
+    - src: /assets/img/slider/11.jpg
+    - src: /assets/img/slider/5.jpg
+    - src: /assets/img/slider/4.jpg
+    - src: /assets/img/slider/6.jpg
+    - src: /assets/img/slider/7.jpg
 pagename: Eagle & Whitetail Lodges
 permalink: /camp-grounds/eagle-whitetail-lodges/
 ---
@@ -26,106 +37,36 @@ permalink: /camp-grounds/eagle-whitetail-lodges/
             </div>
         </div>
     </div>
-    <!-- Image Gallery -->
+   <!-- Image Gallery -->
+    {% if page.gallery %}
     <section class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="section-subtitle">Images</div>
-                    <div class="section-title">Image Gallery</div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 text-center">
+            <div class="section-subtitle">{{ page.gallery.subtitle }}</div>
+            <div class="section-title">{{ page.gallery.title }}</div>
+          </div>
+
+          {% for image in page.gallery.images %}
+            <div class="col-md-4 gallery-item">
+              <a href="{{ image.src | relative_url }}" class="img-zoom">
+                <div class="gallery-box">
+                  <div class="gallery-img">
+                    <img src="{{ image.src | relative_url }}"
+                         class="img-fluid mx-auto d-block"
+                         alt="{{ page.title }} image {{ forloop.index }}">
+                  </div>
                 </div>
-                <!-- 3 columns -->
-                <div class="col-md-4 gallery-item">
-                    <a href="img/slider/1.jpg" title="" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ '/assets/img/slider/1.jpg' | relative_url }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <a href="img/slider/2.jpg" title="" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ '/assets/img/slider/2.jpg' | relative_url }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <a href="img/slider/3.jpg" title="" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ '/assets/img/slider/4.jpg' | relative_url }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- 2 columns -->
-                <div class="col-md-6 gallery-item">
-                    <a href="img/slider/11.jpg" title="" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ '/assets/img/slider/11.jpg' | relative_url }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 gallery-item">
-                    <a href="img/slider/5.jpg" title="" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ '/assets/img/slider/5.jpg' | relative_url }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- 3 columns -->
-                <div class="col-md-4 gallery-item">
-                    <a href="img/slider/4.jpg" title="" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ '/assets/img/slider/4.jpg' | relative_url }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <a href="img/slider/6.jpg" title="" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ '/assets/img/slider/6.jpg' | relative_url }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 gallery-item">
-                    <a href="img/slider/7.jpg" title="" class="img-zoom">
-                        <div class="gallery-box">
-                            <div class="gallery-img"> <img src="{{ '/assets/img/slider/7.jpg' | relative_url }}" class="img-fluid mx-auto d-block" alt="work-img"> </div>
-                        </div>
-                    </a>
-                </div>
+              </a>
             </div>
+          {% endfor %}
+
         </div>
+      </div>
     </section>
-    <!-- Video Gallery -->
-    <section class="section-padding bg-lightgreen">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-30 text-center">
-                    <div class="section-subtitle">Videos</div>
-                    <div class="section-title">Video Gallery</div>
-                </div>
-                <!-- 2 columns -->
-                <div class="col-md-6">
-                    <div class="vid-area mb-30">
-                        <div class="vid-icon"> <img src="{{ '/assets/img/slider/8.jpg' | relative_url }}" alt="YouTube">
-                            <a class="video-gallery-button vid" href="https://youtu.be/mtc2IHdyz4s"> <span class="video-gallery-polygon">
-                                    <i class="ti-control-play"></i>
-                                </span> </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="vid-area mb-30">
-                        <div class="vid-icon"> <img src="{{ '/assets/img/slider/12.jpg' | relative_url }}" alt="Vimeo">
-                            <a class="video-gallery-button vid" href="https://youtu.be/mtc2IHdyz4s"> <span class="video-gallery-polygon">
-                                    <i class="ti-control-play"></i>
-                                </span> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {% endif %}
+
     <!-- Reservation & Booking Form -->
     <section class="reservation">
         <div class="background bg-img bg-fixed section-padding pb-0" data-background="{{ '/assets/img/slider/5.jpg' | relative_url }}" data-overlay-dark="5">
@@ -133,15 +74,34 @@ permalink: /camp-grounds/eagle-whitetail-lodges/
                 <div class="row">
                     <!-- Reservation -->
                     <div class="col-lg-5 col-md-12 mb-30 mt-30">
-                        <p><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></p>
-                        <h5>Enjoy The Better Adventure Life Tent Camping</h5>
-                        <p>Create memories that will last a lifetime - camping in the heart of the New York.</p>
-                        <div class="reservations">
-                            <div class="icon color-1"><span class="ti-headphone-alt"></span></div>
-                            <div class="text">
-                                <p class="color-1">Reservation</p> <a class="color-1" href="tel:855-100-4444">855 100 4444</a>
-                            </div>
-                        </div>
+
+                    <h5>
+  {% if page.pagename %}
+    Plan Your {{ page.pagename }} at {{ site.data.company.name }}
+  {% else %}
+    Plan Your Visit to {{ site.data.company.name }}
+  {% endif %}
+</h5>
+
+<p>
+  {% if page.short_description %}
+    {{ page.short_description }}
+  {% else %}
+    A Christ-centered environment designed for spiritual growth, connection, and meaningful experiences.
+  {% endif %}
+</p>
+
+<div class="reservations">
+  <div class="icon color-1">
+    <span class="ti-headphone-alt"></span>
+  </div>
+  <div class="text">
+    <p class="color-1">Call Us to Start Planning</p>
+    <a class="color-1" href="tel:{{ site.data.company.phone | replace: '-', '' }}">
+      {{ site.data.company.phone }}
+    </a>
+  </div>
+</div>
                     </div>
                     <!-- Booking From -->
                     <div class="col-lg-5 offset-lg-2 col-md-12">
@@ -208,55 +168,3 @@ permalink: /camp-grounds/eagle-whitetail-lodges/
             </div>
         </div>
     </section>
-    <!-- Clients -->
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/1.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/2.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/3.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/4.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/5.png' | relative_url }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ '/assets/img/clients/6.png' | relative_url }}" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-
-    <!-- jQuery -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body></html>

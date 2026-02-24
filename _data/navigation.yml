@@ -53,6 +53,8 @@
       url: "/conference-retreats/"
     - label: "Summer Staff Adoption"
       url: "/summer-staff-adoption/"
+    - label: "Summer Camp Ministry Team"
+      url: "/camp-summer-ministry-team"
     - label: "Beyond the Camp Fire"
       url: "/beyond-the-camp-fire/"
 

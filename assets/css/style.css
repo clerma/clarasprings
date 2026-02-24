@@ -2332,9 +2332,10 @@ hr.border-2 {
 .page-list-icon {
     display: flex;
     align-items: center;
+    padding-top: 15px;
 }
 .page-list-icon span {
-    font-size: 45px;
+    font-size: 25px;
     color: #344831;
 }
 .page-list-icon span.small-size {

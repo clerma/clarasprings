@@ -1,68 +1,76 @@
 ---
 layout: camp
-title: Pre-Camp
+title: Pre-Camp 2026
 name: Pre-Camp
+
 slider:
   overlay: 3
   images:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
-description: >-
-  Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
-  This one-night introductory camp is designed to give young campers a fun and
-  safe first camp experience.Pre-Camp offers a full schedule of age-appropriate
-  activities, worship, and time with trained camp staff. It is a great way for
-  first-time campers to get comfortable with Clara Springs before attending
-  longer summer camps.
-checkin:
-  title: Check-in
+
+description:
+  - Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
+  - This one-night introductory camp is designed to give young campers a fun, safe, and confidence-building first camp experience.
+  - Pre-Camp offers age-appropriate activities, engaging worship, and time with trained Clara Springs staff in a structured and encouraging environment.
+  - It is the perfect way for first-time campers to become comfortable with camp before attending longer summer sessions.
+
+camp_details:
+  title: Camp Schedule
   items:
     - Check-in begins at 5:00 PM on July 3, 2026
-    - Early check-in is not available for Pre-Camp
-    - Parents must check in campers in person
-checkout:
-  title: Check-out
-  items:
+    - Parents must check campers in personally
     - Check-out is at 1:00 PM on July 4, 2026
-    - Parents must present ID to check out a camper
-policies:
-  - title: General Policy
-    text: >-
-      Campers and parents will receive complete instructions by email before
-      arrival.
-amenities:
-  - icon: flaticon-007-tent-1
-    text: Age-Appropriate Activities
-  - icon: flaticon-005-firewood
-    text: Worship & Small Group Time
-  - icon: flaticon-030-camping-gas
-    text: Camp Staff Leadership
-  - icon: flaticon-031-pot
-    text: Meals Included
-  - icon: flaticon-010-bedding
-    text: Indoor Lodging Provided
+    - Parents must present ID for pickup
+
+what_to_expect:
+  title: What to Expect
+  items:
+    - Age-appropriate worship and Bible teaching
+    - Small group time with trained counselors
+    - Outdoor recreation and team activities
+    - Meals included
+    - Safe indoor lodging
+
+highlights:
+  - icon: ti-heart
+    text: A gentle introduction to overnight camp
+  - icon: ti-user
+    text: Caring and trained camp staff
+  - icon: ti-music
+    text: Worship designed for younger campers
+  - icon: ti-star
+    text: Confidence-building activities
+  - icon: ti-home
+    text: Structured and supervised environment
+
 tickets:
-  - name: Pre-Camp Registration
-    price: 60
+  - name: Early Registration
+    price: "$60"
     features:
-      - 'Early Registration Rate: $60 (before May 1)'
-      - 'Regular Rate: $70 (after May 1)'
+      - Register before May 1, 2026
       - Includes all meals and activities
       - One-night camp experience
+  - name: Regular Registration
+    price: "$70"
+    features:
+      - After May 1, 2026
+      - Includes all meals and activities
+      - One-night camp experience
+
 faqs:
   - question: What ages can attend Pre-Camp?
-    answer: >-
-      Pre-Camp is designed as an introductory camp for younger children who are
-      not yet ready for week-long summer camps.
+    answer: Pre-Camp is designed as an introductory experience for younger children who may not yet be ready for a full week of camp.
   - question: What should my camper bring?
-    answer: A packing list will be emailed to parents prior to camp.
+    answer: A detailed packing list will be emailed to parents prior to camp.
   - question: Is financial assistance available?
-    answer: Contact the Clara Springs office to inquire about available assistance.
+    answer: Please contact the Clara Springs office to inquire about available assistance options.
   - question: Can parents stay on campus during Pre-Camp?
-    answer: >-
-      Pre-Camp is a drop-off program; parents are not required to stay
-      overnight.
+    answer: Pre-Camp is a drop-off program. Parents are not required to stay overnight.
+
 nav_hide: false
+permalink: /2026-summer-camp-info/precamp/
 ---
+
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
@@ -72,86 +80,123 @@ nav_hide: false
       </div>
 
       <div class="col-lg-7 col-md-12">
+
         {% for paragraph in page.description %}
           <p class="mb-30">{{ paragraph }}</p>
         {% endfor %}
 
         <div class="row">
+
           <div class="col-md-6">
-            <h6>{{ page.checkin.title }}</h6>
+            <h6>{{ page.camp_details.title }}</h6>
             <ul class="list-unstyled page-list mb-30">
-              {% for item in page.checkin.items %}
+              {% for item in page.camp_details.items %}
                 <li>
-                  <div class="page-list-icon"><span class="ti-check small-size"></span></div>
-                  <div class="page-list-text"><p>{{ item }}</p></div>
+                  <div class="page-list-icon">
+                    <span class="ti-check small-size"></span>
+                  </div>
+                  <div class="page-list-text">
+                    <p>{{ item }}</p>
+                  </div>
                 </li>
               {% endfor %}
             </ul>
           </div>
 
           <div class="col-md-6">
-            <h6>{{ page.checkout.title }}</h6>
+            <h6>{{ page.what_to_expect.title }}</h6>
             <ul class="list-unstyled page-list mb-30">
-              {% for item in page.checkout.items %}
+              {% for item in page.what_to_expect.items %}
                 <li>
-                  <div class="page-list-icon"><span class="ti-check small-size"></span></div>
-                  <div class="page-list-text"><p>{{ item }}</p></div>
+                  <div class="page-list-icon">
+                    <span class="ti-check small-size"></span>
+                  </div>
+                  <div class="page-list-text">
+                    <p>{{ item }}</p>
+                  </div>
                 </li>
               {% endfor %}
             </ul>
           </div>
 
-          {% for policy in page.policies %}
-            <div class="col-md-12">
-              <h6>{{ policy.title }}</h6>
-              <p>{{ policy.text }}</p>
-            </div>
-          {% endfor %}
         </div>
       </div>
+
       <div class="col-lg-4 offset-lg-1 col-md-12">
-              <h6>Amenities</h6>
-              <ul class="list-unstyled page-list mb-30">
-                {% for amenity in page.amenities %}
-                  <li>
-                    <div class="page-list-icon">
-                      <span class="{{ amenity.icon }}"></span>
-                    </div>
-                    <div class="page-list-text">
-                      <p>{{ amenity.text }}</p>
-                    </div>
-                  </li>
+        <h6>Camp Highlights</h6>
+        <ul class="list-unstyled page-list mb-30">
+          {% for highlight in page.highlights %}
+            <li>
+              <div class="page-list-icon">
+                <span class="{{ highlight.icon }}"></span>
+              </div>
+              <div class="page-list-text">
+                <p>{{ highlight.text }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="section-padding bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-30">
+        <div class="section-subtitle">Registration</div>
+        <div class="section-title">Camp Pricing</div>
+      </div>
+
+      {% for ticket in page.tickets %}
+        <div class="col-md-6">
+          <div class="pricing-card">
+            <div class="desc text-center">
+              <div class="name">{{ ticket.name }}</div>
+              <div class="amount">{{ ticket.price }}</div>
+              <ul class="list-unstyled list col-md-6">
+                {% for feature in ticket.features %}
+                  <li><i class="ti-check"></i> {{ feature }}</li>
                 {% endfor %}
               </ul>
+              <div class="butn-1 mt-20">
+                <a href="/register/"><span>Register Now</span></a>
+              </div>
             </div>
-
           </div>
         </div>
-      </section>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
 <section class="section-padding bg-lightgreen">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 mb-30">
-              <div class="section-subtitle">FAQs</div>
-              <div class="section-title">Frequently Asked Questions</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-30">
+        <div class="section-subtitle">FAQs</div>
+        <div class="section-title">Frequently Asked Questions</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="accordion-box clearfix">
+          {% for faq in page.faqs %}
+          <li class="accordion block">
+            <div class="acc-btn">{{ faq.question }}</div>
+            <div class="acc-content">
+              <div class="content">
+                <div class="text">{{ faq.answer }}</div>
+              </div>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="accordion-box clearfix">
-                {% for faq in page.faqs %}
-                  <li class="accordion block">
-                    <div class="acc-btn">{{ faq.question }}</div>
-                    <div class="acc-content">
-                      <div class="content">
-                        <div class="text">{{ faq.answer }}</div>
-                      </div>
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
