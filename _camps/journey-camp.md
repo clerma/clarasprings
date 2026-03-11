@@ -1,7 +1,7 @@
 ---
 layout: camp
-title: Pre-Camp 2026
-name: Pre-Camp
+title: Journey Youth Camp 2026
+name: Journey Youth Camp
 
 slider:
   overlay: 3
@@ -9,63 +9,77 @@ slider:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
 
 description:
-  - Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
-  - This one-night introductory camp is designed to give young campers a fun, safe, and confidence-building first camp experience.
-  - Pre-Camp offers age-appropriate activities, engaging worship, and time with trained Clara Springs staff in a structured and encouraging environment.
-  - It is the perfect way for first-time campers to become comfortable with camp before attending longer summer sessions.
+  - "Journey Youth Camp is July 19–22, 2026."
+  - "This camp is for youth in grades 7th–12th."
+  - "Camp begins at 5:00 PM on July 19th and ends at 12:00 PM on July 22nd."
+  - "Campers draw closer to God through powerful worship and deep devotion times, plus a full schedule of outdoor fun and activities."
 
 camp_details:
   title: Camp Schedule
   items:
-    - Check-in begins at 5:00 PM on July 3, 2026
-    - Parents must check campers in personally
-    - Check-out is at 1:00 PM on July 4, 2026
-    - Parents must present ID for pickup
+    - "Camp Dates: July 19–22, 2026"
+    - "Begins: 5:00 PM Sunday, July 19"
+    - "Ends: 12:00 PM Wednesday, July 22"
+    - "Grades: 7th–12th"
+    - "Camp Pastor: TBA"
+    - "Camp Band: Broken Vessels"
+    - "Registration opens: January 30th"
+    - "Mail-in forms address: Clara Springs Camp, 4420 HWY 177, Pelican, LA 71063"
 
 what_to_expect:
   title: What to Expect
   items:
-    - Age-appropriate worship and Bible teaching
-    - Small group time with trained counselors
-    - Outdoor recreation and team activities
-    - Meals included
-    - Safe indoor lodging
+    - Powerful worship
+    - Deep devotion times
+    - Archery
+    - Fishing
+    - Swimming
+    - Shooting range
+    - Sling shots
+    - Canoes
+    - Games and activities
 
 highlights:
-  - icon: ti-heart
-    text: A gentle introduction to overnight camp
-  - icon: ti-user
-    text: Caring and trained camp staff
   - icon: ti-music
-    text: Worship designed for younger campers
-  - icon: ti-star
-    text: Confidence-building activities
-  - icon: ti-home
-    text: Structured and supervised environment
+    text: Powerful worship with Broken Vessels
+  - icon: ti-book
+    text: Deep devotion times to grow closer to God
+  - icon: ti-target
+    text: Archery, shooting range, and sling shots
+  - icon: ti-flag
+    text: Canoes, swimming, fishing, and outdoor adventure
+  - icon: ti-user
+    text: Designed for students in grades 7th–12th
 
 tickets:
   - name: Early Registration
-    price: "$60"
+    price: "$200"
     features:
-      - Register before May 1, 2026
-      - Includes all meals and activities
-      - One-night camp experience
-  - name: Regular Registration
-    price: "$70"
+      - Register by 5/1/26
+      - July 19–22, 2026 (Sun–Wed)
+      - Includes worship, devotions, and all camp activities
+  - name: Late Registration
+    price: "$210"
     features:
-      - After May 1, 2026
-      - Includes all meals and activities
-      - One-night camp experience
+      - If not registered by 5/1/26
+      - July 19–22, 2026 (Sun–Wed)
+      - Includes worship, devotions, and all camp activities
 
 faqs:
-  - question: What ages can attend Pre-Camp?
-    answer: Pre-Camp is designed as an introductory experience for younger children who may not yet be ready for a full week of camp.
-  - question: What should my camper bring?
-    answer: A detailed packing list will be emailed to parents prior to camp.
-  - question: Is financial assistance available?
-    answer: Please contact the Clara Springs office to inquire about available assistance options.
-  - question: Can parents stay on campus during Pre-Camp?
-    answer: Pre-Camp is a drop-off program. Parents are not required to stay overnight.
+  - question: What are the camp dates and times?
+    answer: Journey Youth Camp is July 19–22, 2026. Camp begins 5:00 PM Sunday, July 19 and ends 12:00 PM Wednesday, July 22.
+  - question: What grades can attend?
+    answer: Journey Youth Camp is for students in grades 7th–12th.
+  - question: How much does it cost?
+    answer: The cost is $200. If not registered by 5/1/26, the price increases to $210.
+  - question: When does registration open?
+    answer: Registration opens January 30th.
+  - question: Do adult chaperones need training?
+    answer: Yes. All adult chaperones 18 or older must complete Child Protection Training (via Lifeway) and will also be required to have a background check.
+  - question: Is there a permission form?
+    answer: Yes. A permission form must be turned in the day of camp by all campers.
+  - question: What activities are included?
+    answer: Campers can participate in archery, fishing, swimming, shooting range, sling shots, canoes, and various games and activities.
 
 nav_hide: false
 ---

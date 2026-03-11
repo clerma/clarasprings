@@ -1,7 +1,7 @@
 ---
 layout: camp
-title: Pre-Camp 2026
-name: Pre-Camp
+title: YAC 2026
+name: YAC (Young Adult Camp)
 
 slider:
   overlay: 3
@@ -9,63 +9,70 @@ slider:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
 
 description:
-  - Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
-  - This one-night introductory camp is designed to give young campers a fun, safe, and confidence-building first camp experience.
-  - Pre-Camp offers age-appropriate activities, engaging worship, and time with trained Clara Springs staff in a structured and encouraging environment.
-  - It is the perfect way for first-time campers to become comfortable with camp before attending longer summer sessions.
+  - "YAC (Young Adult Camp) is July 10–12, 2026."
+  - "This camp is for graduated high school students (18+) through young adults."
+  - "Come enjoy a weekend away with amazing worship, deep Bible studies, and time to relax and meet new friends."
 
 camp_details:
   title: Camp Schedule
   items:
-    - Check-in begins at 5:00 PM on July 3, 2026
-    - Parents must check campers in personally
-    - Check-out is at 1:00 PM on July 4, 2026
-    - Parents must present ID for pickup
+    - "Camp Dates: July 10–12, 2026"
+    - "Begins: 6:00 PM Friday, July 10"
+    - "Ends: 9:00 AM Sunday, July 12"
+    - "Ages: Graduated High School (18+) to Young Adults"
+    - "Speaker: TBA"
+    - "Worship: TBA"
 
 what_to_expect:
   title: What to Expect
   items:
-    - Age-appropriate worship and Bible teaching
-    - Small group time with trained counselors
-    - Outdoor recreation and team activities
-    - Meals included
-    - Safe indoor lodging
+    - Worship
+    - Deep Bible studies
+    - Time to relax and reset
+    - Meet new friends
+    - Weekend getaway atmosphere
 
 highlights:
   - icon: ti-heart
-    text: A gentle introduction to overnight camp
-  - icon: ti-user
-    text: Caring and trained camp staff
+    text: A weekend to recharge, connect, and grow spiritually
+  - icon: ti-book
+    text: Deep Bible studies designed for young adults
   - icon: ti-music
-    text: Worship designed for younger campers
-  - icon: ti-star
-    text: Confidence-building activities
+    text: Worship (details coming soon)
+  - icon: ti-user
+    text: Meet new friends and build community
   - icon: ti-home
-    text: Structured and supervised environment
+    text: A relaxed weekend away at camp
 
 tickets:
   - name: Early Registration
-    price: "$60"
+    price: "$120"
     features:
-      - Register before May 1, 2026
-      - Includes all meals and activities
-      - One-night camp experience
-  - name: Regular Registration
-    price: "$70"
+      - Register by 5/1/26
+      - July 10–12, 2026 (Fri–Sun)
+      - Includes worship + Bible studies + camp experience
+  - name: Late Registration
+    price: "$130"
     features:
-      - After May 1, 2026
-      - Includes all meals and activities
-      - One-night camp experience
+      - If not registered by 5/1/26
+      - July 10–12, 2026 (Fri–Sun)
+      - Includes worship + Bible studies + camp experience
 
 faqs:
-  - question: What ages can attend Pre-Camp?
-    answer: Pre-Camp is designed as an introductory experience for younger children who may not yet be ready for a full week of camp.
-  - question: What should my camper bring?
-    answer: A detailed packing list will be emailed to parents prior to camp.
-  - question: Is financial assistance available?
-    answer: Please contact the Clara Springs office to inquire about available assistance options.
-  - question: Can parents stay on campus during Pre-Camp?
-    answer: Pre-Camp is a drop-off program. Parents are not required to stay overnight.
+  - question: What are the camp dates?
+    answer: YAC is July 10–12, 2026. Camp begins 6:00 PM Friday, July 10 and ends 9:00 AM Sunday, July 12.
+  - question: Who can attend?
+    answer: Graduated high school students (18+) through young adults.
+  - question: How much does it cost?
+    answer: The cost is $120. If not registered by 5/1/26, the price increases to $130.
+  - question: When does registration open?
+    answer: Registration opens January 30th.
+  - question: Who is the speaker and worship leader?
+    answer: Speaker is TBA. Worship is TBA.
+  - question: Do campers need to turn in a permission form?
+    answer: Yes. A permission form must be turned in the day of camp by all campers.
+  - question: What should I bring?
+    answer: “Things to Know” and “What to Bring” are available as additional info (links provided on the camp page).
 
 nav_hide: false
 ---

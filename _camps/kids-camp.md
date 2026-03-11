@@ -1,7 +1,7 @@
 ---
 layout: camp
-title: Pre-Camp 2026
-name: Pre-Camp
+title: Kids Camp 2026
+name: Kids Camp
 
 slider:
   overlay: 3
@@ -9,63 +9,73 @@ slider:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
 
 description:
-  - Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
-  - This one-night introductory camp is designed to give young campers a fun, safe, and confidence-building first camp experience.
-  - Pre-Camp offers age-appropriate activities, engaging worship, and time with trained Clara Springs staff in a structured and encouraging environment.
-  - It is the perfect way for first-time campers to become comfortable with camp before attending longer summer sessions.
+  - "Kids Camp is July 6–9, 2026."
+  - "Our first Kids Camp of the summer is a FANTASTIC camp that celebrates kids coming to know Jesus."
+  - "A fun-filled camp with worship, games, s’mores, and learning more about Jesus for boys and girls."
+  - "For ages: COMPLETED 1st–6th grade."
 
 camp_details:
   title: Camp Schedule
   items:
-    - Check-in begins at 5:00 PM on July 3, 2026
-    - Parents must check campers in personally
-    - Check-out is at 1:00 PM on July 4, 2026
-    - Parents must present ID for pickup
+    - "Camp Dates: July 6–9, 2026"
+    - "Begins: 10:00 AM Monday, July 6"
+    - "Ends: 7:00 PM Thursday, July 9"
+    - "Ages: Completed 1st–6th grade"
+    - "Camp Pastor: TBA"
+    - "Music: Luke & Rachel Kerry"
 
 what_to_expect:
   title: What to Expect
   items:
-    - Age-appropriate worship and Bible teaching
-    - Small group time with trained counselors
-    - Outdoor recreation and team activities
-    - Meals included
-    - Safe indoor lodging
+    - Worship
+    - Games and outdoor fun
+    - S’mores
+    - Teaching focused on learning more about Jesus
+    - Theme nights each evening
 
 highlights:
   - icon: ti-heart
-    text: A gentle introduction to overnight camp
-  - icon: ti-user
-    text: Caring and trained camp staff
+    text: A camp experience designed to help kids come to know Jesus
   - icon: ti-music
-    text: Worship designed for younger campers
+    text: Worship + music led by Luke & Rachel Kerry
   - icon: ti-star
-    text: Confidence-building activities
-  - icon: ti-home
-    text: Structured and supervised environment
+    text: Fun games, s’mores, and unforgettable camp moments
+  - icon: ti-world
+    text: Theme nights all week
+  - icon: ti-user
+    text: For completed 1st–6th grade campers
 
 tickets:
   - name: Early Registration
-    price: "$60"
+    price: "$205"
     features:
-      - Register before May 1, 2026
-      - Includes all meals and activities
-      - One-night camp experience
-  - name: Regular Registration
-    price: "$70"
+      - Register by 5/1/26
+      - July 6–9, 2026 (Mon–Thurs)
+      - Includes worship, activities, and theme nights
+  - name: Late Registration
+    price: "$215"
     features:
-      - After May 1, 2026
-      - Includes all meals and activities
-      - One-night camp experience
+      - If not registered by 5/1/26
+      - July 6–9, 2026 (Mon–Thurs)
+      - Includes worship, activities, and theme nights
 
 faqs:
-  - question: What ages can attend Pre-Camp?
-    answer: Pre-Camp is designed as an introductory experience for younger children who may not yet be ready for a full week of camp.
-  - question: What should my camper bring?
-    answer: A detailed packing list will be emailed to parents prior to camp.
-  - question: Is financial assistance available?
-    answer: Please contact the Clara Springs office to inquire about available assistance options.
-  - question: Can parents stay on campus during Pre-Camp?
-    answer: Pre-Camp is a drop-off program. Parents are not required to stay overnight.
+  - question: What are the camp dates?
+    answer: Kids Camp is July 6–9, 2026. Camp begins 10:00 AM Monday, July 6 and ends 7:00 PM Thursday, July 9.
+  - question: What ages can attend?
+    answer: Kids Camp is for boys and girls who have COMPLETED 1st–6th grade.
+  - question: How much does it cost?
+    answer: The cost is $205. If not registered by 5/1/26, the price increases to $215.
+  - question: When does registration open?
+    answer: Registration opens January 30th.
+  - question: Who is leading worship and teaching?
+    answer: Camp Pastor is TBA. Music is led by Luke & Rachel Kerry.
+  - question: Do adult chaperones need training?
+    answer: Yes. All adult chaperones 18 or older must complete Child Protection Training prior to attending camp (via Lifeway) and will also be required to have a background check.
+  - question: What are the theme nights?
+    answer: Monday—Patriotic. Tuesday—Super Hero. Wednesday—Around the World/Tourist. Thursday—Camp T-shirt.
+  - question: What do campers need to bring?
+    answer: A “What to Bring” list is coming soon (per camp info page).
 
 nav_hide: false
 ---

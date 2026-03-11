@@ -1,7 +1,7 @@
 ---
 layout: camp
-title: Pre-Camp 2026
-name: Pre-Camp
+title: Kids on Mission 2026
+name: Kids on Mission
 
 slider:
   overlay: 3
@@ -9,63 +9,73 @@ slider:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
 
 description:
-  - Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
-  - This one-night introductory camp is designed to give young campers a fun, safe, and confidence-building first camp experience.
-  - Pre-Camp offers age-appropriate activities, engaging worship, and time with trained Clara Springs staff in a structured and encouraging environment.
-  - It is the perfect way for first-time campers to become comfortable with camp before attending longer summer sessions.
+  - "Kids on Mission is July 13–16, 2026."
+  - "This camp is geared for kids who have COMPLETED 1st–6th grade."
+  - "Kids on Mission helps boys and girls learn how to share Christ in their schools, neighborhoods, sports teams, and at home."
+  - "A fun, mission-focused camp experience with worship, games, and theme nights."
 
 camp_details:
   title: Camp Schedule
   items:
-    - Check-in begins at 5:00 PM on July 3, 2026
-    - Parents must check campers in personally
-    - Check-out is at 1:00 PM on July 4, 2026
-    - Parents must present ID for pickup
+    - "Camp Dates: July 13–16, 2026"
+    - "Begins: 10:00 AM Monday, July 13"
+    - "Ends: 7:00 PM Thursday, July 16"
+    - "Ages: Completed 1st–6th grade"
+    - "Camp Pastor: TBA"
+    - "Music: Luke & Rachel Kerry"
+    - "Registration opens: January 30th"
+    - "Mail-in forms address: Clara Springs Camp, 4420 HWY 177, Pelican, LA 71063"
 
 what_to_expect:
   title: What to Expect
   items:
-    - Age-appropriate worship and Bible teaching
-    - Small group time with trained counselors
-    - Outdoor recreation and team activities
-    - Meals included
-    - Safe indoor lodging
+    - Worship
+    - Teaching focused on sharing Christ
+    - Practical ways to live on mission at school, at home, and in everyday life
+    - Games and camp activities
+    - Theme nights each evening
 
 highlights:
+  - icon: ti-world
+    text: Learn how to share Christ in everyday life
   - icon: ti-heart
-    text: A gentle introduction to overnight camp
-  - icon: ti-user
-    text: Caring and trained camp staff
+    text: Mission-focused teaching for kids
   - icon: ti-music
-    text: Worship designed for younger campers
+    text: Worship + music led by Luke & Rachel Kerry
   - icon: ti-star
-    text: Confidence-building activities
-  - icon: ti-home
-    text: Structured and supervised environment
+    text: Fun camp activities + theme nights
+  - icon: ti-user
+    text: For completed 1st–6th grade campers
 
 tickets:
   - name: Early Registration
-    price: "$60"
+    price: "$205"
     features:
-      - Register before May 1, 2026
-      - Includes all meals and activities
-      - One-night camp experience
-  - name: Regular Registration
-    price: "$70"
+      - Register by 5/1/26
+      - July 13–16, 2026 (Mon–Thurs)
+      - Includes worship, teaching, activities, and theme nights
+  - name: Late Registration
+    price: "$215"
     features:
-      - After May 1, 2026
-      - Includes all meals and activities
-      - One-night camp experience
+      - If not registered by 5/1/26
+      - July 13–16, 2026 (Mon–Thurs)
+      - Includes worship, teaching, activities, and theme nights
 
 faqs:
-  - question: What ages can attend Pre-Camp?
-    answer: Pre-Camp is designed as an introductory experience for younger children who may not yet be ready for a full week of camp.
-  - question: What should my camper bring?
-    answer: A detailed packing list will be emailed to parents prior to camp.
-  - question: Is financial assistance available?
-    answer: Please contact the Clara Springs office to inquire about available assistance options.
-  - question: Can parents stay on campus during Pre-Camp?
-    answer: Pre-Camp is a drop-off program. Parents are not required to stay overnight.
+  - question: What are the camp dates and times?
+    answer: Kids on Mission is July 13–16, 2026. Camp begins 10:00 AM Monday, July 13 and ends 7:00 PM Thursday, July 16.
+  - question: What ages/grades can attend?
+    answer: This camp is for kids who have COMPLETED 1st–6th grade.
+  - question: How much does it cost?
+    answer: The cost is $205. If not registered by 5/1/26, the price increases to $215.
+  - question: When does registration open?
+    answer: Registration opens January 30th.
+  - question: Do adult chaperones need training?
+    answer: Yes. All adult chaperones 18 or older must complete Child Protection Training (via Lifeway) and will also be required to have a background check.
+  - question: Is there a permission form?
+    answer: Yes. Please bring the permission form on the day of camp.
+  - question: What are the theme nights?
+    answer: "Monday: Missions Monday Night (Super Hero). Tuesday: Tacky Tourist Tuesday (vacation t-shirt or Hawaiian shirt). Wednesday: Wacky Wednesday (NEON!). Thursday: Camp T-shirt."
 
 nav_hide: false
 ---
