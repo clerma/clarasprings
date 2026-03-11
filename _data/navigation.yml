@@ -59,6 +59,8 @@
       url: "/camp-summer-ministry-team"
     - label: "Beyond the Camp Fire"
       url: "/beyond-the-camp-fire/"
+    - label: "Contact Us"
+      url: "/contact"
 
 - label: "Donate"
   url: "/donate/"
