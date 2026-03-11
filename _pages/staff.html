@@ -69,20 +69,20 @@ staff:
           <div class="info">
             <h6 class="editable">{{ member.name }}</h6>
             <p class="editable">{{ member.role }}</p>
-
+            {% if member.social %}
             <div class="social valign">
               <div class="full-width">
                 {% if member.socials.instagram %}<a href="{{ member.socials.instagram }}"><i class="ti-instagram"></i></a>{% endif %}
                 {% if member.socials.twitter %}<a href="{{ member.socials.twitter }}"><i class="ti-twitter"></i></a>{% endif %}
                 {% if member.socials.facebook %}<a href="{{ member.socials.facebook }}"><i class="ti-facebook"></i></a>{% endif %}
-                {% if member.socials.pinterest %}<a href="{{ member.socials.pinterest }}"><i class="ti-pinterest"></i></a>{% endif %}
+
 
                 {% if member.email and member.email != "" %}
                   <p class="editable">{{ member.email }}</p>
                 {% endif %}
               </div>
             </div>
-
+            {% endif %}
           </div>
         </div>
       </div>
