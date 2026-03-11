@@ -174,6 +174,68 @@ _select_data:
     - Updates
     - Events
 timezone: Etc/UTC
+_enabled_editors:
+  - data
+  - content
+  - visual
+_editables:
+  block:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    blockquote: true
+    bold: true
+    bulletedlist: true
+    center: text-center
+    code: true
+    embed: true
+    expandable: true
+    format: p h1 h2 h3 h4 h5 h6 pre address div
+    image: true
+    image_size_attributes: true
+    indent: true
+    italic: true
+    left: text-left
+    link: true
+    numberedlist: true
+    resize_style: cover
+    right: text-right
+    styles: /assets/css/style.css
+    table: true
+    underline: true
+  content:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    blockquote: true
+    bold: true
+    bulletedlist: true
+    center: text-center
+    code: true
+    copyformatting: true
+    embed: true
+    expandable: true
+    format: p h1 h2 h3 h4 h5 h6 pre address div
+    image: true
+    image_size_attributes: false
+    indent: true
+    italic: true
+    left: text-left
+    link: true
+    numberedlist: true
+    redo: true
+    removeformat: true
+    resize_style: cover
+    right: text-right
+    styles: /assets/css/editor.css
+    table: true
+    underline: true
+  image:
+    expandable:
+    height: 300
+    image_size_attributes: true
+    mime_type:
+    paths:
+    resize_style: crop
+    width: 400
 _editor:
   default_path: /
 uploads:
