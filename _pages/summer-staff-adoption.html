@@ -8,6 +8,8 @@ image: /assets/img/default-og-image.jpg
 short_description: "Partner with a Summer Staff member through prayer and financial support to help impact students for Christ."
 pagename: Summer Staff Adoption
 permalink: /summer-staff-adoption/
+hero_background_image: /assets/img/slider/11.jpg
+cta_background_image: /assets/img/slider/5.jpg
 ---
 
 <div class="progress-wrap cursor-pointer">
@@ -19,7 +21,7 @@ permalink: /summer-staff-adoption/
 <!-- Header Banner -->
 <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom"
      data-overlay-dark="5"
-     data-background="{{ '/assets/img/slider/11.jpg' | relative_url }}">
+     data-background="{{ page.hero_background_image | relative_url }}">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center caption mt-90">
@@ -35,24 +37,24 @@ permalink: /summer-staff-adoption/
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center">
 
-        <div class="section-subtitle">Partner in Ministry</div>
-        <div class="section-title">Adopt a Summer Staff Member</div>
+        <div class="section-subtitle editable">Partner in Ministry</div>
+        <div class="section-title editable">Adopt a Summer Staff Member</div>
 
-        <p class="mt-4">
+        <p class="mt-4 editable">
           Each summer, Clara Springs depends on a dedicated team of young men and women
           who serve campers through leadership, discipleship, and daily ministry.
           These staff members invest deeply in students’ lives, helping create
           environments where lives are changed for eternity.
         </p>
 
-        <p>
+        <p class="editable">
           The Summer Staff Adoption program allows individuals, families, and churches
           to financially support a staff member during the summer season.
           Your partnership helps cover ministry expenses and enables them to focus
           fully on serving and discipling campers.
         </p>
 
-        <p>
+        <p class="editable">
           Most importantly, your support provides encouragement — reminding our staff
           that they are sent, supported, and prayed for as they serve.
         </p>
@@ -68,8 +70,8 @@ permalink: /summer-staff-adoption/
     <div class="row justify-content-center text-center">
       <div class="col-lg-10">
 
-        <div class="section-subtitle">How It Works</div>
-        <div class="section-title">Simple & Meaningful</div>
+        <div class="section-subtitle editable">How It Works</div>
+        <div class="section-title editable">Simple & Meaningful</div>
 
         <ul class="list-unstyled mt-4">
           <li><i class="ti-check"></i> Choose to sponsor a Summer Staff member</li>
@@ -86,7 +88,7 @@ permalink: /summer-staff-adoption/
 <!-- Call to Action -->
 <section class="reservation">
   <div class="background bg-img bg-fixed section-padding pb-0"
-       data-background="{{ '/assets/img/slider/5.jpg' | relative_url }}"
+       data-background="{{ page.cta_background_image | relative_url }}"
        data-overlay-dark="5">
 
     <div class="container">
@@ -95,7 +97,7 @@ permalink: /summer-staff-adoption/
         <!-- CTA Text -->
         <div class="col-lg-5 col-md-12 mb-30 mt-30">
 
-          <h5>
+          <h5 class="editable">
             Support a Summer Staff Member
           </h5>
 
@@ -108,7 +110,7 @@ permalink: /summer-staff-adoption/
               <span class="ti-headphone-alt"></span>
             </div>
             <div class="text">
-              <p class="color-1">Call Us to Learn More</p>
+              <p class="color-1 editable">Call Us to Learn More</p>
               <a class="color-1" href="tel:{{ site.data.company.phone | replace: '-', '' }}">
                 {{ site.data.company.phone }}
               </a>
@@ -121,14 +123,14 @@ permalink: /summer-staff-adoption/
         <div class="col-lg-5 offset-lg-2 col-md-12">
           <div class="booking-box">
             <div class="head-box text-center">
-              <h4>Adopt a Staff Member Today</h4>
+              <h4 class="editable">Adopt a Staff Member Today</h4>
             </div>
             <div class="booking-inner clearfix text-center">
               <!-- Replace with donation / Paperform embed -->
-              <p class="mt-4">
+              <p class="mt-4 editable">
                 Online adoption form coming soon.
               </p>
-              <a href="/donate/" class="btn-form1-submit mt-15">
+              <a href="/donate/" class="btn-form1-submit mt-15 editable">
                 Give Online
               </a>
             </div>

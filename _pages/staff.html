@@ -48,7 +48,7 @@ staff:
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center caption mt-90">
-        <h1 class="editable">{{ page.hero_heading }}</h1>
+        <h1>{{ page.hero_heading }}</h1>
       </div>
     </div>
   </div>
@@ -62,13 +62,13 @@ staff:
       {% for member in page.staff %}
       <div class="col-lg-4 col-md-6">
         <div class="item">
-          <div class="img editable">
+          <div class="img">
             <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" />
           </div>
 
           <div class="info">
-            <h6 class="editable">{{ member.name }}</h6>
-            <p class="editable">{{ member.role }}</p>
+            <h6>{{ member.name }}</h6>
+            <p>{{ member.role }}</p>
             {% if member.social %}
             <div class="social valign">
               <div class="full-width">
@@ -78,7 +78,7 @@ staff:
 
 
                 {% if member.email and member.email != "" %}
-                  <p class="editable">{{ member.email }}</p>
+                  <p>{{ member.email }}</p>
                 {% endif %}
               </div>
             </div>
@@ -99,9 +99,9 @@ staff:
       <div class="row">
 
         <div class="col-lg-5 col-md-12 mb-30 mt-30">
-          <h5 class="editable">{{ page.cta_heading }}</h5>
+          <h5>{{ page.cta_heading }}</h5>
 
-          <p class="editable">
+          <p>
             {% if page.short_description %}
               {{ page.short_description }}
             {% else %}
@@ -125,13 +125,13 @@ staff:
         <div class="col-lg-5 offset-lg-2 col-md-12">
           <div class="booking-box">
             <div class="head-box text-center">
-              <h4 class="editable">{{ page.cta_button_heading }}</h4>
+              <h4>{{ page.cta_button_heading }}</h4>
             </div>
             <div class="booking-inner clearfix text-center">
               <p class="mt-4 editable">
                 Whether you have questions about camp, retreats, events, or the Clara Springs team, we’d love to help.
               </p>
-              <a href="{{ page.cta_button_url }}" class="btn-form1-submit mt-15 editable">
+              <a href="{{ page.cta_button_url }}" class="btn-form1-submit mt-15">
                 {{ page.cta_button_text }}
               </a>
             </div>

@@ -18,6 +18,8 @@ gallery:
     - src: /assets/img/slider/7.jpg
 pagename: Dining Hall
 permalink: /camp-grounds/dining-hall/
+hero_background_image: /assets/img/slider/11.jpg
+cta_background_image: /assets/img/slider/5.jpg
 ---
 
 <!-- Preloader --><!-- Progress scroll totop --><html><head></head><body><div class="progress-wrap cursor-pointer">
@@ -28,7 +30,7 @@ permalink: /camp-grounds/dining-hall/
     <!-- Navbar -->
 
     <!-- Header Banner -->
-    <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="{{ '/assets/img/slider/11.jpg' | relative_url }}">
+    <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="{{ page.hero_background_image | relative_url }}">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center caption mt-90">
@@ -69,7 +71,7 @@ permalink: /camp-grounds/dining-hall/
 
     <!-- Reservation & Booking Form -->
     <section class="reservation">
-        <div class="background bg-img bg-fixed section-padding pb-0" data-background="{{ '/assets/img/slider/5.jpg' | relative_url }}" data-overlay-dark="5">
+        <div class="background bg-img bg-fixed section-padding pb-0" data-background="{{ page.cta_background_image | relative_url }}" data-overlay-dark="5">
             <div class="container">
                 <div class="row">
                     <!-- Reservation -->
