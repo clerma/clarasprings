@@ -237,11 +237,11 @@ _editables:
     width: 400
   text:
     allow_custom_markup: true
-    remove_custom_markup: false
-    bold:
-    copyformatting:
-    italic:
-    link:
+    remove_custom_markup: true
+    bold: true
+    copyformatting: true
+    italic: true
+    link: true
     paths:
     redo:
     removeformat:
