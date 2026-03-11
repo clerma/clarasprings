@@ -1,144 +1,148 @@
 collections_config:
   Pages:
     path: _pages
-    glob: null
+    glob:
     name: Pages
-    singular_name: null
+    singular_name:
     icon: sticky_note_2
-    url: null
+    url:
     disable_url: false
-    include_developer_files: null
-    documentation: null
-    description: null
-    preview: null
-    sort: null
-    sort_options: null
-    view_options: null
-    _editables: null
-    _enabled_editors: null
-    _inputs: null
-    _select_data: null
-    _structures: null
-    add_options: null
-    create: null
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    new_preview_url: null
-    schemas: null
-    schema_key: null
+    new_preview_url:
+    schemas:
+    schema_key:
   Data:
     path: _data
-    glob: null
-    name: null
-    singular_name: null
+    glob:
+    name:
+    singular_name:
     icon: database
-    url: null
+    url:
     disable_url: false
-    include_developer_files: null
-    documentation: null
-    description: null
-    preview: null
-    sort: null
-    sort_options: null
-    view_options: null
-    _editables: null
-    _enabled_editors: null
-    _inputs: null
-    _select_data: null
-    _structures: null
-    add_options: null
-    create: null
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    new_preview_url: null
-    schemas: null
-    schema_key: null
+    new_preview_url:
+    schemas:
+    schema_key:
   Posts:
     path: _posts
-    glob: null
-    name: null
-    singular_name: null
+    glob:
+    name:
+    singular_name:
     icon: edit_note
-    url: null
+    url:
     disable_url: false
-    include_developer_files: null
-    documentation: null
-    description: null
-    preview: null
-    sort: null
-    sort_options: null
-    view_options: null
-    _editables: null
-    _enabled_editors: null
-    _inputs: null
-    _select_data: null
-    _structures: null
-    add_options: null
-    create: null
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    new_preview_url: null
-    schemas: null
-    schema_key: null
+    new_preview_url:
+    schemas:
+    schema_key:
   Camps:
     path: _camps
-    glob: null
-    name: null
-    singular_name: null
+    glob:
+    name:
+    singular_name:
     icon: camping
-    url: null
+    url:
     disable_url: false
-    include_developer_files: null
-    documentation: null
-    description: null
-    preview: null
-    sort: null
-    sort_options: null
-    view_options: null
-    _editables: null
-    _enabled_editors: null
-    _inputs: null
-    _select_data: null
-    _structures: null
-    add_options: null
-    create: null
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    new_preview_url: null
-    schemas: null
-    schema_key: null
+    new_preview_url:
+    schemas:
+    schema_key:
   Events:
     path: _events
-    glob: null
-    name: null
-    singular_name: null
+    glob:
+    name:
+    singular_name:
     icon: calendar_month
-    url: null
+    url:
     disable_url: false
-    include_developer_files: null
-    documentation: null
-    description: null
-    preview: null
-    sort: null
-    sort_options: null
-    view_options: null
-    _editables: null
-    _enabled_editors: null
-    _inputs: null
-    _select_data: null
-    _structures: null
-    add_options: null
-    create: null
+    include_developer_files:
+    documentation:
+    description:
+    preview:
+    sort:
+    sort_options:
+    view_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    new_preview_url: null
-    schemas: null
-    schema_key: null
+    new_preview_url:
+    schemas:
+    schema_key:
+_enabled_editors:
+  - data
+  - content
+  - visual
 _inputs:
   title:
     type: text
@@ -173,15 +177,10 @@ _select_data:
     - News
     - Updates
     - Events
-timezone: Etc/UTC
-_enabled_editors:
-  - data
-  - content
-  - visual
 _editables:
   block:
     allow_custom_markup: true
-    remove_custom_markup: false
+    remove_custom_markup: true
     blockquote: true
     bold: true
     bulletedlist: true
@@ -204,7 +203,7 @@ _editables:
     underline: true
   content:
     allow_custom_markup: true
-    remove_custom_markup: false
+    remove_custom_markup: true
     blockquote: true
     bold: true
     bulletedlist: true
@@ -229,14 +228,30 @@ _editables:
     table: true
     underline: true
   image:
-    expandable: null
+    expandable: true
     height: 300
     image_size_attributes: true
-    mime_type: null
-    paths: null
+    mime_type:
+    paths:
     resize_style: crop
     width: 400
+  text:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    bold:
+    copyformatting:
+    italic:
+    link:
+    paths:
+    redo:
+    removeformat:
+    strike:
+    subscript:
+    superscript:
+    underline:
+    undo:
+timezone: Etc/UTC
 _editor:
   default_path: /
 uploads:
-  path: 'uploads/:title/:year/:month/:day/:categories'
+  path: uploads/:title/:year/:month/:day/:categories
