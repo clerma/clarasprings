@@ -49,6 +49,8 @@
 - label: "Information"
   url: "#"
   children:
+    - label: "About Us"
+      url: "/about"
     - label: "Conference & Retreats"
       url: "/conference-retreats/"
     - label: "Summer Staff Adoption"
