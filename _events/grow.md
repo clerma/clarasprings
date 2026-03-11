@@ -39,7 +39,7 @@ what_to_expect:
 
 highlights:
   - icon: ti-heart
-    text: Theme: Becoming God’s Masterpiece
+    text: "Theme: Becoming God's Masterpiece"
   - icon: ti-music
     text: Worship led by Macy Cline
   - icon: ti-microphone
