@@ -36,12 +36,10 @@ cta_background_image: /assets/img/slider/5.jpg
    <section class="section-padding">
      <div class="container">
        <div class="row">
-
          <div class="col-md-12 text-center">
            <div class="section-subtitle">{{ page.gallery.subtitle }}</div>
            <div class="section-title">{{ page.gallery.title }}</div>
          </div>
-
          {% for image in page.gallery.images %}
            <div class="col-md-4 gallery-item">
              <a href="{{ image.src | relative_url }}" class="img-zoom">
@@ -53,7 +51,6 @@ cta_background_image: /assets/img/slider/5.jpg
              </a>
            </div>
          {% endfor %}
-
        </div>
      </div>
    </section>
@@ -66,7 +63,6 @@ cta_background_image: /assets/img/slider/5.jpg
                 <div class="row">
                     <!-- Reservation -->
                     <div class="col-lg-5 col-md-12 mb-30 mt-30">
-
                     <h5>
   {% if page.pagename %}
     Plan Your {{ page.pagename }} at {{ site.data.company.name }}
@@ -102,7 +98,7 @@ cta_background_image: /assets/img/slider/5.jpg
                                 <h4>Camping Booking Form</h4>
                             </div>
                             <div class="booking-inner clearfix">
-                           
+                              {% include sub-page-form.html %}
                             </div>
                         </div>
                     </div>
