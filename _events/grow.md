@@ -3,18 +3,12 @@ layout: camp
 title: "G.R.O.W Women’s Conference 2026"
 name: "G.R.O.W Women’s Conference"
 subtitle: "Becoming God’s Masterpiece"
-
 slider:
   overlay: 3
   images:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
 
 description:
-  - "The G.R.O.W Women’s Conference hosted by Wallace Baptist Church is Friday, February 20–Saturday, February 21, 2026."
-  - "Theme: Becoming God’s Masterpiece."
-  - "Comedian: Peppi Garrett • Speaker: Pat Domanque • Worship led by Macy Cline."
-  - "Registration deadline is February 2, 2026."
-  - "There will be a shopping opportunity with Boutique Booths available to rent."
 
 camp_details:
   title: Event Details
@@ -110,22 +104,17 @@ links:
   flyer: ""
   needs_list: ""
 
-nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
-
       <div class="col-md-12">
         <div class="section-title">{{ page.title }}</div>
       </div>
-
       <div class="col-lg-7 col-md-12">
         {% for paragraph in page.description %}
           <p class="mb-30">{{ paragraph }}</p>
         {% endfor %}
-
         <div class="row">
           <div class="col-md-6">
             <h6>{{ page.checkin.title }}</h6>
@@ -138,7 +127,6 @@ nav_hide: false
               {% endfor %}
             </ul>
           </div>
-
           <div class="col-md-6">
             <h6>{{ page.checkout.title }}</h6>
             <ul class="list-unstyled page-list mb-30">
@@ -150,7 +138,6 @@ nav_hide: false
               {% endfor %}
             </ul>
           </div>
-
           {% for policy in page.policies %}
             <div class="col-md-12">
               <h6>{{ policy.title }}</h6>
@@ -186,7 +173,6 @@ nav_hide: false
               <div class="section-title">Frequently Asked Questions</div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-md-12">
               <ul class="accordion-box clearfix">

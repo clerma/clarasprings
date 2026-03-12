@@ -2,28 +2,20 @@
 layout: camp
 title: Kids Camp 2026
 name: Kids Camp
-
 slider:
   overlay: 3
   images:
-    - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
-
+    - image: /assets/img/site-images/e1a3ca69-a7d2-4953-b870-4251853427e0@2x.jpg
 description:
-  - "Kids Camp is July 6–9, 2026."
-  - "Our first Kids Camp of the summer is a FANTASTIC camp that celebrates kids coming to know Jesus."
-  - "A fun-filled camp with worship, games, s’mores, and learning more about Jesus for boys and girls."
-  - "For ages: COMPLETED 1st–6th grade."
-
 camp_details:
   title: Camp Schedule
   items:
-    - "Camp Dates: July 6–9, 2026"
-    - "Begins: 10:00 AM Monday, July 6"
-    - "Ends: 7:00 PM Thursday, July 9"
-    - "Ages: Completed 1st–6th grade"
-    - "Camp Pastor: TBA"
-    - "Music: Luke & Rachel Kerry"
-
+    - 'Camp Dates: July 6–9, 2026'
+    - 'Begins: 10:00 AM Monday, July 6'
+    - 'Ends: 7:00 PM Thursday, July 9'
+    - 'Ages: Completed 1st–6th grade'
+    - 'Camp Pastor: TBA'
+    - 'Music: Luke & Rachel Kerry'
 what_to_expect:
   title: What to Expect
   items:
@@ -32,7 +24,6 @@ what_to_expect:
     - S’mores
     - Teaching focused on learning more about Jesus
     - Theme nights each evening
-
 highlights:
   - icon: ti-heart
     text: A camp experience designed to help kids come to know Jesus
@@ -44,42 +35,47 @@ highlights:
     text: Theme nights all week
   - icon: ti-user
     text: For completed 1st–6th grade campers
-
 tickets:
   - name: Early Registration
-    price: "$205"
+    price: $205
     features:
       - Register by 5/1/26
       - July 6–9, 2026 (Mon–Thurs)
       - Includes worship, activities, and theme nights
   - name: Late Registration
-    price: "$215"
+    price: $215
     features:
       - If not registered by 5/1/26
       - July 6–9, 2026 (Mon–Thurs)
       - Includes worship, activities, and theme nights
-
 faqs:
   - question: What are the camp dates?
-    answer: Kids Camp is July 6–9, 2026. Camp begins 10:00 AM Monday, July 6 and ends 7:00 PM Thursday, July 9.
+    answer: >-
+      Kids Camp is July 6–9, 2026. Camp begins 10:00 AM Monday, July 6 and ends
+      7:00 PM Thursday, July 9.
   - question: What ages can attend?
     answer: Kids Camp is for boys and girls who have COMPLETED 1st–6th grade.
   - question: How much does it cost?
-    answer: The cost is $205. If not registered by 5/1/26, the price increases to $215.
+    answer: >-
+      The cost is $205. If not registered by 5/1/26, the price increases to
+      $215.
   - question: When does registration open?
     answer: Registration opens January 30th.
   - question: Who is leading worship and teaching?
     answer: Camp Pastor is TBA. Music is led by Luke & Rachel Kerry.
   - question: Do adult chaperones need training?
-    answer: Yes. All adult chaperones 18 or older must complete Child Protection Training prior to attending camp (via Lifeway) and will also be required to have a background check.
+    answer: >-
+      Yes. All adult chaperones 18 or older must complete Child Protection
+      Training prior to attending camp (via Lifeway) and will also be required
+      to have a background check.
   - question: What are the theme nights?
-    answer: Monday—Patriotic. Tuesday—Super Hero. Wednesday—Around the World/Tourist. Thursday—Camp T-shirt.
+    answer: >-
+      Monday—Patriotic. Tuesday—Super Hero. Wednesday—Around the World/Tourist.
+      Thursday—Camp T-shirt.
   - question: What do campers need to bring?
     answer: A “What to Bring” list is coming soon (per camp info page).
-
 nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">

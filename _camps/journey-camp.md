@@ -2,30 +2,22 @@
 layout: camp
 title: Journey Youth Camp 2026
 name: Journey Youth Camp
-
 slider:
   overlay: 3
   images:
-    - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
-
+    - image: /assets/img/site-images/11f179c9-8b7b-4be7-aaf9-13936793970d@2x.jpg
 description:
-  - "Journey Youth Camp is July 19–22, 2026."
-  - "This camp is for youth in grades 7th–12th."
-  - "Camp begins at 5:00 PM on July 19th and ends at 12:00 PM on July 22nd."
-  - "Campers draw closer to God through powerful worship and deep devotion times, plus a full schedule of outdoor fun and activities."
-
 camp_details:
   title: Camp Schedule
   items:
-    - "Camp Dates: July 19–22, 2026"
-    - "Begins: 5:00 PM Sunday, July 19"
-    - "Ends: 12:00 PM Wednesday, July 22"
-    - "Grades: 7th–12th"
-    - "Camp Pastor: TBA"
-    - "Camp Band: Broken Vessels"
-    - "Registration opens: January 30th"
-    - "Mail-in forms address: Clara Springs Camp, 4420 HWY 177, Pelican, LA 71063"
-
+    - 'Camp Dates: July 19–22, 2026'
+    - 'Begins: 5:00 PM Sunday, July 19'
+    - 'Ends: 12:00 PM Wednesday, July 22'
+    - 'Grades: 7th–12th'
+    - 'Camp Pastor: TBA'
+    - 'Camp Band: Broken Vessels'
+    - 'Registration opens: January 30th'
+    - 'Mail-in forms address: Clara Springs Camp, 4420 HWY 177, Pelican, LA 71063'
 what_to_expect:
   title: What to Expect
   items:
@@ -38,7 +30,6 @@ what_to_expect:
     - Sling shots
     - Canoes
     - Games and activities
-
 highlights:
   - icon: ti-music
     text: Powerful worship with Broken Vessels
@@ -50,40 +41,45 @@ highlights:
     text: Canoes, swimming, fishing, and outdoor adventure
   - icon: ti-user
     text: Designed for students in grades 7th–12th
-
 tickets:
   - name: Early Registration
-    price: "$200"
+    price: $200
     features:
       - Register by 5/1/26
       - July 19–22, 2026 (Sun–Wed)
       - Includes worship, devotions, and all camp activities
   - name: Late Registration
-    price: "$210"
+    price: $210
     features:
       - If not registered by 5/1/26
       - July 19–22, 2026 (Sun–Wed)
       - Includes worship, devotions, and all camp activities
-
 faqs:
   - question: What are the camp dates and times?
-    answer: Journey Youth Camp is July 19–22, 2026. Camp begins 5:00 PM Sunday, July 19 and ends 12:00 PM Wednesday, July 22.
+    answer: >-
+      Journey Youth Camp is July 19–22, 2026. Camp begins 5:00 PM Sunday, July
+      19 and ends 12:00 PM Wednesday, July 22.
   - question: What grades can attend?
     answer: Journey Youth Camp is for students in grades 7th–12th.
   - question: How much does it cost?
-    answer: The cost is $200. If not registered by 5/1/26, the price increases to $210.
+    answer: >-
+      The cost is $200. If not registered by 5/1/26, the price increases to
+      $210.
   - question: When does registration open?
     answer: Registration opens January 30th.
   - question: Do adult chaperones need training?
-    answer: Yes. All adult chaperones 18 or older must complete Child Protection Training (via Lifeway) and will also be required to have a background check.
+    answer: >-
+      Yes. All adult chaperones 18 or older must complete Child Protection
+      Training (via Lifeway) and will also be required to have a background
+      check.
   - question: Is there a permission form?
     answer: Yes. A permission form must be turned in the day of camp by all campers.
   - question: What activities are included?
-    answer: Campers can participate in archery, fishing, swimming, shooting range, sling shots, canoes, and various games and activities.
-
+    answer: >-
+      Campers can participate in archery, fishing, swimming, shooting range,
+      sling shots, canoes, and various games and activities.
 nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
