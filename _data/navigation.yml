@@ -51,6 +51,8 @@
   children:
     - label: "About Us"
       url: "/about"
+    - label: "Blog"
+      url: "/blog"
     - label: "Conference & Retreats"
       url: "/conference-retreats/"
     - label: "Summer Staff Adoption"
