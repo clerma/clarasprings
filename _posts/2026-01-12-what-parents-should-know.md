@@ -1,16 +1,19 @@
 ---
 layout: post
-title: "What Parents Should Know Before Sending Their Child to Camp"
-description: "Sending your child to camp is a big decision. Here’s what parents should know about safety, spiritual growth, and the Clara Springs experience."
-keywords: "parents guide to camp, Clara Springs safety, Christian youth camp, first time camper, Louisiana summer camp"
+title: What Parents Should Know Before Sending Their Child to Camp
+description: >-
+  Sending your child to camp is a big decision. Here’s what parents should know
+  about safety, spiritual growth, and the Clara Springs experience.
+keywords: >-
+  parents guide to camp, Clara Springs safety, Christian youth camp, first time
+  camper, Louisiana summer camp
 categories:
   - blog
 tags:
   - blog
-image: /assets/img/slider/11.jpg
+image: /assets/img/site-images/72fb3d40-c53b-474c-ab1d-79c293e85db7@2x.jpg
 permalink: /blog/what-parents-should-know-before-sending-your-child-to-camp/
 ---
-
 Sending your child to camp can feel like a big step.
 
 We understand — trust matters.

@@ -1,16 +1,19 @@
 ---
 layout: post
-title: "Why Christian Summer Camp Still Changes Lives in 2026"
-description: "In a world full of distractions, Christian summer camp still creates space for faith, friendships, and life change. Here’s why it matters in 2026."
-keywords: "Christian summer camp, Clara Springs, Louisiana church camp, youth camp, spiritual growth"
+title: Why Christian Summer Camp Still Changes Lives in 2026
+description: >-
+  In a world full of distractions, Christian summer camp still creates space for
+  faith, friendships, and life change. Here’s why it matters in 2026.
+keywords: >-
+  Christian summer camp, Clara Springs, Louisiana church camp, youth camp,
+  spiritual growth
 categories:
   - blog
 tags:
   - blog
-image: /assets/img/slider/1.jpg
+image: /assets/img/site-images/0071ac45-684d-4286-bf33-1576823d053b@2x.png
 permalink: /blog/why-christian-summer-camp-still-changes-lives-2026/
 ---
-
 In a world filled with screens, noise, and constant distraction, students are craving something deeper — connection, purpose, and truth.
 
 That’s why Christian summer camp still matters.

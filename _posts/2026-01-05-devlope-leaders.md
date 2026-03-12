@@ -1,16 +1,19 @@
 ---
 layout: post
-title: "How Clara Springs Develops Leaders, Not Just Campers"
-description: "Christian camp isn’t just fun — it’s leadership development. Here’s how Clara Springs helps students grow into confident, faith-filled leaders."
-keywords: "Clara Springs leadership, Christian camp leaders, summer camp discipleship, youth leadership, Louisiana camp"
+title: How Clara Springs Develops Leaders, Not Just Campers
+description: >-
+  Christian camp isn’t just fun — it’s leadership development. Here’s how Clara
+  Springs helps students grow into confident, faith-filled leaders.
+keywords: >-
+  Clara Springs leadership, Christian camp leaders, summer camp discipleship,
+  youth leadership, Louisiana camp
 categories:
   - blog
 tags:
   - blog
-image: /assets/img/slider/6.jpg
+image: /assets/img/site-images/29b28b92-4d34-4aa4-bf2e-aee4de204818@2x.jpg
 permalink: /blog/how-clara-springs-develops-leaders-not-just-campers/
 ---
-
 Some students come to camp for fun.
 
 They leave as leaders.
