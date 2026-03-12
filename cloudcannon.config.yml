@@ -168,6 +168,9 @@ _inputs:
     type: checkbox
     label: Featured Item
     cascade: true
+  src:
+    type: image
+    cascade: true
 _select_data:
   colors:
     - Red
