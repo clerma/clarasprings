@@ -3,7 +3,6 @@ layout: camp
 title: G.R.O.W Women’s Conference 2026
 name: G.R.O.W Women’s Conference
 subtitle: "Becoming God’s Masterpiece"
-
 slider:
   overlay: 3
   images:
@@ -105,21 +104,17 @@ links:
   flyer: ""
   needs_list: ""
 
-nav_hide: false
 ---
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
-
       <div class="col-md-12">
         <div class="section-title">{{ page.title }}</div>
       </div>
-
       <div class="col-lg-7 col-md-12">
         {% for paragraph in page.description %}
           <p class="mb-30">{{ paragraph }}</p>
         {% endfor %}
-
         <div class="row">
           <div class="col-md-6">
             <h6>{{ page.checkin.title }}</h6>
@@ -132,7 +127,6 @@ nav_hide: false
               {% endfor %}
             </ul>
           </div>
-
           <div class="col-md-6">
             <h6>{{ page.checkout.title }}</h6>
             <ul class="list-unstyled page-list mb-30">
@@ -144,7 +138,6 @@ nav_hide: false
               {% endfor %}
             </ul>
           </div>
-
           {% for policy in page.policies %}
             <div class="col-md-12">
               <h6>{{ policy.title }}</h6>
@@ -180,7 +173,6 @@ nav_hide: false
               <div class="section-title">Frequently Asked Questions</div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-md-12">
               <ul class="accordion-box clearfix">

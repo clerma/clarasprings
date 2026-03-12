@@ -9,9 +9,7 @@ slider:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
 
 description:
-  - "Every May, District Eight Baptist Convention hosts Adult Day at Clara Springs."
-  - "This FREE event encourages senior adults from local churches, nursing homes, assisted living, and more to join together for worship, fellowship, and food."
-  - "Jake Cowley will be in concert—don’t miss this time of amazing worship, fellowship, and a meal."
+
 
 camp_details:
   title: Event Details
