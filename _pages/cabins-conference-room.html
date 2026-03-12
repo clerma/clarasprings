@@ -1,121 +1,113 @@
 ---
 layout: default
-title: Cabins & The Buffalo Conference Room
+title: "Cabins & The Buffalo Conference Room"
 description:
 keywords:
 image: /assets/img/site-images/20bc8119-ee19-4167-b573-d1fa785b054f.jpg
 gallery:
-  subtitle: Images
-  title: Image Gallery
-  images:
-    - src: /assets/img/slider/1.jpg
-    - src: /assets/img/slider/2.jpg
-    - src: /assets/img/slider/4.jpg
-    - src: /assets/img/slider/11.jpg
-    - src: /assets/img/slider/5.jpg
-    - src: /assets/img/slider/4.jpg
-    - src: /assets/img/slider/6.jpg
-    - src: /assets/img/slider/7.jpg
-pagename: Cabins & The Buffalo Conference Room
+subtitle: Images
+title: Image Gallery
+images:
+- src: /assets/img/slider/1.jpg
+- src: /assets/img/slider/2.jpg
+- src: /assets/img/slider/4.jpg
+- src: /assets/img/slider/11.jpg
+- src: /assets/img/slider/5.jpg
+- src: /assets/img/slider/4.jpg
+- src: /assets/img/slider/6.jpg
+- src: /assets/img/slider/7.jpg
+pagename: "Cabins & The Buffalo Conference Room"
 permalink: /camp-grounds/cabins-conference-room/
 hero_background_image: /assets/img/slider/11.jpg
 cta_background_image: /assets/img/slider/5.jpg
 ---
-<!-- Preloader --><!-- Progress scroll totop --><html><head></head><body><div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-    <!-- Navbar -->
-
-    <!-- Header Banner -->
-    <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="{{ page.hero_background_image | relative_url }}">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center caption mt-90">
-                    <h1>{{page.pagename}}</h1>
-                </div>
-            </div>
-        </div>
-    </div>
- <!-- Image Gallery -->
-  {% if page.gallery %}
-  <section class="section-padding">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-12 text-center">
-          <div class="section-subtitle">{{ page.gallery.subtitle }}</div>
-          <div class="section-title">{{ page.gallery.title }}</div>
-        </div>
-
-        {% for image in page.gallery.images %}
-          <div class="col-md-4 gallery-item">
-            <a href="{{ image.src | relative_url }}" class="img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="{{ image.src | relative_url }}" class="img-fluid mx-auto d-block" alt="{{ page.title }} image {{ forloop.index }}" />
-                </div>
-              </div>
-            </a>
-          </div>
-        {% endfor %}
-
+<!-- Header Banner -->
+<div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom" data-overlay-dark="5" data-background="{{ page.hero_background_image | relative_url }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center caption mt-90">
+        <h1>{{page.pagename}}</h1>
       </div>
     </div>
-  </section>
-  {% endif %}
+  </div>
+</div>
+<!-- Image Gallery -->
+{% if page.gallery %}
+<section class="section-padding">
+  <div class="container">
+    <div class="row">
 
-    <!-- Reservation & Booking Form -->
-    <section class="reservation">
-        <div class="background bg-img bg-fixed section-padding pb-0" data-background="{{ page.cta_background_image | relative_url }}" data-overlay-dark="5">
-            <div class="container">
-                <div class="row">
-                    <!-- Reservation -->
-                    <div class="col-lg-5 col-md-12 mb-30 mt-30">
+      <div class="col-md-12 text-center">
+        <div class="section-subtitle">{{ page.gallery.subtitle }}</div>
+        <div class="section-title">{{ page.gallery.title }}</div>
+      </div>
 
-                    <h5>
-  {% if page.pagename %}
-    Plan Your {{ page.pagename }} at {{ site.data.company.name }}
+      {% for image in page.gallery.images %}
+      <div class="col-md-4 gallery-item">
+        <a href="{{ image.src | relative_url }}" class="img-zoom">
+          <div class="gallery-box">
+            <div class="gallery-img">
+              <img src="{{ image.src | relative_url }}" class="img-fluid mx-auto d-block" alt="{{ page.title }} image {{ forloop.index }}" />
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Reservation & Booking Form -->
+<section class="reservation">
+  <div class="background bg-img bg-fixed section-padding pb-0" data-background="{{ page.cta_background_image | relative_url }}" data-overlay-dark="5">
+    <div class="container">
+      <div class="row">
+        <!-- Reservation -->
+        <div class="col-lg-5 col-md-12 mb-30 mt-30">
+
+          <h5>
+            {% if page.pagename %}
+            Plan Your {{ page.pagename }} at {{ site.data.company.name }}
   {% else %}
     Plan Your Visit to {{ site.data.company.name }}
   {% endif %}
-</h5>
+          </h5>
 
-<p>
-  {% if page.short_description %}
-    {{ page.short_description }}
+          <p>
+            {% if page.short_description %}
+            {{ page.short_description }}
   {% else %}
     A Christ-centered environment designed for spiritual growth, connection, and meaningful experiences.
   {% endif %}
-</p>
+          </p>
 
-<div class="reservations">
-  <div class="icon color-1">
-    <span class="ti-headphone-alt"></span>
-  </div>
-  <div class="text">
-    <p class="color-1">Call Us to Start Planning</p>
-    <a class="color-1" href="tel:{{ site.data.company.phone | replace: '-', '' }}">
-      {{ site.data.company.phone }}
-    </a>
-  </div>
-</div>
-                    </div>
-                    <!-- Booking From -->
-                    <div class="col-lg-5 offset-lg-2 col-md-12">
-                        <div class="booking-box">
-                            <div class="head-box text-center">
-                                <h4>Camping Booking Form</h4>
-                            </div>
-                            <div class="booking-inner clearfix">
-
-                                {% include sub-page-form.html %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="reservations">
+            <div class="icon color-1">
+              <span class="ti-headphone-alt"></span>
             </div>
+            <div class="text">
+              <p class="color-1">Call Us to Start Planning</p>
+              <a class="color-1" href="tel:{{ site.data.company.phone | replace: '-', '' }}">
+                {{ site.data.company.phone }}
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
-</body></html>
+        <!-- Booking From -->
+        <div class="col-lg-5 offset-lg-2 col-md-12">
+          <div class="booking-box">
+            <div class="head-box text-center">
+              <h4>Camping Booking Form</h4>
+            </div>
+            <div class="booking-inner clearfix">
+
+              {% include sub-page-form.html %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
