@@ -63,14 +63,7 @@ cta_background_image: /assets/img/slider/5.jpg
                 <div class="row">
                     <!-- Reservation -->
                     <div class="col-lg-5 col-md-12 mb-30 mt-30">
-                    <h5>
-  {% if page.pagename %}
-    Plan Your {{ page.pagename }} at {{ site.data.company.name }}
-  {% else %}
-    Plan Your Visit to {{ site.data.company.name }}
-  {% endif %}
-</h5>
-
+                    <h5>{% if page.pagename %}Plan Your {{ page.pagename }} at {{ site.data.company.name }} {% else %}Plan Your Visit to {{ site.data.company.name }}{% endif %}</h5>
 <p>
   {% if page.short_description %}
     {{ page.short_description }}
