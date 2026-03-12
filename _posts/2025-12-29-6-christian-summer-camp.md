@@ -11,7 +11,7 @@ categories:
   - blog
 tags:
   - blog
-image: /assets/img/site-images/0071ac45-684d-4286-bf33-1576823d053b@2x.png
+image: /uploads/489119379-1060483276107255-1949021201432723989-n.jpg
 permalink: /blog/why-christian-summer-camp-still-changes-lives-2026/
 ---
 In a world filled with screens, noise, and constant distraction, students are craving something deeper — connection, purpose, and truth.
