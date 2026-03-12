@@ -10,11 +10,6 @@ slider:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
 
 description:
-  - "The G.R.O.W Women’s Conference hosted by Wallace Baptist Church is Friday, February 20–Saturday, February 21, 2026."
-  - "Theme: Becoming God’s Masterpiece."
-  - "Comedian: Peppi Garrett • Speaker: Pat Domanque • Worship led by Macy Cline."
-  - "Registration deadline is February 2, 2026."
-  - "There will be a shopping opportunity with Boutique Booths available to rent."
 
 camp_details:
   title: Event Details
@@ -112,7 +107,6 @@ links:
 
 nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">

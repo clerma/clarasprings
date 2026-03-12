@@ -2,27 +2,20 @@
 layout: camp
 title: YAC 2026
 name: YAC (Young Adult Camp)
-
 slider:
   overlay: 3
   images:
-    - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
-
+    - image: /assets/img/site-images/5333fdbe-caaf-4201-8e94-572c481988a8@2x.jpg
 description:
-  - "YAC (Young Adult Camp) is July 10–12, 2026."
-  - "This camp is for graduated high school students (18+) through young adults."
-  - "Come enjoy a weekend away with amazing worship, deep Bible studies, and time to relax and meet new friends."
-
 camp_details:
   title: Camp Schedule
   items:
-    - "Camp Dates: July 10–12, 2026"
-    - "Begins: 6:00 PM Friday, July 10"
-    - "Ends: 9:00 AM Sunday, July 12"
-    - "Ages: Graduated High School (18+) to Young Adults"
-    - "Speaker: TBA"
-    - "Worship: TBA"
-
+    - 'Camp Dates: July 10–12, 2026'
+    - 'Begins: 6:00 PM Friday, July 10'
+    - 'Ends: 9:00 AM Sunday, July 12'
+    - 'Ages: Graduated High School (18+) to Young Adults'
+    - 'Speaker: TBA'
+    - 'Worship: TBA'
 what_to_expect:
   title: What to Expect
   items:
@@ -31,7 +24,6 @@ what_to_expect:
     - Time to relax and reset
     - Meet new friends
     - Weekend getaway atmosphere
-
 highlights:
   - icon: ti-heart
     text: A weekend to recharge, connect, and grow spiritually
@@ -43,28 +35,30 @@ highlights:
     text: Meet new friends and build community
   - icon: ti-home
     text: A relaxed weekend away at camp
-
 tickets:
   - name: Early Registration
-    price: "$120"
+    price: $120
     features:
       - Register by 5/1/26
       - July 10–12, 2026 (Fri–Sun)
       - Includes worship + Bible studies + camp experience
   - name: Late Registration
-    price: "$130"
+    price: $130
     features:
       - If not registered by 5/1/26
       - July 10–12, 2026 (Fri–Sun)
       - Includes worship + Bible studies + camp experience
-
 faqs:
   - question: What are the camp dates?
-    answer: YAC is July 10–12, 2026. Camp begins 6:00 PM Friday, July 10 and ends 9:00 AM Sunday, July 12.
+    answer: >-
+      YAC is July 10–12, 2026. Camp begins 6:00 PM Friday, July 10 and ends 9:00
+      AM Sunday, July 12.
   - question: Who can attend?
     answer: Graduated high school students (18+) through young adults.
   - question: How much does it cost?
-    answer: The cost is $120. If not registered by 5/1/26, the price increases to $130.
+    answer: >-
+      The cost is $120. If not registered by 5/1/26, the price increases to
+      $130.
   - question: When does registration open?
     answer: Registration opens January 30th.
   - question: Who is the speaker and worship leader?
@@ -72,11 +66,11 @@ faqs:
   - question: Do campers need to turn in a permission form?
     answer: Yes. A permission form must be turned in the day of camp by all campers.
   - question: What should I bring?
-    answer: “Things to Know” and “What to Bring” are available as additional info (links provided on the camp page).
-
+    answer: >-
+      “Things to Know” and “What to Bring” are available as additional info
+      (links provided on the camp page).
 nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
