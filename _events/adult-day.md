@@ -2,15 +2,11 @@
 layout: camp
 title: 2026 Adult Day
 name: Adult Day
-
 slider:
   overlay: 3
   images:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
-
 description:
-
-
 camp_details:
   title: Event Details
   items:
@@ -61,14 +57,11 @@ faqs:
     answer: Yes. Please RSVP to the District Eight Office to save your seat.
   - question: How do I RSVP?
     answer: Call 318.352.4090 or email office@districteightmissions.com.
-
 contact:
   phone: "318.352.4090"
   email: "office@districteightmissions.com"
-
 nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
