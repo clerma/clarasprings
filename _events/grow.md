@@ -1,7 +1,7 @@
 ---
 layout: camp
-title: G.R.O.W Women’s Conference 2026
-name: G.R.O.W Women’s Conference
+title: "G.R.O.W Women’s Conference 2026"
+name: "G.R.O.W Women’s Conference"
 subtitle: "Becoming God’s Masterpiece"
 
 slider:
