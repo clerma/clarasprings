@@ -8,7 +8,7 @@ description: >-
 slider:
   overlay: 3
   images:
-    - image: /assets/img/site-images/3332f2c6-0f3f-4789-8ade-43aa38128b06.jpg
+    - image: /assets/img/site-images/402007d9-14b4-4cd8-936c-aeecc0929293.jpg
 body_content:
   - >-
     Adult Day is a special gathering for senior adults from around the district
