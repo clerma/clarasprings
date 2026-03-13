@@ -40,7 +40,7 @@ cta_background_image: /assets/img/slider/5.jpg
            <div class="section-subtitle">{{ page.gallery.subtitle }}</div>
            <div class="section-title">{{ page.gallery.title }}</div>
          </div>
-         {% for image in page.gallery.images %}
+         {% for image in page.gallery.images.src %}
            <div class="col-md-4 gallery-item">
              <a href="{{ image.src | relative_url }}" class="img-zoom">
                <div class="gallery-box">
