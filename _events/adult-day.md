@@ -1,75 +1,76 @@
 ---
 layout: camp
-title: "2026 Adult Day"
-name: "Adult Day"
-description: "Free senior adult gathering at Clara Springs featuring worship, fellowship, lunch, and a concert with Jake Cowley."
+title: 2026 Adult Day
+name: Adult Day
+description: >-
+  Free senior adult gathering at Clara Springs featuring worship, fellowship,
+  lunch, and a concert with Jake Cowley.
 slider:
   overlay: 3
   images:
-    - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
-
+    - image: /assets/img/site-images/3332f2c6-0f3f-4789-8ade-43aa38128b06.jpg
 body_content:
-  - "Adult Day is a special gathering for senior adults from around the district to come together for worship, encouragement, and fellowship."
-  - "Guests will enjoy a concert with Jake Cowley, a shared meal, and meaningful time with churches and senior communities from across the area."
-
+  - >-
+    Adult Day is a special gathering for senior adults from around the district
+    to come together for worship, encouragement, and fellowship.
+  - >-
+    Guests will enjoy a concert with Jake Cowley, a shared meal, and meaningful
+    time with churches and senior communities from across the area.
 camp_details:
-  title: "Event Details"
+  title: Event Details
   items:
-    - "When: Thursday, May (exact date TBA)"
-    - "Time: 10:00 AM – Lunch"
-    - "Where: Clara Springs Worship Center"
-    - "Cost: FREE"
-    - "RSVP required to save your seat"
-
+    - 'When: Thursday, May (exact date TBA)'
+    - 'Time: 10:00 AM – Lunch'
+    - 'Where: Clara Springs Worship Center'
+    - 'Cost: FREE'
+    - RSVP required to save your seat
 what_to_expect:
-  title: "What to Expect"
+  title: What to Expect
   items:
-    - "Worship and fellowship with senior adults from around the district"
-    - "Concert with Jake Cowley"
-    - "A meal (lunch) provided"
-    - "Community time with local churches, nursing homes, and assisted living groups"
-
+    - Worship and fellowship with senior adults from around the district
+    - Concert with Jake Cowley
+    - A meal (lunch) provided
+    - >-
+      Community time with local churches, nursing homes, and assisted living
+      groups
 highlights:
   - icon: ti-heart
-    text: "A FREE day to encourage senior adults"
+    text: A FREE day to encourage senior adults
   - icon: ti-music
-    text: "Jake Cowley in concert"
+    text: Jake Cowley in concert
   - icon: ti-user
-    text: "Fellowship with churches and senior communities"
+    text: Fellowship with churches and senior communities
   - icon: ti-star
-    text: "Worship and an uplifting gathering"
+    text: Worship and an uplifting gathering
   - icon: ti-home
-    text: "Hosted at Clara Springs Worship Center"
-
+    text: Hosted at Clara Springs Worship Center
 tickets:
-  - name: "Free Admission"
-    price: "$0"
+  - name: Free Admission
+    price: $0
     features:
-      - "FREE event"
-      - "Includes worship, fellowship, and lunch"
-      - "RSVP required to reserve your seat"
-
+      - FREE event
+      - Includes worship, fellowship, and lunch
+      - RSVP required to reserve your seat
 faqs:
-  - question: "How much does Adult Day cost?"
-    answer: "This is a FREE event."
-  - question: "Who is Adult Day for?"
-    answer: "Senior adults from local churches, nursing homes, assisted living, and similar groups are invited."
-  - question: "What time does it start and end?"
-    answer: "10:00 AM through lunch."
-  - question: "Where is it held?"
-    answer: "Clara Springs Worship Center."
-  - question: "Do I need to RSVP?"
-    answer: "Yes. Please RSVP to the District Eight Office to save your seat."
-  - question: "How do I RSVP?"
-    answer: "Call 318.352.4090 or email office@districteightmissions.com."
-
+  - question: How much does Adult Day cost?
+    answer: This is a FREE event.
+  - question: Who is Adult Day for?
+    answer: >-
+      Senior adults from local churches, nursing homes, assisted living, and
+      similar groups are invited.
+  - question: What time does it start and end?
+    answer: 10:00 AM through lunch.
+  - question: Where is it held?
+    answer: Clara Springs Worship Center.
+  - question: Do I need to RSVP?
+    answer: Yes. Please RSVP to the District Eight Office to save your seat.
+  - question: How do I RSVP?
+    answer: Call 318.352.4090 or email office@districteightmissions.com.
 contact:
-  phone: "318.352.4090"
-  email: "office@districteightmissions.com"
-
+  phone: 318.352.4090
+  email: office@districteightmissions.com
 nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
