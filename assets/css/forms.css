@@ -1,111 +1,3 @@
-body {
-  margin: 0 !important;
-}
-
-#container {
-  background: #ecefed !important;
-  width: 100% !important;
-  border: 0;
-}
-
-.wufoo .info,
-.wufoo .instruct,
-.wufoo .info h2 {
-  display: none;
-}
-
-/* Main labels */
-.wufoo label.desc,
-.wufoo legend.desc {
-  font-family: 'Zilla Slab', serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 8px;
-  display: block;
-}
-
-/* Default text inputs, textarea, selects */
-.wufoo input.text,
-.wufoo textarea.textarea,
-.wufoo select.select {
-  max-width: 100%;
-  padding: 15px;
-  height: auto;
-  background-color: #fff;
-  box-shadow: none;
-  line-height: 1.5em;
-  font-family: 'Outfit', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  color: #333;
-  background-image: none;
-  border: none;
-  border-radius: 0;
-}
-
-/* Only full-width standalone fields should behave like blocks */
-.wufoo li:not(.complex):not(.phone):not(.address):not(.name) input.text,
-.wufoo li:not(.complex):not(.phone):not(.address):not(.name) textarea.textarea,
-.wufoo li:not(.complex):not(.phone):not(.address):not(.name) select.select {
-  display: block;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-/* Restore compound field behavior */
-.wufoo li.complex span,
-.wufoo li.address span,
-.wufoo li.name span {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-/* Inputs inside compound fields should not force full width */
-.wufoo li.complex span input.text,
-.wufoo li.address span input.text,
-.wufoo li.name span input.text {
-  display: block;
-  width: 100%;
-  margin-bottom: 4px;
-  padding: 12px 15px;
-  box-sizing: border-box;
-}
-
-/* Sub-labels under split inputs */
-.wufoo li div label,
-.wufoo li span label {
-  display: block;
-  font-family: 'Outfit', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #666;
-  margin-top: 2px;
-  line-height: 1.3;
-}
-
-/* Choice labels should not inherit input styling */
-.wufoo label.choice {
-  font-family: 'Outfit', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  color: #444;
-  display: inline;
-  width: auto;
-  padding: 0;
-  background: none;
-  border: 0;
-  box-shadow: none;
-}
-
-/* Focus */
-.wufoo .focused {
-  background: #FFF7C0;
-}
-
-/* Buttons */
 .btTxt,
 form li.buttons input,
 .safari input.btTxt {
@@ -122,11 +14,178 @@ form li.buttons input,
   line-height: 1.2em;
   border: none;
 }
-.wufoo li.name span {
-  width: 22%;
+
+#logo a {
+  background-image: url('http://wufoo.com/images/themes/logos/shark.png');
+  min-height: 0;
+  height: 40px;
 }
 
-.wufoo li.name span:nth-child(3),
-.wufoo li.name span:nth-child(4) {
-  width: 30%;
+* html #logo a {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://wufoo.com/images/themes/logos/shark.png", sizingMethod="crop");
+}
+
+body {
+  margin: 0 !important;
+}
+
+#logo {
+  background-image: none;
+  background-color: transparent;
+}
+
+#container {
+  background: #ecefed !important;
+  width: 100% !important;
+  border: 0;
+}
+
+/* Hide default Wufoo title/instructions */
+.wufoo .info,
+.wufoo .info h2,
+.wufoo .instruct {
+  display: none;
+}
+
+/* Section copy */
+.wufoo .section h3 {
+  font-size: 110%;
+  font-family: inherit;
+  color: #000;
+}
+
+.wufoo .section div {
+  font-size: 85%;
+  font-family: inherit;
+  color: #444;
+}
+
+/* Main field labels */
+.wufoo label.desc,
+.wufoo legend.desc {
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: 'Zilla Slab', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* General text styling */
+.wufoo li div,
+.wufoo li div label,
+.wufoo li span label {
+  font-family: 'Outfit', sans-serif;
+  color: #444;
+}
+
+/* Base inputs */
+.wufoo input.text,
+.wufoo textarea.textarea,
+.wufoo select.select {
+  max-width: 100%;
+  padding: 15px;
+  height: auto;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.5em;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+/* Normal full-width fields only */
+.wufoo li:not(.complex):not(.name):not(.address):not(.phone) input.text,
+.wufoo li:not(.complex):not(.name):not(.address):not(.phone) textarea.textarea,
+.wufoo li:not(.complex):not(.name):not(.address):not(.phone) select.select {
+  display: block;
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+
+/* Restore compound field layout */
+.wufoo li.complex,
+.wufoo li.name,
+.wufoo li.address,
+.wufoo li.phone {
+  overflow: hidden;
+}
+
+.wufoo li.complex span,
+.wufoo li.name span,
+.wufoo li.address span,
+.wufoo li.phone span {
+  float: left;
+  display: block;
+  margin: 0 10px 10px 0;
+  vertical-align: top;
+}
+
+/* Name field widths */
+.wufoo li.name span:nth-of-type(1) { width: 12%; }
+.wufoo li.name span:nth-of-type(2) { width: 24%; }
+.wufoo li.name span:nth-of-type(3) { width: 30%; }
+.wufoo li.name span:nth-of-type(4) { width: 18%; }
+
+/* Phone field widths */
+.wufoo li.phone span { width: 30%; }
+
+/* Address field widths */
+.wufoo li.address span { width: 48%; }
+
+/* Compound field inputs/selects */
+.wufoo li.complex span input.text,
+.wufoo li.complex span select.select,
+.wufoo li.name span input.text,
+.wufoo li.name span select.select,
+.wufoo li.address span input.text,
+.wufoo li.address span select.select,
+.wufoo li.phone span input.text,
+.wufoo li.phone span select.select {
+  display: block;
+  width: 100% !important;
+  margin: 0 0 4px 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Sub labels under split fields */
+.wufoo li div label,
+.wufoo li span label {
+  display: block;
+  margin: 0;
+  padding: 0 2px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #666;
+  min-height: 16px;
+}
+
+/* Choice labels should not look like inputs */
+.wufoo label.choice {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #444;
+  display: inline;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+/* Focus */
+.wufoo .focused {
+  background: #FFF7C0;
 }
