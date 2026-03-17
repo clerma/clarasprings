@@ -102,26 +102,28 @@ body {
 }
 
 /* Normal full-width fields only */
-.wufoo li:not(.complex):not(.name):not(.address):not(.phone) input.text,
-.wufoo li:not(.complex):not(.name):not(.address):not(.phone) textarea.textarea,
-.wufoo li:not(.complex):not(.name):not(.address):not(.phone) select.select {
+.wufoo li:not(.complex):not(.name):not(.address):not(.phone):not(.date):not(.time) input.text,
+.wufoo li:not(.complex):not(.name):not(.address):not(.phone):not(.date):not(.time) textarea.textarea,
+.wufoo li:not(.complex):not(.name):not(.address):not(.phone):not(.date):not(.time) select.select {
   display: block;
   width: 100% !important;
   margin-bottom: 15px;
 }
 
-/* Restore compound field layout */
+/* Compound wrappers */
 .wufoo li.complex,
 .wufoo li.name,
 .wufoo li.address,
-.wufoo li.phone {
-  overflow: hidden;
+.wufoo li.phone,
+.wufoo li.date,
+.wufoo li.time {
+  overflow: visible;
 }
 
-.wufoo li.complex span,
+/* Name / address / other grouped fields */
 .wufoo li.name span,
 .wufoo li.address span,
-.wufoo li.phone span {
+.wufoo li.complex span {
   float: left;
   display: block;
   margin: 0 10px 10px 0;
@@ -134,21 +136,18 @@ body {
 .wufoo li.name span:nth-of-type(3) { width: 30%; }
 .wufoo li.name span:nth-of-type(4) { width: 18%; }
 
-/* Phone field widths */
-.wufoo li.phone span { width: 30%; }
-
 /* Address field widths */
-.wufoo li.address span { width: 48%; }
+.wufoo li.address span {
+  width: 48%;
+}
 
-/* Compound field inputs/selects */
-.wufoo li.complex span input.text,
-.wufoo li.complex span select.select,
+/* Inputs inside standard compound fields */
 .wufoo li.name span input.text,
 .wufoo li.name span select.select,
 .wufoo li.address span input.text,
 .wufoo li.address span select.select,
-.wufoo li.phone span input.text,
-.wufoo li.phone span select.select {
+.wufoo li.complex span input.text,
+.wufoo li.complex span select.select {
   display: block;
   width: 100% !important;
   margin: 0 0 4px 0;
@@ -156,11 +155,50 @@ body {
   box-sizing: border-box;
 }
 
+/* Phone / date / time fields need separators inline */
+.wufoo li.phone span,
+.wufoo li.date span,
+.wufoo li.time span {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: top;
+  margin: 0 4px 10px 0;
+  float: none;
+  white-space: nowrap;
+}
+
+/* Small inputs stay inline so separators remain visible */
+.wufoo li.phone span input.text,
+.wufoo li.date span input.text,
+.wufoo li.time span input.text,
+.wufoo li.phone span select.select,
+.wufoo li.date span select.select,
+.wufoo li.time span select.select {
+  display: inline-block;
+  width: auto !important;
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  max-width: none;
+}
+
+/* Optional width tuning for small segmented fields */
+.wufoo li.phone span input.text[size="3"],
+.wufoo li.date span input.text[size="2"],
+.wufoo li.time span input.text[size="2"] {
+  width: 4.25em !important;
+}
+
+.wufoo li.phone span input.text[size="4"] {
+  width: 5.25em !important;
+}
+
 /* Sub labels under split fields */
 .wufoo li div label,
 .wufoo li span label {
   display: block;
-  margin: 0;
+  margin: 4px 0 0 0;
   padding: 0 2px;
   font-family: 'Outfit', sans-serif;
   font-size: 12px;
