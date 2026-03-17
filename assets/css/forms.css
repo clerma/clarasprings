@@ -52,7 +52,8 @@
 .wufoo .section div{font-size:85%;font-family:inherit;color:#444444}
 .wufoo label.desc, .wufoo legend.desc{font-size:95%;font-family:inherit;color:#444444}
 .wufoo li div, .wufoo li div label, .wufoo li span label{font-family:inherit;color:#444444}
-.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{max-width: 100%;{
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{
+    max-width: 100%;
         margin-bottom: 15px;
         padding: 15px;
         height: auto;
