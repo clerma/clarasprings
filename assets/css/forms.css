@@ -1,0 +1,12 @@
+.btTxt submit{
+font-weight: 700;
+    font-family: Outfit, sans-serif;
+    background: #ff911b;
+    color: #fff;
+    padding: 15px 25px;
+    margin: 0;
+    position: relative;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
