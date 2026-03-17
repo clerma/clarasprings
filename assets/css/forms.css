@@ -21,7 +21,7 @@
 /* Backgrounds */
 /* html{background-image:none;background-color:#99cc00} */
 #logo{background-image:none;background-color:transparent}
-#container{background:transparent}
+#container{background:#ecefed !important}
 .wufoo input.text, .wufoo textarea.textarea{ margin-bottom: 15px;
     padding: 15px;
     height: auto;
