@@ -35,233 +35,243 @@ body {
   background-color: transparent;
 }
 
-/* ------------------------------
-   WUFOO FINAL LAYOUT OVERRIDES
------------------------------- */
+#container {
+  background: #ecefed !important;
+  width: 100% !important;
+  border: 0;
+}
 
-/* Main labels */
-form.wufoo label.desc,
-form.wufoo legend.desc {
-  display: block !important;
-  margin: 0 0 10px 0 !important;
-  font-family: 'Zilla Slab', serif !important;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  color: #444 !important;
+/* Hide default Wufoo title/instructions */
+.wufoo .info,
+.wufoo .info h2,
+.wufoo .instruct {
+  display: none;
+}
+
+/* Section copy */
+.wufoo .section h3 {
+  font-size: 110%;
+  font-family: inherit;
+  color: #000;
+}
+
+.wufoo .section div {
+  font-size: 85%;
+  font-family: inherit;
+  color: #444;
+}
+
+/* Main field labels */
+.wufoo label.desc,
+.wufoo legend.desc {
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: 'Zilla Slab', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* General text styling */
+.wufoo li div,
+.wufoo li div label,
+.wufoo li span label {
+  font-family: 'Outfit', sans-serif;
+  color: #444;
 }
 
 /* Base inputs */
-form.wufoo input.text,
-form.wufoo textarea.textarea,
-form.wufoo select.select {
-  max-width: 100% !important;
-  padding: 15px !important;
-  height: auto !important;
-  background: #fff !important;
-  box-shadow: none !important;
-  line-height: 1.5em !important;
-  font-family: 'Outfit', sans-serif !important;
-  font-size: 15px !important;
-  font-weight: 300 !important;
-  color: #333 !important;
-  background-image: none !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-sizing: border-box !important;
+.wufoo input.text,
+.wufoo textarea.textarea,
+.wufoo select.select {
+  max-width: 100%;
+  padding: 15px;
+  height: auto;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.5em;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
 }
 
-/* Standard single-field inputs only */
-form.wufoo li > div > input.text.medium,
-form.wufoo li > div > input.text.large,
-form.wufoo li > div > textarea.textarea,
-form.wufoo li > div > select.select {
-  display: block !important;
+/* Normal full-width fields only */
+.wufoo li:not(.complex) > div > input.text,
+.wufoo li:not(.complex) > div > textarea.textarea,
+.wufoo li:not(.complex) > div > select.select {
+  display: block;
   width: 100% !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 15px;
 }
 
-/* --------------------------------
-   NAME FIELD
---------------------------------- */
-form.wufoo li > span {
+/* Complex wrapper */
+.wufoo li.complex {
+  overflow: hidden;
+}
+
+/* Address field layout inside .complex */
+.wufoo li.complex > div > span.full {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px 0;
+  float: none;
+  clear: both;
+}
+
+.wufoo li.complex > div > span.left,
+.wufoo li.complex > div > span.right {
+  display: block;
+  float: left;
+  width: 48%;
+  margin: 0 2% 10px 0;
   vertical-align: top;
+  box-sizing: border-box;
 }
 
-form.wufoo li > span label {
-  display: block !important;
-  margin: 4px 0 0 0 !important;
-  padding: 0 2px !important;
-  font-family: 'Outfit', sans-serif !important;
-  font-size: 12px !important;
-  font-weight: 400 !important;
-  line-height: 1.25 !important;
-  color: #666 !important;
-  min-height: 16px !important;
+.wufoo li.complex > div > span.right {
+  margin-right: 0;
 }
 
-form.wufoo li > span input.text,
-form.wufoo li > span select.select {
-  margin: 0 !important;
-}
-
-/* Name row */
-form.wufoo li:not(.complex) > span input.text[size="2"],
-form.wufoo li:not(.complex) > span input.text[size="8"],
-form.wufoo li:not(.complex) > span input.text[size="14"],
-form.wufoo li:not(.complex) > span input.text[size="3"] {
-  display: block !important;
+.wufoo li.complex > div > span input.text,
+.wufoo li.complex > div > span select.select {
+  display: block;
   width: 100% !important;
+  margin: 0 0 4px 0;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-form.wufoo li:not(.complex) > span:has(input.text[size="2"]) {
-  display: inline-block !important;
-  width: 12% !important;
-  margin: 0 10px 10px 0 !important;
+/* Generic split-field spans for Name / Date / Time / Phone / Currency */
+.wufoo li:not(.complex) > span {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px 10px 0;
 }
 
-form.wufoo li:not(.complex) > span:has(input.text[size="8"]) {
-  display: inline-block !important;
-  width: 24% !important;
-  margin: 0 10px 10px 0 !important;
+/* Name field widths based on input size */
+.wufoo li:not(.complex) > span:has(input.text[size="2"]:not([maxlength])) {
+  width: 12%;
 }
 
-form.wufoo li:not(.complex) > span:has(input.text[size="14"]) {
-  display: inline-block !important;
-  width: 30% !important;
-  margin: 0 10px 10px 0 !important;
+.wufoo li:not(.complex) > span:has(input.text[size="8"]) {
+  width: 24%;
 }
 
-form.wufoo li:not(.complex) > span:has(input.text[size="3"]:not([maxlength])) {
-  display: inline-block !important;
-  width: 18% !important;
-  margin: 0 10px 10px 0 !important;
+.wufoo li:not(.complex) > span:has(input.text[size="14"]) {
+  width: 30%;
+}
+
+.wufoo li:not(.complex) > span:has(input.text[size="3"]:not([maxlength])) {
+  width: 18%;
+}
+
+/* Name field inputs should fill their span */
+.wufoo li:not(.complex) > span:has(input.text[size="2"]:not([maxlength])) input.text,
+.wufoo li:not(.complex) > span:has(input.text[size="8"]) input.text,
+.wufoo li:not(.complex) > span:has(input.text[size="14"]) input.text,
+.wufoo li:not(.complex) > span:has(input.text[size="3"]:not([maxlength])) input.text {
+  display: block;
+  width: 100% !important;
+  margin: 0 0 4px 0;
 }
 
 /* --------------------------------
-   PHONE / DATE / TIME
+   FINAL FIX FOR DATE / TIME / PHONE
 --------------------------------- */
-form.wufoo li > span:has(input.text[maxlength]),
-form.wufoo li > span:has(select.select) {
+
+/* segmented fields should stay inline so separators remain beside inputs */
+.wufoo li:not(.complex) > span:has(input.text[maxlength]),
+.wufoo li:not(.complex) > span:has(select.select),
+.wufoo li:not(.complex) > span:has(input.currency) {
   display: inline-block !important;
   vertical-align: top !important;
-  margin: 0 6px 10px 0 !important;
   white-space: nowrap !important;
+  margin: 0 6px 10px 0 !important;
+  width: auto !important;
 }
 
-form.wufoo li > span:has(input.text[maxlength]) input.text,
-form.wufoo li > span:has(select.select) select.select {
+/* keep small segmented inputs inline */
+.wufoo li:not(.complex) > span:has(input.text[maxlength]) input.text,
+.wufoo li:not(.complex) > span:has(select.select) select.select,
+.wufoo li:not(.complex) > span:has(input.currency) input.text {
   display: inline-block !important;
   width: auto !important;
   max-width: none !important;
   vertical-align: middle !important;
-}
-
-/* segmented widths */
-form.wufoo li > span input.text[size="2"][maxlength="2"] {
-  width: 4.25em !important;
-}
-
-form.wufoo li > span input.text[size="3"][maxlength="3"] {
-  width: 4.75em !important;
-}
-
-form.wufoo li > span input.text[size="4"][maxlength="4"] {
-  width: 5.75em !important;
-}
-
-/* AM/PM select */
-form.wufoo li > span select.select[style*="4em"] {
-  width: 4.5em !important;
-  min-width: 4.5em !important;
-}
-
-/* --------------------------------
-   ADDRESS FIELD
---------------------------------- */
-form.wufoo li.complex > div {
-  overflow: hidden !important;
-}
-
-form.wufoo li.complex > div > span.full {
-  display: block !important;
-  width: 100% !important;
-  float: none !important;
-  clear: both !important;
-  margin: 0 0 10px 0 !important;
-}
-
-form.wufoo li.complex > div > span.left,
-form.wufoo li.complex > div > span.right {
-  display: block !important;
-  float: left !important;
-  width: 48% !important;
-  margin: 0 2% 10px 0 !important;
-  box-sizing: border-box !important;
-}
-
-form.wufoo li.complex > div > span.right {
-  margin-right: 0 !important;
-}
-
-form.wufoo li.complex > div > span.left input.text,
-form.wufoo li.complex > div > span.right input.text,
-form.wufoo li.complex > div > span.left select.select,
-form.wufoo li.complex > div > span.right select.select,
-form.wufoo li.complex > div > span.full input.text,
-form.wufoo li.complex > div > span.full select.select {
-  display: block !important;
-  width: 100% !important;
   margin: 0 !important;
 }
 
-/* complex sublabels */
-form.wufoo li.complex > div > span label {
+/* labels under segmented fields */
+.wufoo li:not(.complex) > span:has(input.text[maxlength]) label,
+.wufoo li:not(.complex) > span:has(select.select) label,
+.wufoo li:not(.complex) > span:has(input.currency) label {
   display: block !important;
   margin: 4px 0 0 0 !important;
-  padding: 0 2px !important;
-  font-family: 'Outfit', sans-serif !important;
-  font-size: 12px !important;
-  font-weight: 400 !important;
   line-height: 1.25 !important;
-  color: #666 !important;
   min-height: 16px !important;
 }
 
-/* --------------------------------
-   CHOICE LABELS
---------------------------------- */
-form.wufoo label.choice {
-  font-family: 'Outfit', sans-serif !important;
-  font-size: 15px !important;
-  font-weight: 300 !important;
-  color: #444 !important;
-  display: inline !important;
-  width: auto !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  background: none !important;
-  border: 0 !important;
-  box-shadow: none !important;
+/* widths for segmented fields */
+.wufoo li:not(.complex) > span input.text[size="2"][maxlength="2"] {
+  width: 4.25em !important;
 }
 
-/* --------------------------------
-   BUTTON
---------------------------------- */
-.btTxt,
-form li.buttons input,
-.safari input.btTxt {
-  font-weight: 700 !important;
-  font-family: Outfit, sans-serif !important;
-  background: #ff911b !important;
-  color: #fff !important;
-  padding: 15px 25px !important;
-  margin: 0 !important;
-  position: relative !important;
-  font-size: 13px !important;
-  text-transform: uppercase !important;
-  letter-spacing: 1px !important;
-  line-height: 1.2em !important;
-  border: none !important;
+.wufoo li:not(.complex) > span input.text[size="3"][maxlength="3"] {
+  width: 4.5em !important;
+}
+
+.wufoo li:not(.complex) > span input.text[size="4"][maxlength="4"] {
+  width: 5.5em !important;
+}
+
+.wufoo li:not(.complex) > span input.currency[size="10"] {
+  width: 8.5em !important;
+}
+
+/* AM/PM select */
+.wufoo li:not(.complex) > span select.select[style*="4em"] {
+  width: 4.75em !important;
+  min-width: 4.75em !important;
+}
+
+/* Sub labels under split fields */
+.wufoo li div label,
+.wufoo li span label {
+  display: block;
+  margin: 4px 0 0 0;
+  padding: 0 2px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #666;
+  min-height: 16px;
+}
+
+/* Choice labels should not look like inputs */
+.wufoo label.choice {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #444;
+  display: inline;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+/* Focus */
+.wufoo .focused {
+  background: #FFF7C0;
 }
 input.checkbox, input.radio {
     display: inline;
