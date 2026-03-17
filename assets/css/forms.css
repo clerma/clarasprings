@@ -1,5 +1,5 @@
-.btTxt{
-font-weight: 700;
+.btTxt {
+    font-weight: 700;
     font-family: Outfit, sans-serif;
     background: #ff911b;
     color: #fff;
@@ -9,6 +9,7 @@ font-weight: 700;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 1.2em;
 }
 
 #logo a {background-image:url('http://wufoo.com/images/themes/logos/shark.png'); min-height:0; height:40px}
@@ -18,9 +19,9 @@ font-weight: 700;
 }
 
 /* Backgrounds */
-html{background-image:none;background-color:#99cc00}
-#logo{background-image:none;background-color:#669900}
-#container{background:#FFFFFF}
+/* html{background-image:none;background-color:#99cc00} */
+#logo{background-image:none;background-color:transparent}
+#container{background:transparent}
 .wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
 .wufoo .focused{background:#FFF7C0}
 .wufoo .instruct{background-color:#F5F5F5}
