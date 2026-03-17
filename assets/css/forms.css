@@ -22,17 +22,31 @@
 /* html{background-image:none;background-color:#99cc00} */
 #logo{background-image:none;background-color:transparent}
 #container{background:transparent}
-.wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
+.wufoo input.text, .wufoo textarea.textarea{ margin-bottom: 15px;
+    padding: 15px;
+    height: auto;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    line-height: 1.5em;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #333;
+    background-image: none;
+    border: none;}
 .wufoo .focused{background:#FFF7C0}
 .wufoo .instruct{background-color:#F5F5F5}
 
 /* Borders */
-#container{border:0 solid #cccccc}
-.wufoo .info{border-bottom:1px dotted #CCCCCC}
-.wufoo .instruct{border:1px solid #e6e6e6}
+#container{border:0px}
+.wufoo .info{display: none}
+.wufoo .instruct{display: none}
 
 /* Typography */
-.wufoo .info h2{font-size:160%;font-family:inherit;color:#000000}
+.wufoo .info h2{display: none}
 .wufoo .info div{font-size:95%;font-family:inherit;color:#444444}
 .wufoo .section h3{font-size:110%;font-family:inherit;background:#FFFFFF;color:#000000}
 .wufoo .section div{font-size:85%;font-family:inherit;color:#444444}
