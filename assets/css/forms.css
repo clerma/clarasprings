@@ -191,6 +191,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2em;
+    border: none;
 }
 
 #logo a {background-image:url('http://wufoo.com/images/themes/logos/shark.png'); min-height:0; height:40px}
