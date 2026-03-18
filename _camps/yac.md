@@ -172,7 +172,30 @@ nav_hide: false
 
     </div>
   </div>
-  <div id="wufoo-x176ncwv08qsrl2"> Fill out my <a href="https://clarasprings.wufoo.com/forms/x176ncwv08qsrl2">online form</a>. </div> <script type="text/javascript"> var x176ncwv08qsrl2; (function(d, t) { var s = d.createElement(t), options = { 'userName':'clarasprings', 'formHash':'x176ncwv08qsrl2', 'autoResize':true, 'height':'1348', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { x176ncwv08qsrl2 = new WufooForm(); x176ncwv08qsrl2.initialize(options); x176ncwv08qsrl2.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div id="wufoo-x176ncwv08qsrl2"> Fill out my <a href="https://clarasprings.wufoo.com/forms/x176ncwv08qsrl2">online form</a>. </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript"> var x176ncwv08qsrl2; (function(d, t) { var s = d.createElement(t), options = { 'userName':'clarasprings', 'formHash':'x176ncwv08qsrl2', 'autoResize':true, 'height':'1348', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { x176ncwv08qsrl2 = new WufooForm(); x176ncwv08qsrl2.initialize(options); x176ncwv08qsrl2.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
 </section>
 
 <section class="section-padding bg-lightgreen">
