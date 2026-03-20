@@ -163,7 +163,7 @@ nav_hide: false
                 {% endfor %}
               </ul>
               <div class="butn-1 mt-20">
-                <a href="/register/"><span>Register Now</span></a>
+                <a href="/register/" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span>Register Now</span></a>
               </div>
             </div>
           </div>
@@ -197,7 +197,25 @@ nav_hide: false
 </div>
   <script type="text/javascript"> var x176ncwv08qsrl2; (function(d, t) { var s = d.createElement(t), options = { 'userName':'clarasprings', 'formHash':'x176ncwv08qsrl2', 'autoResize':true, 'height':'1348', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { x176ncwv08qsrl2 = new WufooForm(); x176ncwv08qsrl2.initialize(options); x176ncwv08qsrl2.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
 </section>
+<!-- Button trigger modal -->
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Registration Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+     <div id="wufoo-x176ncwv08qsrl2"> Fill out my <a href="https://clarasprings.wufoo.com/forms/x176ncwv08qsrl2">online form</a>. </div> <script type="text/javascript"> var x176ncwv08qsrl2; (function(d, t) { var s = d.createElement(t), options = { 'userName':'clarasprings', 'formHash':'x176ncwv08qsrl2', 'autoResize':true, 'height':'1348', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { x176ncwv08qsrl2 = new WufooForm(); x176ncwv08qsrl2.initialize(options); x176ncwv08qsrl2.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <section class="section-padding bg-lightgreen">
   <div class="container">
     <div class="row">
