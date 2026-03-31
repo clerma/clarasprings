@@ -38,12 +38,14 @@ highlights:
 tickets:
   - name: Early Registration
     price: $120
+    wufoo_form_hash: "x176ncwv08qsrl2"
     features:
       - Register by 5/1/26
       - July 10–12, 2026 (Fri–Sun)
       - Includes worship + Bible studies + camp experience
   - name: Late Registration
     price: $130
+    wufoo_form_hash: "x176ncwv08qsrl2"
     features:
       - If not registered by 5/1/26
       - July 10–12, 2026 (Fri–Sun)
@@ -71,6 +73,27 @@ faqs:
       (links provided on the camp page).
 nav_hide: false
 wufoo_form_hash: "x176ncwv08qsrl2"
+wufoo_username: "clarasprings"
+camp_forms:
+  - label: "Individual Registration (Online)"
+    wufoo_form_hash: "x176ncwv08qsrl2"
+    button_label: "Register Online"
+  - label: "Church Group Registration (Online)"
+    wufoo_form_hash: ""
+    button_label: "Register as Group"
+    note: "Registering multiple campers? Use the church group form."
+  - label: "Individual Registration (Print & Mail)"
+    url: ""
+    button_label: "Download Form"
+    note: "Print, complete, and mail in with payment."
+  - label: "Church Group Registration (Print & Mail)"
+    url: ""
+    button_label: "Download Form"
+    note: "Print, complete, and mail in with payment."
+  - label: "Permission Form"
+    wufoo_form_hash: ""
+    button_label: "Open Permission Form"
+    note: "Required — must be turned in the day of camp by all campers."
 ---
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">

@@ -9,6 +9,8 @@
       </div>
 
       {% for ticket in page.tickets %}
+        {% assign ticket_hash = ticket.wufoo_form_hash | default: page.wufoo_form_hash %}
+        {% assign ticket_user = page.wufoo_username | default: 'clarasprings' %}
         <div class="col-md-6">
           <div class="pricing-card">
             <div class="desc text-center">
@@ -20,8 +22,18 @@
                 {% endfor %}
               </ul>
               <div class="butn-1 mt-20">
-                {% if page.wufoo_form_hash %}
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#registrationModal"><span>Register Now</span></a>
+                {% if ticket_hash %}
+                  <a href="#"
+                     data-bs-toggle="modal"
+                     data-bs-target="#registrationModal"
+                     data-wufoo-hash="{{ ticket_hash }}"
+                     data-wufoo-user="{{ ticket_user }}">
+                    <span>Register Now</span>
+                  </a>
+                {% elsif ticket.register_url %}
+                  <a href="{{ ticket.register_url }}" target="_blank" rel="noopener">
+                    <span>Register Now</span>
+                  </a>
                 {% else %}
                   <a href="/register/"><span>Register Now</span></a>
                 {% endif %}

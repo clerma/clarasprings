@@ -1,6 +1,4 @@
 {% if page.wufoo_form_hash %}
-{% assign _wufoo_hash = page.wufoo_form_hash %}
-{% assign _wufoo_user = page.wufoo_username | default: 'clarasprings' %}
 <div class="modal fade" id="registrationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
@@ -11,13 +9,11 @@
       <div class="modal-body p-0">
         <iframe
           id="wufoo-iframe"
-          data-src="https://{{ _wufoo_user }}.wufoo.com/embed/{{ _wufoo_hash }}/"
           title="Registration Form"
           frameborder="0"
           scrolling="yes"
           sandbox="allow-popups allow-forms allow-scripts allow-same-origin"
           style="width:100%;height:100%;border:none;display:block;">
-          <a href="https://{{ _wufoo_user }}.wufoo.com/forms/{{ _wufoo_hash }}">Fill out the online form.</a>
         </iframe>
       </div>
       <div class="modal-footer">
@@ -30,11 +26,18 @@
   (function () {
     var modal = document.getElementById('registrationModal');
     var iframe = document.getElementById('wufoo-iframe');
-    modal.addEventListener('show.bs.modal', function () {
-      if (!iframe.src && iframe.dataset.src) {
-        iframe.src = iframe.dataset.src;
-      }
+
+    // Use 'shown.bs.modal' so the modal is fully visible before the iframe loads
+    modal.addEventListener('shown.bs.modal', function (event) {
+      var btn = event.relatedTarget;
+      var hash = btn && btn.getAttribute('data-wufoo-hash');
+      var user = (btn && btn.getAttribute('data-wufoo-user')) || '{{ page.wufoo_username | default: "clarasprings" }}';
+      if (!hash) hash = '{{ page.wufoo_form_hash }}';
+      // Append timestamp to bypass any caching
+      iframe.src = 'https://' + user + '.wufoo.com/embed/' + hash + '/?t=' + Date.now();
     });
+
+    // Clear on close so reopening always gets a fresh load
     modal.addEventListener('hide.bs.modal', function () {
       iframe.src = '';
     });
