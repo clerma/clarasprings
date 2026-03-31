@@ -96,7 +96,7 @@ camp_forms:
   - label: "Individual Registration (Print & Mail)"
     url: ""
   - label: "Church Group Registration (Print & Mail)"
-    url: ""
+    url: "/assets/documents/Summer_2026_Group_Reservation.pdf"
   - label: "Permission Form"
     url: "/assets/documents/2026_PermissionForm.pdf"
     note: "Must be turned in the day of camp by all campers"
