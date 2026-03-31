@@ -7,7 +7,7 @@
         <div class="col-md-4">
           <div class="footer-column footer-about">
             <h3 class="footer-title">About {{ site.data.company.name }}</h3>
-            <p class="footer-about-text">
+            <p class="footer-about-text editable">
               {{ site.data.company.name }} is a Christ-centered camp and conference center in
               {{ site.data.company.address.city }}, {{ site.data.company.address.state }}.
               We host youth camps, church retreats, conferences, and special events
@@ -22,12 +22,9 @@
           <div class="footer-column footer-explore clearfix">
             <h3 class="footer-title">Explore</h3>
             <ul class="footer-explore-list list-unstyled">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/events/">Events</a></li>
-              <li><a href="/accommodations/">Accommodations</a></li>
-              <li><a href="/retreats/">Retreats</a></li>
-              <li><a href="/contact/">Contact</a></li>
+              {% for link in site.data.footer_links %}
+              <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+              {% endfor %}
             </ul>
           </div>
         </div>

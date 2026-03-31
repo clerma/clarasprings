@@ -10,6 +10,11 @@ pagename: Summer Staff Adoption
 permalink: /summer-staff-adoption/
 hero_background_image: /assets/img/slider/11.jpg
 cta_background_image: /assets/img/slider/5.jpg
+steps:
+  - "Choose to sponsor a Summer Staff member"
+  - "Provide financial support for the summer season"
+  - "Commit to praying for your adopted staff member"
+  - "Encourage them as they serve campers"
 ---
 <!-- Header Banner -->
 <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom"
@@ -67,10 +72,9 @@ cta_background_image: /assets/img/slider/5.jpg
         <div class="section-title editable">Simple & Meaningful</div>
 
         <ul class="list-unstyled mt-4">
-          <li><i class="ti-check"></i> Choose to sponsor a Summer Staff member</li>
-          <li><i class="ti-check"></i> Provide financial support for the summer season</li>
-          <li><i class="ti-check"></i> Commit to praying for your adopted staff member</li>
-          <li><i class="ti-check"></i> Encourage them as they serve campers</li>
+          {% for item in page.steps %}
+          <li><i class="ti-check"></i> {{ item }}</li>
+          {% endfor %}
         </ul>
 
       </div>

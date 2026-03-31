@@ -6,6 +6,8 @@ keywords: ""
 image: /assets/img/default-og-image.jpg
 pagename: contact
 permalink: /contact/
+hero_heading: "Contact Us"
+form_id: "0ykc22rr"
 hero_background_image: /assets/img/slider/3.jpg
 cta_background_image: /assets/img/slider/5.jpg
 ---
@@ -14,7 +16,7 @@ cta_background_image: /assets/img/slider/5.jpg
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-left caption mt-90">
-                    <h1>Contact Us</h1>
+                    <h1>{{ page.hero_heading }}</h1>
                 </div>
             </div>
         </div>
@@ -47,7 +49,7 @@ cta_background_image: /assets/img/slider/5.jpg
                 </div>
                 <div class="col-lg-6 col-md-12 mb-30">
                     <h3 class="editable">Get in touch</h3>
-                    <div data-paperform-id="0ykc22rr"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
+                    <div data-paperform-id="{{ page.form_id }}"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script>
                 </div>
             </div>
             <!-- Map Section -->

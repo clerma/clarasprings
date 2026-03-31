@@ -8,6 +8,11 @@ image: /assets/img/default-og-image.jpg
 pagename: donate
 permalink: /donate/
 hero_background_image: /assets/img/slider/11.jpg
+giving_options:
+  - "One-time gift"
+  - "Monthly recurring support"
+  - "Special event sponsorship"
+  - "Legacy and planned giving"
 ---
 
 <!-- Donate Page Banner -->
@@ -30,23 +35,22 @@ hero_background_image: /assets/img/slider/11.jpg
             <div class="col-lg-10">
 
                 <h2 class="text-center mb-4 editable">Why We Need Your Support</h2>
-                <p>
+                <p class="editable">
                     {{ site.data.company.name }} has served as a ministry and Christ-centered retreat destination for over 70 years,
                     welcoming campers, churches, families, and groups to grow spiritually in community.
-                    Through generous giving, we are able to maintain facilities, expand programming, and provide life-changing experiences. :contentReference[oaicite:3]{index=3}
+                    Through generous giving, we are able to maintain facilities, expand programming, and provide life-changing experiences.
                 </p>
 
-                <p>
+                <p class="editable">
                     Your gift — whether one-time or recurring — plays a vital role in sustaining our mission.
-                    Online giving is secure and easy, and your support directly impacts the Kingdom work happening here at Clara Springs. :contentReference[oaicite:4]{index=4}
+                    Online giving is secure and easy, and your support directly impacts the Kingdom work happening here at Clara Springs.
                 </p>
 
                 <h3 class="mt-5 mb-3 text-center editable">Ways to Give</h3>
                 <ul class="list-unstyled donation-benefits">
-                    <li><i class="ti-check"></i> One-time gift</li>
-                    <li><i class="ti-check"></i> Monthly recurring support</li>
-                    <li><i class="ti-check"></i> Special event sponsorship</li>
-                    <li><i class="ti-check"></i> Legacy and planned giving</li>
+                    {% for option in page.giving_options %}
+                    <li><i class="ti-check"></i> {{ option }}</li>
+                    {% endfor %}
                 </ul>
 
                 <!-- Call to Action / Form Placeholder -->

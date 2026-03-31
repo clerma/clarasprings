@@ -16,8 +16,9 @@ gallery:
     - src: /assets/img/slider/4.jpg
     - src: /assets/img/slider/6.jpg
     - src: /assets/img/slider/7.jpg
-pagename: 
+pagename: "Conference & Retreats"
 permalink: /conference-retreats
+form_id: "ep5vvlho"
 hero_background_image: /assets/img/slider/11.jpg
 cta_background_image: /assets/img/slider/5.jpg
 ---
@@ -40,7 +41,7 @@ cta_background_image: /assets/img/slider/5.jpg
            <div class="section-subtitle">{{ page.gallery.subtitle }}</div>
            <div class="section-title">{{ page.gallery.title }}</div>
          </div>
-         {% for image in page.gallery.images.src %}
+         {% for image in page.gallery.images %}
            <div class="col-md-4 gallery-item">
              <a href="{{ image.src | relative_url }}" class="img-zoom">
                <div class="gallery-box">
@@ -77,7 +78,7 @@ cta_background_image: /assets/img/slider/5.jpg
     <span class="ti-headphone-alt"></span>
   </div>
   <div class="text">
-    <p class="color-1">Call Us to Start Planning</p>
+    <p class="color-1 editable">Call Us to Start Planning</p>
     <a class="color-1" href="tel:{{ site.data.company.phone | replace: '-', '' }}">
       {{ site.data.company.phone }}
     </a>
@@ -88,7 +89,7 @@ cta_background_image: /assets/img/slider/5.jpg
                     <div class="col-lg-5 offset-lg-2 col-md-12">
                         <div class="booking-box">
                             <div class="head-box text-center">
-                                <h4>Camping Booking Form</h4>
+                                <h4 class="editable">Camping Booking Form</h4>
                             </div>
                             <div class="booking-inner clearfix">
                               {% include sub-page-form.html %}
