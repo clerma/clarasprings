@@ -1,0 +1,91 @@
+{% if page.tickets %}
+<!-- Pricing Section -->
+<section class="section-padding bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-30">
+        <div class="section-subtitle">Registration</div>
+        <div class="section-title">Camp Pricing</div>
+      </div>
+
+      {% for ticket in page.tickets %}
+        {% assign ticket_hash = ticket.wufoo_form_hash | default: page.wufoo_form_hash %}
+        {% assign ticket_user = page.wufoo_username | default: 'clarasprings' %}
+        <div class="col-md-6 mb-30">
+          <div class="pricing-card h-100">
+            <div class="desc text-center p-3">
+              <div class="name">{{ ticket.name }}</div>
+              <div class="amount">{{ ticket.price }}</div>
+              <ul class="list-unstyled list col-md-6">
+                {% for feature in ticket.features %}
+                  <li><i class="ti-check"></i> {{ feature }}</li>
+                {% endfor %}
+              </ul>
+              <div class="butn-1 mt-20">
+                {% if ticket_hash %}
+                  <a href="#"
+                     data-bs-toggle="modal"
+                     data-bs-target="#registrationModal"
+                     data-wufoo-hash="{{ ticket_hash }}"
+                     data-wufoo-user="{{ ticket_user }}">
+                    <span>Register Now</span>
+                  </a>
+                {% elsif ticket.register_url %}
+                  <a href="{{ ticket.register_url }}" target="_blank" rel="noopener">
+                    <span>Register Now</span>
+                  </a>
+                {% else %}
+                  <a href="/register/"><span>Register Now</span></a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+
+    {% if page.camp_forms %}
+      {% assign visible_forms = '' | split: '' %}
+      {% for form in page.camp_forms %}
+        {% if form.url and form.url != '' %}
+          {% assign visible_forms = visible_forms | push: form %}
+        {% elsif form.wufoo_form_hash and form.wufoo_form_hash != '' %}
+          {% assign visible_forms = visible_forms | push: form %}
+        {% endif %}
+      {% endfor %}
+
+      {% if visible_forms.size > 0 %}
+      <div class="row">
+        <div class="col-12">
+          <hr>
+          <h6 class="mb-10">Forms &amp; Documents</h6>
+          <ul class="list-unstyled d-flex flex-wrap mb-0" style="gap: 6px 24px;">
+            {% for form in visible_forms %}
+              {% assign form_user = page.wufoo_username | default: 'clarasprings' %}
+              <li>
+                {% if form.wufoo_form_hash and form.wufoo_form_hash != '' %}
+                  <a href="#"
+                     data-bs-toggle="modal"
+                     data-bs-target="#registrationModal"
+                     data-wufoo-hash="{{ form.wufoo_form_hash }}"
+                     data-wufoo-user="{{ form_user }}">
+                    <i class="ti-pencil-alt"></i> {{ form.label }}
+                  </a>
+                {% else %}
+                  <a href="{{ form.url }}" target="_blank" rel="noopener">
+                    <i class="ti-file"></i> {{ form.label }}
+                  </a>
+                {% endif %}
+                {% if form.note %}<span class="text-muted small"> — {{ form.note }}</span>{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endif %}
+    {% endif %}
+
+  </div>
+</section>
+{% endif %}

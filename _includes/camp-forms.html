@@ -1,0 +1,41 @@
+{% if page.camp_forms %}
+<!-- Additional Forms Section -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-30">
+        <div class="section-subtitle">Forms &amp; Documents</div>
+        <div class="section-title">Registration &amp; Required Forms</div>
+      </div>
+    </div>
+    <div class="row">
+      {% for form in page.camp_forms %}
+        <div class="col-md-6 mb-30">
+          <div class="camp-form-card p-30 bg-light">
+            <h6>{{ form.label }}</h6>
+            {% if form.note %}
+              <p class="small mb-20">{{ form.note }}</p>
+            {% endif %}
+            <div class="butn-1">
+              {% if form.wufoo_form_hash %}
+                {% assign form_user = page.wufoo_username | default: 'clarasprings' %}
+                <a href="#"
+                   data-bs-toggle="modal"
+                   data-bs-target="#registrationModal"
+                   data-wufoo-hash="{{ form.wufoo_form_hash }}"
+                   data-wufoo-user="{{ form_user }}">
+                  <span>{{ form.button_label | default: 'Open Form' }}</span>
+                </a>
+              {% elsif form.url %}
+                <a href="{{ form.url }}" target="_blank" rel="noopener">
+                  <span>{{ form.button_label | default: 'Open Form' }}</span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

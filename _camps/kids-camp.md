@@ -147,37 +147,7 @@ nav_hide: false
   </div>
 </section>
 
-<!-- Pricing Section -->
-<section class="section-padding bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 mb-30">
-        <div class="section-subtitle">Registration</div>
-        <div class="section-title">Camp Pricing</div>
-      </div>
-
-      {% for ticket in page.tickets %}
-        <div class="col-md-6">
-          <div class="pricing-card">
-            <div class="desc text-center">
-              <div class="name">{{ ticket.name }}</div>
-              <div class="amount">{{ ticket.price }}</div>
-              <ul class="list-unstyled list col-md-6">
-                {% for feature in ticket.features %}
-                  <li><i class="ti-check"></i> {{ feature }}</li>
-                {% endfor %}
-              </ul>
-              <div class="butn-1 mt-20">
-                <a href="/register/"><span>Register Now</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-
-    </div>
-  </div>
-</section>
+{% include camp-pricing.html %}
 
 <section class="section-padding bg-lightgreen">
   <div class="container">
