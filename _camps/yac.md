@@ -69,8 +69,23 @@ faqs:
     answer: Yes. A permission form must be turned in the day of camp by all campers.
   - question: What should I bring?
     answer: >-
-      “Things to Know” and “What to Bring” are available as additional info
-      (links provided on the camp page).
+      Bible, pen/pencil, journal · Tennis shoes and sandals/crocs (no flip-flops) ·
+      Modest swimsuit — no 2-pieces; towel and sunscreen (shoes required to/from pool) ·
+      Clothes for the duration of camp; shorts must be mid-thigh for both boys and girls;
+      no spaghetti-strap or strapless tops · Modest sleepwear ·
+      Sheets/blanket/sleeping bag and pillow for a twin bed · Towels and washcloths ·
+      Toiletries — shampoo, soap, deodorant, toothbrush and toothpaste ·
+      Insect repellant · Umbrella or raincoat · Flashlight ·
+      Spending money for the gift shop · Offering money for missions ·
+      Prescription medications labeled for the camp nurse.
+  - question: What should I NOT bring?
+    answer: >-
+      Cell phones, tablets, laptops, iPods, or other electronic devices ·
+      Non-prescription medications ·
+      Fireworks, tobacco products, vaping products, firearms, knives, or pets ·
+      2-piece swimwear, short shorts, halter tops, or spaghetti-strap/strapless tops;
+      no clothing advertising tobacco, alcohol, or vulgarity ·
+      Skateboards or water guns.
 nav_hide: false
 wufoo_form_hash: "x176ncwv08qsrl2"
 wufoo_username: "clarasprings"
@@ -83,10 +98,8 @@ camp_forms:
   - label: "Church Group Registration (Print & Mail)"
     url: ""
   - label: "Permission Form"
-    url: "/assets/img/documents/2026_PermissionForm.pdf"
+    url: "/assets/documents/2026_PermissionForm.pdf"
     note: "Must be turned in the day of camp by all campers"
-  - label: "What to Bring"
-    url: "/assets/img/documents/What_to_bring_2022.pdf"
 ---
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
