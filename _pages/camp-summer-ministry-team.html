@@ -9,6 +9,12 @@ pagename: Summer Camp Ministry Team
 permalink: /camp-summer-ministry-team/
 hero_background_image: /assets/img/slider/11.jpg
 cta_background_image: /assets/img/slider/5.jpg
+experience_items:
+  - "Intentional discipleship and leadership development"
+  - "Deep friendships and lifelong connections"
+  - "Real ministry opportunities with students"
+  - "Personal spiritual growth"
+  - "Serving alongside experienced camp leadership"
 ---
 <!-- Header Banner -->
 <div class="banner-header section-padding valign bg-img bg-fixed bg-position-bottom"
@@ -65,11 +71,9 @@ cta_background_image: /assets/img/slider/5.jpg
         <div class="section-title editable">More Than a Summer</div>
 
         <ul class="list-unstyled mt-4">
-          <li><i class="ti-check"></i> Intentional discipleship and leadership development</li>
-          <li><i class="ti-check"></i> Deep friendships and lifelong connections</li>
-          <li><i class="ti-check"></i> Real ministry opportunities with students</li>
-          <li><i class="ti-check"></i> Personal spiritual growth</li>
-          <li><i class="ti-check"></i> Serving alongside experienced camp leadership</li>
+          {% for item in page.experience_items %}
+          <li><i class="ti-check"></i> {{ item }}</li>
+          {% endfor %}
         </ul>
 
       </div>

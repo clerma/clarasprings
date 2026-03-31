@@ -18,6 +18,7 @@ gallery:
     - src: /assets/img/slider/7.jpg
 pagename: Dorms
 permalink: /camp-grounds/dorms/
+form_id: "ep5vvlho"
 hero_background_image: /assets/img/slider/11.jpg
 cta_background_image: /assets/img/slider/5.jpg
 ---
@@ -92,7 +93,7 @@ cta_background_image: /assets/img/slider/5.jpg
     <span class="ti-headphone-alt"></span>
   </div>
   <div class="text">
-    <p class="color-1">Call Us to Start Planning</p>
+    <p class="color-1 editable">Call Us to Start Planning</p>
     <a class="color-1" href="tel:{{ site.data.company.phone | replace: '-', '' }}">
       {{ site.data.company.phone }}
     </a>
@@ -103,7 +104,7 @@ cta_background_image: /assets/img/slider/5.jpg
                     <div class="col-lg-5 offset-lg-2 col-md-12">
                         <div class="booking-box">
                             <div class="head-box text-center">
-                                <h4>Camping Booking Form</h4>
+                                <h4 class="editable">Camping Booking Form</h4>
                             </div>
                             <div class="booking-inner clearfix">
                               {% include sub-page-form.html %}

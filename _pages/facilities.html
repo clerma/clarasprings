@@ -6,8 +6,29 @@ keywords:
 image: /assets/img/default-og-image.jpg
 pagename: activities
 permalink: /camp-grounds/facilities/
+hero_heading: "Our Activities"
+form_id: "ep5vvlho"
 hero_background_image: /assets/img/slider/12.jpg
 cta_background_image: /assets/img/slider/5.jpg
+facilities:
+  - icon: flaticon-014-tent-4
+    title: Dining Hall
+    description: Our Dining Hall serves campers and conference guests with home-style meals in a welcoming setting.
+  - icon: flaticon-045-bicycle
+    title: Worship Center
+    description: A dedicated large-group space for worship, teaching, and special events.
+  - icon: flaticon-054-hiking-2
+    title: Dorms
+    description: Six dorms that each sleep 24 campers, with centrally located restrooms and showers.
+  - icon: flaticon-015-sports
+    title: Eagle Lodge
+    description: A comfortable lodge space ideal for smaller retreats and group gatherings.
+  - icon: flaticon-053-sea-waves
+    title: Cabins & The Buffalo Conference Room
+    description: Private cabin accommodations alongside a versatile conference room for breakout sessions and meetings.
+  - icon: flaticon-042-guitar
+    title: Recreation
+    description: Outdoor recreation areas including archery, fishing, swimming, and team activities.
 ---
 
 
@@ -16,7 +37,7 @@ cta_background_image: /assets/img/slider/5.jpg
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center caption mt-90">
-                    <h1>Our Activities</h1>
+                    <h1>{{ page.hero_heading }}</h1>
                 </div>
             </div>
         </div>
@@ -25,48 +46,16 @@ cta_background_image: /assets/img/slider/5.jpg
     <section class="facilties section-padding">
         <div class="container">
             <div class="row">
+                {% for facility in page.facilities %}
                 <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-014-tent-4"></span>
-                        <h5>Dining Hall</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-014-tent-4"></span> </div>
+                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+                        <span class="{{ facility.icon }}"></span>
+                        <h5>{{ facility.title }}</h5>
+                        <p>{{ facility.description }}</p>
+                        <div class="facility-shape"><span class="{{ facility.icon }}"></span></div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-045-bicycle"></span>
-                        <h5>Worship Center</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-045-bicycle"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-054-hiking-2"></span>
-                        <h5>Dorms</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-054-hiking-2"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-015-sports"></span>
-                        <h5>Eagle Lodge</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-015-sports"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-053-sea-waves"></span>
-                        <h5>Cabins & The Buffalo Conference Room</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-053-sea-waves"></span> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-facility animate-box fadeInUp animated" data-animate-effect="fadeInUp"> <span class="flaticon-042-guitar"></span>
-                        <h5>Recreation</h5>
-                        <p>Lorem ipsum varius natosuen miss manis sarturien monte nasce in the fermens.</p>
-                        <div class="facility-shape"> <span class="flaticon-042-guitar"></span> </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -99,7 +88,7 @@ cta_background_image: /assets/img/slider/5.jpg
     <span class="ti-headphone-alt"></span>
   </div>
   <div class="text">
-    <p class="color-1">Call Us to Start Planning</p>
+    <p class="color-1 editable">Call Us to Start Planning</p>
     <a class="color-1" href="tel:{{ site.data.company.phone | replace: '-', '' }}">
       {{ site.data.company.phone }}
     </a>
@@ -110,7 +99,7 @@ cta_background_image: /assets/img/slider/5.jpg
                     <div class="col-lg-5 offset-lg-2 col-md-12">
                         <div class="booking-box">
                             <div class="head-box text-center">
-                                <h4>Camping Booking Form</h4>
+                                <h4 class="editable">Camping Booking Form</h4>
                             </div>
                             <div class="booking-inner clearfix">
                               {% include sub-page-form.html %}
