@@ -70,6 +70,7 @@ faqs:
       “Things to Know” and “What to Bring” are available as additional info
       (links provided on the camp page).
 nav_hide: false
+wufoo_form_hash: "x176ncwv08qsrl2"
 ---
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
@@ -142,58 +143,7 @@ nav_hide: false
   </div>
 </section>
 
-<!-- Pricing Section -->
-<section class="section-padding bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 mb-30">
-        <div class="section-subtitle">Registration</div>
-        <div class="section-title">Camp Pricing</div>
-      </div>
-      {% for ticket in page.tickets %}
-        <div class="col-md-6">
-          <div class="pricing-card">
-            <div class="desc text-center">
-              <div class="name">{{ ticket.name }}</div>
-              <div class="amount">{{ ticket.price }}</div>
-              <ul class="list-unstyled list col-md-6">
-                {% for feature in ticket.features %}
-                  <li><i class="ti-check"></i> {{ feature }}</li>
-                {% endfor %}
-              </ul>
-              <div class="butn-1 mt-20">
-                <a href="/register/" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span>Register Now</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-  <!-- Button trigger modal -->
-
-
-
-</section>
-<!-- Button trigger modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Registration Form</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body ">
-      <div id="wufoo-x176ncwv08qsrl2"> Fill out my <a href="https://clarasprings.wufoo.com/forms/x176ncwv08qsrl2">online form</a>. </div> <script type="text/javascript"> var x176ncwv08qsrl2; (function(d, t) { var s = d.createElement(t), options = { 'userName':'clarasprings', 'formHash':'x176ncwv08qsrl2', 'autoResize':true, 'height':'1348', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { x176ncwv08qsrl2 = new WufooForm(); x176ncwv08qsrl2.initialize(options); x176ncwv08qsrl2.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+{% include camp-pricing.html %}
 <section class="section-padding bg-lightgreen">
   <div class="container">
     <div class="row">

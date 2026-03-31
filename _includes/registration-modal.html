@@ -1,0 +1,43 @@
+{% if page.wufoo_form_hash %}
+{% assign _wufoo_hash = page.wufoo_form_hash %}
+{% assign _wufoo_user = page.wufoo_username | default: 'clarasprings' %}
+<div class="modal fade" id="registrationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="registrationModalLabel">Registration Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="wufoo-{{ _wufoo_hash }}">
+          Fill out my <a href="https://{{ _wufoo_user }}.wufoo.com/forms/{{ _wufoo_hash }}">online form</a>.
+        </div>
+        <script type="text/javascript">
+          var {{ _wufoo_hash }};
+          (function(d, t) {
+            var s = d.createElement(t), options = {
+              'userName': '{{ _wufoo_user }}',
+              'formHash': '{{ _wufoo_hash }}',
+              'autoResize': true,
+              'height': '1348',
+              'async': true,
+              'host': 'wufoo.com',
+              'header': 'show',
+              'ssl': true
+            };
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+              try { {{ _wufoo_hash }} = new WufooForm(); {{ _wufoo_hash }}.initialize(options); {{ _wufoo_hash }}.display(); } catch (e) {}
+            };
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+          })(document, 'script');
+        </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
