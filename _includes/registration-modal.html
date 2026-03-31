@@ -8,31 +8,17 @@
         <h1 class="modal-title fs-5" id="registrationModalLabel">Registration Form</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div id="wufoo-{{ _wufoo_hash }}">
-          Fill out my <a href="https://{{ _wufoo_user }}.wufoo.com/forms/{{ _wufoo_hash }}">online form</a>.
-        </div>
-        <script type="text/javascript">
-          var {{ _wufoo_hash }};
-          (function(d, t) {
-            var s = d.createElement(t), options = {
-              'userName': '{{ _wufoo_user }}',
-              'formHash': '{{ _wufoo_hash }}',
-              'autoResize': true,
-              'height': '1348',
-              'async': true,
-              'host': 'wufoo.com',
-              'header': 'show',
-              'ssl': true
-            };
-            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js';
-            s.onload = s.onreadystatechange = function() {
-              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-              try { {{ _wufoo_hash }} = new WufooForm(); {{ _wufoo_hash }}.initialize(options); {{ _wufoo_hash }}.display(); } catch (e) {}
-            };
-            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-          })(document, 'script');
-        </script>
+      <div class="modal-body p-0">
+        <iframe
+          id="wufoo-iframe"
+          data-src="https://{{ _wufoo_user }}.wufoo.com/embed/{{ _wufoo_hash }}/"
+          title="Registration Form"
+          frameborder="0"
+          scrolling="yes"
+          sandbox="allow-popups allow-forms allow-scripts allow-same-origin"
+          style="width:100%;height:100%;border:none;display:block;">
+          <a href="https://{{ _wufoo_user }}.wufoo.com/forms/{{ _wufoo_hash }}">Fill out the online form.</a>
+        </iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -40,4 +26,18 @@
     </div>
   </div>
 </div>
+<script>
+  (function () {
+    var modal = document.getElementById('registrationModal');
+    var iframe = document.getElementById('wufoo-iframe');
+    modal.addEventListener('show.bs.modal', function () {
+      if (!iframe.src && iframe.dataset.src) {
+        iframe.src = iframe.dataset.src;
+      }
+    });
+    modal.addEventListener('hide.bs.modal', function () {
+      iframe.src = '';
+    });
+  })();
+</script>
 {% endif %}
