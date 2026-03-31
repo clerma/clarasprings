@@ -44,12 +44,14 @@ highlights:
 tickets:
   - name: Early Registration
     price: $160
+    wufoo_form_hash: "p1u0k2aq1viczqb"
     features:
       - Register by 5/1/26
       - July 23–25, 2026 (Thu–Sat)
       - Includes worship, devotions, and all camp activities
   - name: Late Registration
     price: $170
+    wufoo_form_hash: "p1u0k2aq1viczqb"
     features:
       - If not registered by 5/1/26
       - July 23–25, 2026 (Thu–Sat)
@@ -78,6 +80,19 @@ faqs:
     answer: >-
       Campers can participate in archery, fishing, swimming, shooting range,
       sling shots, canoes, and various games and activities.
+wufoo_form_hash: "p1u0k2aq1viczqb"
+wufoo_username: "clarasprings"
+camp_forms:
+  - label: "Church Group Registration"
+    wufoo_form_hash: "x13orro1sl4v3u"
+    note: "Registering multiple campers from the same church?"
+  - label: "Individual Registration (Print & Mail)"
+    url: ""
+  - label: "Church Group Registration (Print & Mail)"
+    url: "/assets/documents/Summer_2026_Group_Reservation.pdf"
+  - label: "Permission Form"
+    url: "/assets/documents/2026_PermissionForm.pdf"
+    note: "Must be turned in the day of camp by all campers"
 nav_hide: false
 ---
 <section class="pages section-padding" data-scroll-index="1">
@@ -98,15 +113,12 @@ nav_hide: false
 
           <div class="col-md-6">
             <h6>{{ page.camp_details.title }}</h6>
-            <ul class="list-unstyled page-list mb-30">
+            <ul class="list-unstyled mb-30">
               {% for item in page.camp_details.items %}
-                <li>
-                  <div class="page-list-icon">
-                    <span class="ti-check small-size"></span>
-                  </div>
-                  <div class="page-list-text">
-                    <p>{{ item }}</p>
-                  </div>
+                {% assign label = item | split: ':' | first %}
+                {% assign value = item | remove_first: label | remove_first: ':' | lstrip %}
+                <li class="mb-1">
+                  <strong>{{ label }}:</strong> {{ value }}
                 </li>
               {% endfor %}
             </ul>

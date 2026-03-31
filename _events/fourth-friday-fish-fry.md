@@ -6,61 +6,68 @@ slider:
   overlay: 3
   images:
     - image: /assets/img/site-images/b84f9f0a-07f9-4c13-8c8a-8f58c7bb2b8d@2x.png
-description: >-
-  Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
-  This one-night introductory camp is designed to give young campers a fun and
-  safe first camp experience.Pre-Camp offers a full schedule of age-appropriate
-  activities, worship, and time with trained camp staff. It is a great way for
-  first-time campers to get comfortable with Clara Springs before attending
-  longer summer camps.
-checkin:
-  title: Check-in
+description:
+  - Come enjoy a great time of fellowship at our Fourth Friday Fish Fry.
+  - Clara Springs hosts this event every month except July, November, and December. During this time you can meet fellow believers in Christ from all over Louisiana, tour the camp grounds, and even visit the Gift Shop.
+camp_details:
+  title: Event Details
   items:
-    - Check-in begins at 5:00 PM on July 3, 2026
-    - Early check-in is not available for Pre-Camp
-    - Parents must check in campers in person
-checkout:
-  title: Check-out
+    - 'Time: Serving begins at 5:00 PM'
+    - 'Cost (Adults): $15'
+    - 'Cost (Kids 10–17): $10'
+    - 'Cost (Kids 9 & under): FREE'
+    - 'Payment: Personal checks, cash, and most major credit cards (credit card fee applies)'
+what_to_expect:
+  title: What to Expect
   items:
-    - Check-out is at 1:00 PM on July 4, 2026
-    - Parents must present ID to check out a camper
-policies:
-  - title: General Policy
-    text: >-
-      Campers and parents will receive complete instructions by email before
-      arrival.
-amenities:
-  - icon: flaticon-007-tent-1
-    text: Age-Appropriate Activities
-  - icon: flaticon-005-firewood
-    text: Worship & Small Group Time
-  - icon: flaticon-030-camping-gas
-    text: Camp Staff Leadership
-  - icon: flaticon-031-pot
-    text: Meals Included
-  - icon: flaticon-010-bedding
-    text: Indoor Lodging Provided
-tickets:
-  - name: Pre-Camp Registration
-    price: 60
-    features:
-      - 'Early Registration Rate: $60 (before May 1)'
-      - 'Regular Rate: $70 (after May 1)'
-      - Includes all meals and activities
-      - One-night camp experience
+    - A delicious fish fry meal
+    - Fellowship with believers from across Louisiana
+    - Tour of the camp grounds
+    - Visit to the Gift Shop
+highlights:
+  - icon: ti-heart
+    text: Monthly fellowship event open to everyone
+  - icon: ti-user
+    text: Connect with believers from all over Louisiana
+  - icon: ti-home
+    text: Tour Clara Springs camp grounds
+  - icon: ti-gift
+    text: Visit the camp Gift Shop
+  - icon: ti-star
+    text: Family-friendly — kids 9 and under eat FREE
+schedule:
+  - month: January
+    host: Fairview Baptist
+    note: Cancelled due to weather
+  - month: February
+    host: Westside Baptist
+  - month: March
+    host: FBC Robeline
+  - month: April
+    host: Grand Cane Baptist
+  - month: May
+    host: Martin Baptist
+  - month: June
+    host: FBC Coushatta
+  - month: July
+    note: NO Fish Fry in July
+  - month: August
+    host: FBC Mansfield
+  - month: September
+    host: FBC Zwolle
+  - month: October
+    host: Salem Baptist
 faqs:
-  - question: What ages can attend Pre-Camp?
-    answer: >-
-      Pre-Camp is designed as an introductory camp for younger children who are
-      not yet ready for week-long summer camps.
-  - question: What should my camper bring?
-    answer: A packing list will be emailed to parents prior to camp.
-  - question: Is financial assistance available?
-    answer: Contact the Clara Springs office to inquire about available assistance.
-  - question: Can parents stay on campus during Pre-Camp?
-    answer: >-
-      Pre-Camp is a drop-off program; parents are not required to stay
-      overnight.
+  - question: How much does the Fish Fry cost?
+    answer: Adults $15, Kids 10–17 $10, Kids 9 and under are FREE.
+  - question: What forms of payment are accepted?
+    answer: Personal checks, cash, and most major credit cards (credit card fee applies).
+  - question: What time does it start?
+    answer: We start serving at 5:00 PM.
+  - question: How often does the Fish Fry happen?
+    answer: Every month except July, November, and December.
+  - question: Who hosts the Fish Fry each month?
+    answer: Each month is hosted by a different local church. See the 2026 schedule for the full list.
 nav_hide: false
 ---
 <section class="pages section-padding" data-scroll-index="1">
@@ -72,86 +79,102 @@ nav_hide: false
       </div>
 
       <div class="col-lg-7 col-md-12">
+
         {% for paragraph in page.description %}
           <p class="mb-30">{{ paragraph }}</p>
         {% endfor %}
 
         <div class="row">
+
           <div class="col-md-6">
-            <h6>{{ page.checkin.title }}</h6>
-            <ul class="list-unstyled page-list mb-30">
-              {% for item in page.checkin.items %}
-                <li>
-                  <div class="page-list-icon"><span class="ti-check small-size"></span></div>
-                  <div class="page-list-text"><p>{{ item }}</p></div>
+            <h6>{{ page.camp_details.title }}</h6>
+            <ul class="list-unstyled mb-30">
+              {% for item in page.camp_details.items %}
+                {% assign label = item | split: ':' | first %}
+                {% assign value = item | remove_first: label | remove_first: ':' | lstrip %}
+                <li class="mb-1">
+                  <strong>{{ label }}:</strong> {{ value }}
                 </li>
               {% endfor %}
             </ul>
           </div>
 
           <div class="col-md-6">
-            <h6>{{ page.checkout.title }}</h6>
+            <h6>{{ page.what_to_expect.title }}</h6>
             <ul class="list-unstyled page-list mb-30">
-              {% for item in page.checkout.items %}
+              {% for item in page.what_to_expect.items %}
                 <li>
-                  <div class="page-list-icon"><span class="ti-check small-size"></span></div>
-                  <div class="page-list-text"><p>{{ item }}</p></div>
+                  <div class="page-list-icon">
+                    <span class="ti-check small-size"></span>
+                  </div>
+                  <div class="page-list-text">
+                    <p>{{ item }}</p>
+                  </div>
                 </li>
               {% endfor %}
             </ul>
           </div>
 
-          {% for policy in page.policies %}
-            <div class="col-md-12">
-              <h6>{{ policy.title }}</h6>
-              <p>{{ policy.text }}</p>
-            </div>
+        </div>
+
+        {% if page.schedule %}
+        <h6>2026 Dates &amp; Hosts</h6>
+        <ul class="list-unstyled mb-30">
+          {% for s in page.schedule %}
+            <li class="mb-1">
+              <strong>{{ s.month }}:</strong>
+              {% if s.host %}{{ s.host }}{% endif %}
+              {% if s.note %}<em>{{ s.note }}</em>{% endif %}
+            </li>
           {% endfor %}
-        </div>
+        </ul>
+        {% endif %}
+
       </div>
+
       <div class="col-lg-4 offset-lg-1 col-md-12">
-              <h6>Amenities</h6>
-              <ul class="list-unstyled page-list mb-30">
-                {% for amenity in page.amenities %}
-                  <li>
-                    <div class="page-list-icon">
-                      <span class="{{ amenity.icon }}"></span>
-                    </div>
-                    <div class="page-list-text">
-                      <p>{{ amenity.text }}</p>
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
+        <h6>Event Highlights</h6>
+        <ul class="list-unstyled page-list mb-30">
+          {% for highlight in page.highlights %}
+            <li>
+              <div class="page-list-icon">
+                <span class="{{ highlight.icon }}"></span>
+              </div>
+              <div class="page-list-text">
+                <p>{{ highlight.text }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
 
-          </div>
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
+
 <section class="section-padding bg-lightgreen">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 mb-30">
-              <div class="section-subtitle">FAQs</div>
-              <div class="section-title">Frequently Asked Questions</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-30">
+        <div class="section-subtitle">FAQs</div>
+        <div class="section-title">Frequently Asked Questions</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="accordion-box clearfix">
+          {% for faq in page.faqs %}
+          <li class="accordion block">
+            <div class="acc-btn">{{ faq.question }}</div>
+            <div class="acc-content">
+              <div class="content">
+                <div class="text">{{ faq.answer }}</div>
+              </div>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="accordion-box clearfix">
-                {% for faq in page.faqs %}
-                  <li class="accordion block">
-                    <div class="acc-btn">{{ faq.question }}</div>
-                    <div class="acc-content">
-                      <div class="content">
-                        <div class="text">{{ faq.answer }}</div>
-                      </div>
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

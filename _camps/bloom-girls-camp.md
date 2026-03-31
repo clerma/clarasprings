@@ -53,8 +53,20 @@ faqs:
     answer: Safety is a top priority. All staff and counselors are trained, and structured supervision is provided throughout the week.
   - question: How do I get more information?
     answer: You can contact Clara Springs directly by phone or through our contact page for more details.
+wufoo_form_hash: "pk06viz1mq9r6i"
+wufoo_username: "clarasprings"
+camp_forms:
+  - label: "Church Group Registration"
+    wufoo_form_hash: "x13orro1sl4v3u"
+    note: "Registering multiple campers from the same church?"
+  - label: "Individual Registration (Print & Mail)"
+    url: ""
+  - label: "Church Group Registration (Print & Mail)"
+    url: "/assets/documents/Summer_2026_Group_Reservation.pdf"
+  - label: "Permission Form"
+    url: "/assets/documents/2026_PermissionForm.pdf"
+    note: "Must be turned in the day of camp by all campers"
 nav_hide: false
-
 ---
 
 <section class="pages section-padding" data-scroll-index="1">
@@ -75,16 +87,9 @@ nav_hide: false
 
           <div class="col-md-6">
             <h6>{{ page.camp_details.title }}</h6>
-            <ul class="list-unstyled page-list mb-30">
+            <ul class="list-unstyled mb-30">
               {% for item in page.camp_details.items %}
-                <li>
-                  <div class="page-list-icon">
-                    <span class="ti-check small-size"></span>
-                  </div>
-                  <div class="page-list-text">
-                    <p>{{ item }}</p>
-                  </div>
-                </li>
+                <li class="mb-1">{{ item }}</li>
               {% endfor %}
             </ul>
           </div>
@@ -127,6 +132,8 @@ nav_hide: false
     </div>
   </div>
 </section>
+
+{% include camp-pricing.html %}
 
 <section class="section-padding bg-lightgreen">
   <div class="container">
