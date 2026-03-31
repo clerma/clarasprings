@@ -149,7 +149,7 @@ _inputs:
     label: Title
     cascade: true
   description:
-    type: html
+    type: textarea
     label: Description
     cascade: true
   image:
