@@ -91,7 +91,7 @@ wufoo_form_hash: "x176ncwv08qsrl2"
 wufoo_username: "clarasprings"
 camp_forms:
   - label: "Church Group Registration"
-    wufoo_form_hash: ""
+    wufoo_form_hash: "x13orro1sl4v3u"
     note: "Registering multiple campers from the same church?"
   - label: "Individual Registration (Print & Mail)"
     url: ""
