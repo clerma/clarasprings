@@ -38,14 +38,14 @@ highlights:
 tickets:
   - name: Early Registration
     price: $120
-    wufoo_form_hash: "x176ncwv08qsrl2"
+    wufoo_form_hash: x176ncwv08qsrl2
     features:
       - Register by 5/1/26
       - July 10–12, 2026 (Fri–Sun)
       - Includes worship + Bible studies + camp experience
   - name: Late Registration
     price: $130
-    wufoo_form_hash: "x176ncwv08qsrl2"
+    wufoo_form_hash: x176ncwv08qsrl2
     features:
       - If not registered by 5/1/26
       - July 10–12, 2026 (Fri–Sun)
@@ -68,23 +68,37 @@ faqs:
   - question: Do campers need to turn in a permission form?
     answer: Yes. A permission form must be turned in the day of camp by all campers.
   - question: What should I bring?
-    answer: "<ul><li>Bible, pen/pencil, journal</li><li>Tennis shoes and sandals/crocs (no flip-flops)</li><li>Modest swimsuit — no 2-pieces; towel and sunscreen (shoes required to/from pool)</li><li>Clothes for the duration of camp; shorts must be mid-thigh for both boys and girls; no spaghetti-strap or strapless tops</li><li>Modest sleepwear</li><li>Sheets/blanket/sleeping bag and pillow for a twin bed</li><li>Towels and washcloths</li><li>Toiletries — shampoo, soap, deodorant, toothbrush and toothpaste</li><li>Insect repellant</li><li>Umbrella or raincoat</li><li>Flashlight</li><li>Spending money for the gift shop</li><li>Offering money for missions</li><li>Prescription medications labeled for the camp nurse</li></ul>"
+    answer: >-
+      <ul><li>Bible, pen/pencil, journal</li><li>Tennis shoes and sandals/crocs
+      (no flip-flops)</li><li>Modest swimsuit — no 2-pieces; towel and sunscreen
+      (shoes required to/from pool)</li><li>Clothes for the duration of camp;
+      shorts must be mid-thigh for both boys and girls; no spaghetti-strap or
+      strapless tops</li><li>Modest sleepwear</li><li>Sheets/blanket/sleeping
+      bag and pillow for a twin bed</li><li>Towels and
+      washcloths</li><li>Toiletries — shampoo, soap, deodorant, toothbrush and
+      toothpaste</li><li>Insect repellant</li><li>Umbrella or
+      raincoat</li><li>Flashlight</li><li>Spending money for the gift
+      shop</li><li>Offering money for missions</li><li>Prescription medications
+      labeled for the camp nurse</li></ul>
   - question: What should I NOT bring?
-    answer: "<ul><li>Cell phones, tablets, laptops, iPods, or other electronic devices</li><li>Non-prescription medications</li><li>Fireworks, tobacco products, vaping products, firearms, knives, or pets</li><li>2-piece swimwear, short shorts, halter tops, or spaghetti-strap/strapless tops; no clothing advertising tobacco, alcohol, or vulgarity</li><li>Skateboards or water guns</li></ul>"
+    answer: >-
+      <ul><li>Cell phones, tablets, laptops, iPods, or other electronic
+      devices</li><li>Non-prescription medications</li><li>Fireworks, tobacco
+      products, vaping products, firearms, knives, or pets</li><li>2-piece
+      swimwear, short shorts, halter tops, or spaghetti-strap/strapless tops; no
+      clothing advertising tobacco, alcohol, or vulgarity</li><li>Skateboards or
+      water guns</li></ul>
 nav_hide: false
-wufoo_form_hash: "x176ncwv08qsrl2"
-wufoo_username: "clarasprings"
+wufoo_form_hash: x176ncwv08qsrl2
+wufoo_username: clarasprings
 camp_forms:
-  - label: "Church Group Registration"
-    wufoo_form_hash: "x13orro1sl4v3u"
-    note: "Registering multiple campers from the same church?"
-  - label: "Individual Registration (Print & Mail)"
-    url: ""
-  - label: "Church Group Registration (Print & Mail)"
-    url: "/assets/documents/Summer_2026_Group_Reservation.pdf"
-  - label: "Permission Form"
-    url: "/assets/documents/2026_PermissionForm.pdf"
-    note: "Must be turned in the day of camp by all campers"
+  - label: Individual Registration (Print & Mail)
+    url: ''
+  - label: Church Group Registration (Print & Mail)
+    url: /assets/documents/Summer_2026_Group_Reservation.pdf
+  - label: Permission Form
+    url: /assets/documents/2026_PermissionForm.pdf
+    note: Must be turned in the day of camp by all campers
 ---
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
