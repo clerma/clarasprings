@@ -104,15 +104,12 @@ camp_forms:
 
           <div class="col-md-6">
             <h6>{{ page.camp_details.title }}</h6>
-            <ul class="list-unstyled page-list mb-30">
+            <ul class="list-unstyled mb-30">
               {% for item in page.camp_details.items %}
-                <li>
-                  <div class="page-list-icon">
-                    <span class="ti-check small-size"></span>
-                  </div>
-                  <div class="page-list-text">
-                    <p>{{ item }}</p>
-                  </div>
+                {% assign label = item | split: ':' | first %}
+                {% assign value = item | remove_first: label | remove_first: ':' | lstrip %}
+                <li class="mb-1">
+                  <strong>{{ label }}:</strong> {{ value }}
                 </li>
               {% endfor %}
             </ul>
