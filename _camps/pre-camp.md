@@ -46,12 +46,14 @@ highlights:
 tickets:
   - name: Early Registration
     price: "$60"
+    wufoo_form_hash: "pnkt4lf0fh2aaa"
     features:
       - Register before May 1, 2026
       - Includes all meals and activities
       - One-night camp experience
   - name: Regular Registration
     price: "$70"
+    wufoo_form_hash: "pnkt4lf0fh2aaa"
     features:
       - After May 1, 2026
       - Includes all meals and activities
@@ -67,6 +69,19 @@ faqs:
   - question: Can parents stay on campus during Pre-Camp?
     answer: Pre-Camp is a drop-off program. Parents are not required to stay overnight.
 
+wufoo_form_hash: "pnkt4lf0fh2aaa"
+wufoo_username: "clarasprings"
+camp_forms:
+  - label: "Church Group Registration"
+    wufoo_form_hash: "x13orro1sl4v3u"
+    note: "Registering multiple campers from the same church?"
+  - label: "Individual Registration (Print & Mail)"
+    url: ""
+  - label: "Church Group Registration (Print & Mail)"
+    url: "/assets/documents/Summer_2026_Group_Reservation.pdf"
+  - label: "Permission Form"
+    url: "/assets/documents/2026_PermissionForm.pdf"
+    note: "Must be turned in the day of camp by all campers"
 nav_hide: false
 ---
 
@@ -88,16 +103,9 @@ nav_hide: false
 
           <div class="col-md-6">
             <h6>{{ page.camp_details.title }}</h6>
-            <ul class="list-unstyled page-list mb-30">
+            <ul class="list-unstyled mb-30">
               {% for item in page.camp_details.items %}
-                <li>
-                  <div class="page-list-icon">
-                    <span class="ti-check small-size"></span>
-                  </div>
-                  <div class="page-list-text">
-                    <p>{{ item }}</p>
-                  </div>
-                </li>
+                <li class="mb-1">{{ item }}</li>
               {% endfor %}
             </ul>
           </div>
