@@ -149,7 +149,7 @@ _inputs:
     label: Title
     cascade: true
   description:
-    type: textarea
+    type: html
     label: Description
     cascade: true
   image:
@@ -170,6 +170,9 @@ _inputs:
     cascade: true
   src:
     type: image
+    cascade: true
+  answer:
+    type: html
     cascade: true
 _select_data:
   colors:
