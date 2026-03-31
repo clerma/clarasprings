@@ -77,7 +77,6 @@ faqs:
       Monday: Missions Monday Night (Super Hero). Tuesday: Tacky Tourist Tuesday
       (vacation t-shirt or Hawaiian shirt). Wednesday: Wacky Wednesday (NEON!).
       Thursday: Camp T-shirt.
-wufoo_form_hash: "xz2wzgi0xyh2tq"
 wufoo_username: "clarasprings"
 camp_forms:
   - label: "Church Group Registration"

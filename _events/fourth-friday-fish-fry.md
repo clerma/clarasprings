@@ -6,9 +6,8 @@ slider:
   overlay: 3
   images:
     - image: /assets/img/site-images/b84f9f0a-07f9-4c13-8c8a-8f58c7bb2b8d@2x.png
-description:
-  - Come enjoy a great time of fellowship at our Fourth Friday Fish Fry.
-  - Clara Springs hosts this event every month except July, November, and December. During this time you can meet fellow believers in Christ from all over Louisiana, tour the camp grounds, and even visit the Gift Shop.
+description: >-
+  Come enjoy a great time of fellowship at the Fourth Friday Fish Fry. Clara Springs hosts this event every month except July, November, and December — meet fellow believers from across Louisiana, tour the camp grounds, and visit the Gift Shop.
 camp_details:
   title: Event Details
   items:

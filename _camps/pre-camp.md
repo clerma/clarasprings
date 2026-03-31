@@ -8,11 +8,8 @@ slider:
   images:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
 
-description:
-  - Camp begins at 5:00 PM on July 3, 2026 and ends at 1:00 PM on July 4, 2026.
-  - This one-night introductory camp is designed to give young campers a fun, safe, and confidence-building first camp experience.
-  - Pre-Camp offers age-appropriate activities, engaging worship, and time with trained Clara Springs staff in a structured and encouraging environment.
-  - It is the perfect way for first-time campers to become comfortable with camp before attending longer summer sessions.
+description: >-
+  Pre-Camp is a one-night introductory camp designed to give young campers a fun, safe, and confidence-building first camp experience. Campers enjoy age-appropriate activities, engaging worship, and time with trained Clara Springs staff — the perfect way to get comfortable with camp before attending longer summer sessions.
 
 camp_details:
   title: Camp Schedule
@@ -69,7 +66,6 @@ faqs:
   - question: Can parents stay on campus during Pre-Camp?
     answer: Pre-Camp is a drop-off program. Parents are not required to stay overnight.
 
-wufoo_form_hash: "pnkt4lf0fh2aaa"
 wufoo_username: "clarasprings"
 camp_forms:
   - label: "Church Group Registration"

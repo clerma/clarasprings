@@ -2,7 +2,6 @@
 layout: camp
 title: "2026 Kids Winter-Spring Retreat"
 name: "2026 Kids Winter-Spring Retreat"
-wufoo_form_hash: "z14mg9rt1iaerxb"
 wufoo_username: "clarasprings"
 camp_forms:
   - label: "Church Group Registration"

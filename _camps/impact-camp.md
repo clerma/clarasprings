@@ -80,7 +80,6 @@ faqs:
     answer: >-
       Campers can participate in archery, fishing, swimming, shooting range,
       sling shots, canoes, and various games and activities.
-wufoo_form_hash: "p1u0k2aq1viczqb"
 wufoo_username: "clarasprings"
 camp_forms:
   - label: "Church Group Registration"

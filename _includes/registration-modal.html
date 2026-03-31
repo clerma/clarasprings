@@ -1,4 +1,3 @@
-{% if page.wufoo_form_hash %}
 <div class="modal fade" id="registrationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
@@ -32,9 +31,10 @@
       var btn = event.relatedTarget;
       var hash = btn && btn.getAttribute('data-wufoo-hash');
       var user = (btn && btn.getAttribute('data-wufoo-user')) || '{{ page.wufoo_username | default: "clarasprings" }}';
-      if (!hash) hash = '{{ page.wufoo_form_hash }}';
-      // Append timestamp to bypass any caching
-      iframe.src = 'https://' + user + '.wufoo.com/embed/' + hash + '/?t=' + Date.now();
+      if (hash) {
+        // Append timestamp to bypass any caching
+        iframe.src = 'https://' + user + '.wufoo.com/embed/' + hash + '/?t=' + Date.now();
+      }
     });
 
     // Clear on close so reopening always gets a fresh load
@@ -43,4 +43,3 @@
     });
   })();
 </script>
-{% endif %}

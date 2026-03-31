@@ -8,10 +8,8 @@ slider:
   images:
     - image: /assets/img/site-images/5333fdbe-caaf-4201-8e94-572c481988a8@2x.jpg
 
-description:
-  - Bloom Girls Camp is designed to help young girls grow in their faith, build lasting friendships, and discover their identity in Christ.
-  - Throughout the week, campers will experience engaging worship, biblical teaching, fun activities, and meaningful small group discussions led by trained counselors.
-  - Our prayer is that every camper leaves encouraged, confident, and rooted in who God created her to be.
+description: >-
+  Bloom Girls Camp is designed to help young girls grow in their faith, build lasting friendships, and discover their identity in Christ through engaging worship, biblical teaching, fun activities, and meaningful small group discussions led by trained counselors.
 
 camp_details:
   title: Camp Details
@@ -53,7 +51,6 @@ faqs:
     answer: Safety is a top priority. All staff and counselors are trained, and structured supervision is provided throughout the week.
   - question: How do I get more information?
     answer: You can contact Clara Springs directly by phone or through our contact page for more details.
-wufoo_form_hash: "pk06viz1mq9r6i"
 wufoo_username: "clarasprings"
 camp_forms:
   - label: "Church Group Registration"

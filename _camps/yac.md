@@ -89,8 +89,7 @@ faqs:
       clothing advertising tobacco, alcohol, or vulgarity</li><li>Skateboards or
       water guns</li></ul>
 nav_hide: false
-wufoo_form_hash: x176ncwv08qsrl2
-wufoo_username: clarasprings
+wufoo_username: "clarasprings"
 camp_forms:
   - label: Individual Registration (Print & Mail)
     url: ''

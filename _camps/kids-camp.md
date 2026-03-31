@@ -76,7 +76,6 @@ faqs:
       Thursday—Camp T-shirt.
   - question: What do campers need to bring?
     answer: A “What to Bring” list is coming soon (per camp info page).
-wufoo_form_hash: "x1ybfy4y0ak0rhe"
 wufoo_username: "clarasprings"
 camp_forms:
   - label: "Church Group Registration"
