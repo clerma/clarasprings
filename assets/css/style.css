@@ -398,6 +398,11 @@ color: #222;
 .color-5 {
 color: #344831;
 }
+.blog-link{
+  height: 20em;
+  width: 100%;
+  object-fit: cover;
+}
 /* star - white  */
 .star {
   position: relative;

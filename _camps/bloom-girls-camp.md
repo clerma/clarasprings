@@ -39,7 +39,21 @@ highlights:
     text: Confidence-building activities
   - icon: ti-light-bulb
     text: Leadership and identity development
-
+tickets:
+    - name: Early Registration
+      price: $160
+      wufoo_form_hash: "pk06viz1mq9r6i"
+      features:
+        - Register by 5/1/26
+        - July 23–25, 2026 (Thu–Sat)
+        - Includes worship, devotions, and all camp activities
+    - name: Late Registration
+      price: $170
+      wufoo_form_hash: "pk06viz1mq9r6i"
+      features:
+        - If not registered by 5/1/26
+        - July 23–25, 2026 (Thu–Sat)
+        - Includes worship, devotions, and all camp activities
 faqs:
   - question: When will registration open?
     answer: Registration details and dates will be announced soon. Check back regularly or contact our office for updates.
