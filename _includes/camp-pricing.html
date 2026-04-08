@@ -11,7 +11,7 @@
       {% for ticket in page.tickets %}
         {% assign ticket_hash = ticket.wufoo_form_hash | default: page.wufoo_form_hash %}
         {% assign ticket_user = page.wufoo_username | default: 'clarasprings' %}
-        <div class="{% if forloop.index > 1 %}col-md-6{% else %}col-md-8 mx-auto{% endif %} mb-30">
+        <div class="{% if forloop.length > 1 %}col-md-6{% else %}col-md-8 mx-auto{% endif %} mb-30">
           <div class="pricing-card h-100">
             <div class="desc text-center p-3">
               <div class="name">{{ ticket.name }}</div>
