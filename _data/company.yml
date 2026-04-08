@@ -1,14 +1,13 @@
----
-site_name: "Clara Springs Camp and Conference"
-logo_image: "/assets/img/logo-light.png"
-phone: "318-796-3875"
-email: "Mandi@clarasprings.com"
+site_name: Clara Springs Camp and Conference
+logo_image: /assets/img/logo-light.png
+phone: 318-796-3875
+email: office@clarasprings.com
 scripture: '"We can make our plans, but the Lord determines our steps." Proverbs 16:9'
 address:
-  street: "4420 Hwy 177"
-  city: "Pelican"
-  state: "Louisiana"
-  zip: "71063"
+  street: 4420 Hwy 177
+  city: Pelican
+  state: Louisiana
+  zip: '71063'
 social:
-  facebook: "https://www.facebook.com/ClaraSpringsBaptistCamp"
-  instagram: "https://instagram.com/claraspringsbaptistcamp"
+  facebook: https://www.facebook.com/ClaraSpringsBaptistCamp
+  instagram: https://instagram.com/claraspringsbaptistcamp
