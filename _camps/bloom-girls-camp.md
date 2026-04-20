@@ -46,17 +46,17 @@ tickets:
       - June 29-July 2, 2026 (Monday-Thursday)
       - Includes worship, devotions, and all camp activities
   - name: Late Registration
-    price: $170
+    price: $215
     wufoo_form_hash: pk06viz1mq9r6i
     features:
       - If not registered by 5/1/26
-      - July 23–25, 2026 (Thu–Sat)
+      - June 29-July 2, 2026
       - Includes worship, devotions, and all camp activities
 faqs:
   - question: When will registration open?
     answer: Registration is NOW OPEN!
   - question: Who can attend Bloom Girls Camp?
-    answer: Bloom Girls Camp is designed for girls completed 1st grade-6th grade
+    answer: Bloom Girls Camp is designed for girls 1st grade-6th grade
   - question: What should campers bring?
     answer: >-
       A full packing list will be provided after registration, including
