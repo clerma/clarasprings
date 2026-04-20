@@ -44,5 +44,4 @@ The friendships formed at camp are different. They’re rooted in shared spiritu
 
 Clara Springs doesn’t just host events — we help cultivate moments that can shape eternity.
 
-**Want to learn more or ask questions about camp?**
-Reach out through our [Contact Page](/contact/).
+**Want to learn more or ask questions about camp?** Reach out through our [Contact Page](/contact/).
