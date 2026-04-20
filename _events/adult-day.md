@@ -4,7 +4,7 @@ title: 2026 Adult Day
 name: Adult Day
 description: >-
   Free senior adult gathering at Clara Springs featuring worship, fellowship,
-  lunch, and a concert with Jake Cowley.
+  lunch, and a concert with The Blake Brothers Band. 
 slider:
   overlay: 3
   images:
@@ -14,12 +14,12 @@ body_content:
     Adult Day is a special gathering for senior adults from around the district
     to come together for worship, encouragement, and fellowship.
   - >-
-    Guests will enjoy a concert with Jake Cowley, a shared meal, and meaningful
-    time with churches and senior communities from across the area.
+    Guests will enjoy a concert with The Blake Brothers Band, a shared meal, and
+    meaningful time with churches and senior communities from across the area.
 camp_details:
   title: Event Details
   items:
-    - 'When: Thursday, May (exact date TBA)'
+    - 'When: Thursday, May 14th'
     - 'Time: 10:00 AM – Lunch'
     - 'Where: Clara Springs Worship Center'
     - 'Cost: FREE'
@@ -56,14 +56,16 @@ faqs:
     answer: This is a FREE event.
   - question: Who is Adult Day for?
     answer: >-
-      Senior adults from local churches, nursing homes, assisted living, and
-      similar groups are invited.
+      Adults from local churches, nursing homes, assisted living, and similar
+      groups are invited.
   - question: What time does it start and end?
     answer: 10:00 AM through lunch.
   - question: Where is it held?
     answer: Clara Springs Worship Center.
   - question: Do I need to RSVP?
-    answer: Yes. Please RSVP to the District Eight Office to save your seat.
+    answer: >-
+      Yes. Please RSVP to the District Eight Office 318-352-4090 to save your
+      seat.
   - question: How do I RSVP?
     answer: Call 318.352.4090 or email office@districteightmissions.com.
 contact:
