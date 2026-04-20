@@ -7,15 +7,20 @@ slider:
   images:
     - image: /assets/img/site-images/b84f9f0a-07f9-4c13-8c8a-8f58c7bb2b8d@2x.png
 description: >-
-  Come enjoy a great time of fellowship at the Fourth Friday Fish Fry. Clara Springs hosts this event every month except July, November, and December — meet fellow believers from across Louisiana, tour the camp grounds, and visit the Gift Shop.
+  Come enjoy a great time of fellowship at the Fourth Friday Fish Fry. Clara
+  Springs hosts this event every month except July, November, and December —
+  meet fellow believers from across Louisiana, tour the camp grounds, and visit
+  the Gift Shop.
 camp_details:
   title: Event Details
   items:
     - 'Time: Serving begins at 5:00 PM'
     - 'Cost (Adults): $15'
-    - 'Cost (Kids 10–17): $10'
+    - 'Cost (Kids 10–15): $10'
     - 'Cost (Kids 9 & under): FREE'
-    - 'Payment: Personal checks, cash, and most major credit cards (credit card fee applies)'
+    - >-
+      Payment: Personal checks, cash, and most major credit cards (credit card
+      fee applies)
 what_to_expect:
   title: What to Expect
   items:
@@ -58,15 +63,19 @@ schedule:
     host: Salem Baptist
 faqs:
   - question: How much does the Fish Fry cost?
-    answer: Adults $15, Kids 10–17 $10, Kids 9 and under are FREE.
+    answer: Adults $15, Kids 10–15 $10, Kids 9 and under are FREE.
   - question: What forms of payment are accepted?
-    answer: Personal checks, cash, and most major credit cards (credit card fee applies).
+    answer: >-
+      Personal checks, cash, and most major credit cards (credit card fee
+      applies).
   - question: What time does it start?
     answer: We start serving at 5:00 PM.
   - question: How often does the Fish Fry happen?
-    answer: Every month except July, November, and December.
+    answer: Every Fourth Friday of the month except July, November, and December.
   - question: Who hosts the Fish Fry each month?
-    answer: Each month is hosted by a different local church. See the 2026 schedule for the full list.
+    answer: >-
+      Each month is hosted by a different local church. See the 2026 schedule
+      for the full list.
 nav_hide: false
 ---
 <section class="pages section-padding" data-scroll-index="1">
