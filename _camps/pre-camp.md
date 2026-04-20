@@ -2,15 +2,16 @@
 layout: camp
 title: Pre-Camp 2026
 name: Pre-Camp
-
 slider:
   overlay: 3
   images:
     - image: /assets/img/site-images/5fe9b3d8-738c-4aff-a60a-0c1ed9d02b12@2x.png
-
 description: >-
-  Pre-Camp is a one-night introductory camp designed to give young campers a fun, safe, and confidence-building first camp experience. Campers enjoy age-appropriate activities, engaging worship, and time with trained Clara Springs staff — the perfect way to get comfortable with camp before attending longer summer sessions.
-
+  Pre-Camp is a one-night introductory camp designed to give young campers a
+  fun, safe, and confidence-building first camp experience. Campers enjoy
+  age-appropriate activities, engaging worship, and time with trained Clara
+  Springs staff — the perfect way to get comfortable with camp before attending
+  longer summer sessions.
 camp_details:
   title: Camp Schedule
   items:
@@ -18,7 +19,6 @@ camp_details:
     - Parents must check campers in personally
     - Check-out is at 1:00 PM on July 4, 2026
     - Parents must present ID for pickup
-
 what_to_expect:
   title: What to Expect
   items:
@@ -27,7 +27,6 @@ what_to_expect:
     - Outdoor recreation and team activities
     - Meals included
     - Safe indoor lodging
-
 highlights:
   - icon: ti-heart
     text: A gentle introduction to overnight camp
@@ -39,48 +38,52 @@ highlights:
     text: Confidence-building activities
   - icon: ti-home
     text: Structured and supervised environment
-
 tickets:
   - name: Early Registration
-    price: "$60"
-    wufoo_form_hash: "pnkt4lf0fh2aaa"
+    price: $60
+    wufoo_form_hash: pnkt4lf0fh2aaa
     features:
       - Register before May 1, 2026
       - Includes all meals and activities
       - One-night camp experience
   - name: Regular Registration
-    price: "$70"
-    wufoo_form_hash: "pnkt4lf0fh2aaa"
+    price: $70
+    wufoo_form_hash: pnkt4lf0fh2aaa
     features:
       - After May 1, 2026
       - Includes all meals and activities
       - One-night camp experience
-
 faqs:
   - question: What ages can attend Pre-Camp?
-    answer: Pre-Camp is designed as an introductory experience for younger children who may not yet be ready for a full week of camp.
+    answer: >-
+      Pre-Camp is designed as an introductory experience for younger children
+      who may not yet be ready for a full week of camp. This camp is geared for
+      kids 4-8 years of age to come with a parent, guardian, or children's
+      minister. 
   - question: What should my camper bring?
     answer: A detailed packing list will be emailed to parents prior to camp.
   - question: Is financial assistance available?
-    answer: Please contact the Clara Springs office to inquire about available assistance options.
+    answer: >-
+      Please contact the Clara Springs office to inquire about available
+      assistance options.
   - question: Can parents stay on campus during Pre-Camp?
-    answer: Pre-Camp is a drop-off program. Parents are not required to stay overnight.
-
-wufoo_username: "clarasprings"
+    answer: >-
+      A parent, guardian, or Children's Ministry leader is required to stay with
+      the camper. 
+wufoo_username: clarasprings
 camp_forms:
-  - label: "Church Group Registration"
-    wufoo_form_hash: "x13orro1sl4v3u"
-    note: "Registering multiple campers from the same church?"
-  - label: "Individual Registration (Print & Mail)"
-    url: ""
-  - label: "Church Group Registration (Print & Mail)"
-    url: "/assets/documents/Summer_2026_Group_Reservation.pdf"
-  - label: "Permission Form"
-    url: "/assets/documents/2026_PermissionForm.pdf"
-    note: "Must be turned in the day of camp by all campers"
+  - label: Church Group Registration
+    wufoo_form_hash: x13orro1sl4v3u
+    note: Registering multiple campers from the same church?
+  - label: Individual Registration (Print & Mail)
+    url: ''
+  - label: Church Group Registration (Print & Mail)
+    url: /assets/documents/Summer_2026_Group_Reservation.pdf
+  - label: Permission Form
+    url: /assets/documents/2026_PermissionForm.pdf
+    note: Must be turned in the day of camp by all campers
 nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
