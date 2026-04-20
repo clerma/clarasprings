@@ -62,7 +62,7 @@ faqs:
       The cost is $120. If not registered by 5/1/26, the price increases to
       $130.
   - question: When does registration open?
-    answer: Registration opens January 30th.
+    answer: Registration is NOW OPEN!
   - question: Who is the speaker and worship leader?
     answer: Speaker is TBA. Worship is TBA.
   - question: Do campers need to turn in a permission form?
@@ -89,7 +89,7 @@ faqs:
       clothing advertising tobacco, alcohol, or vulgarity</li><li>Skateboards or
       water guns</li></ul>
 nav_hide: false
-wufoo_username: "clarasprings"
+wufoo_username: clarasprings
 camp_forms:
   - label: Individual Registration (Print & Mail)
     url: ''
