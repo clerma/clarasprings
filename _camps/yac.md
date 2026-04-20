@@ -2,6 +2,7 @@
 layout: camp
 title: YAC 2026
 name: YAC (Young Adult Camp)
+weight: 4
 slider:
   overlay: 3
   images:

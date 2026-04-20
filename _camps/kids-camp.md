@@ -2,6 +2,7 @@
 layout: camp
 title: Kids Camp 2026
 name: Kids Camp
+weight: 3
 slider:
   overlay: 3
   images:
