@@ -2,6 +2,7 @@
 layout: camp
 title: Pre-Camp 2026
 name: Pre-Camp
+weight: 2
 slider:
   overlay: 3
   images:

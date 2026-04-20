@@ -2,6 +2,7 @@
 layout: camp
 title: Impact Youth Camp 2026
 name: Impact Youth Camp
+weight: 7
 slider:
   overlay: 3
   images:

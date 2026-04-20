@@ -21,7 +21,7 @@
     - _collection: camps
       where:
       published: true
-      sort_by: title
+      sort_by: weight
       order: asc
       limit: 12
       map:

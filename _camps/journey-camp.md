@@ -2,6 +2,7 @@
 layout: camp
 title: Journey Youth Camp 2026
 name: Journey Youth Camp
+weight: 6
 slider:
   overlay: 3
   images:

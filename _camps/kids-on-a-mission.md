@@ -2,6 +2,7 @@
 layout: camp
 title: Kids on Mission 2026
 name: Kids on Mission
+weight: 5
 slider:
   overlay: 3
   images:

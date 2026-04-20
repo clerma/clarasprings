@@ -2,6 +2,7 @@
 layout: camp
 title: Bloom Girls Camp
 name: Bloom Girls Camp
+weight: 1
 slider:
   overlay: 3
   images:
