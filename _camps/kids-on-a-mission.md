@@ -16,7 +16,7 @@ camp_details:
     - 'Ages: Completed 1st–6th grade'
     - 'Camp Pastor: TBA'
     - 'Music: Luke & Rachel Kerry'
-    - 'Registration opens: January 30th'
+    - Registration is NOW OPEN!
     - 'Mail-in forms address: Clara Springs Camp, 4420 HWY 177, Pelican, LA 71063'
 what_to_expect:
   title: What to Expect
@@ -40,14 +40,14 @@ highlights:
 tickets:
   - name: Early Registration
     price: $205
-    wufoo_form_hash: "xz2wzgi0xyh2tq"
+    wufoo_form_hash: xz2wzgi0xyh2tq
     features:
       - Register by 5/1/26
       - July 13–16, 2026 (Mon–Thurs)
       - Includes worship, teaching, activities, and theme nights
   - name: Late Registration
     price: $215
-    wufoo_form_hash: "xz2wzgi0xyh2tq"
+    wufoo_form_hash: xz2wzgi0xyh2tq
     features:
       - If not registered by 5/1/26
       - July 13–16, 2026 (Mon–Thurs)
@@ -64,7 +64,7 @@ faqs:
       The cost is $205. If not registered by 5/1/26, the price increases to
       $215.
   - question: When does registration open?
-    answer: Registration opens January 30th.
+    answer: Registration is NOW OPEN!
   - question: Do adult chaperones need training?
     answer: >-
       Yes. All adult chaperones 18 or older must complete Child Protection
@@ -77,18 +77,18 @@ faqs:
       Monday: Missions Monday Night (Super Hero). Tuesday: Tacky Tourist Tuesday
       (vacation t-shirt or Hawaiian shirt). Wednesday: Wacky Wednesday (NEON!).
       Thursday: Camp T-shirt.
-wufoo_username: "clarasprings"
+wufoo_username: clarasprings
 camp_forms:
-  - label: "Church Group Registration"
-    wufoo_form_hash: "x13orro1sl4v3u"
-    note: "Registering multiple campers from the same church?"
-  - label: "Individual Registration (Print & Mail)"
-    url: ""
-  - label: "Church Group Registration (Print & Mail)"
-    url: "/assets/documents/Summer_2026_Group_Reservation.pdf"
-  - label: "Permission Form"
-    url: "/assets/documents/2026_PermissionForm.pdf"
-    note: "Must be turned in the day of camp by all campers"
+  - label: Church Group Registration
+    wufoo_form_hash: x13orro1sl4v3u
+    note: Registering multiple campers from the same church?
+  - label: Individual Registration (Print & Mail)
+    url: ''
+  - label: Church Group Registration (Print & Mail)
+    url: /assets/documents/Summer_2026_Group_Reservation.pdf
+  - label: Permission Form
+    url: /assets/documents/2026_PermissionForm.pdf
+    note: Must be turned in the day of camp by all campers
 nav_hide: false
 ---
 <section class="pages section-padding" data-scroll-index="1">
