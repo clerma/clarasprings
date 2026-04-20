@@ -2,23 +2,22 @@
 layout: camp
 title: Bloom Girls Camp
 name: Bloom Girls Camp
-
 slider:
   overlay: 3
   images:
     - image: /assets/img/site-images/5333fdbe-caaf-4201-8e94-572c481988a8@2x.jpg
-
 description: >-
-  Bloom Girls Camp is designed to help young girls grow in their faith, build lasting friendships, and discover their identity in Christ through engaging worship, biblical teaching, fun activities, and meaningful small group discussions led by trained counselors.
-
+  Bloom Girls Camp is designed to help girls 1st-6th grade grow in their faith,
+  build lasting friendships, and discover their identity in Christ through
+  engaging worship, biblical teaching, fun activities, and meaningful small
+  group discussions led by trained counselors.
 camp_details:
   title: Camp Details
   items:
-    - Summer 2026 (Exact dates coming soon)
-    - Designed for girls (specific grade levels announced soon)
+    - June 29-July 2, 2026
+    - Designed for girls 1st-6th Grade
     - Led by experienced camp pastors and trained counselors
     - Hosted at Clara Springs Camp & Conference Center
-
 what_to_expect:
   title: What to Expect
   items:
@@ -27,7 +26,6 @@ what_to_expect:
     - Outdoor recreation and team activities
     - Evening services and campfire moments
     - A safe, structured, and encouraging environment
-
 highlights:
   - icon: ti-heart
     text: Biblical teaching tailored for girls
@@ -40,46 +38,51 @@ highlights:
   - icon: ti-light-bulb
     text: Leadership and identity development
 tickets:
-    - name: Early Registration
-      price: $160
-      wufoo_form_hash: "pk06viz1mq9r6i"
-      features:
-        - Register by 5/1/26
-        - July 23–25, 2026 (Thu–Sat)
-        - Includes worship, devotions, and all camp activities
-    - name: Late Registration
-      price: $170
-      wufoo_form_hash: "pk06viz1mq9r6i"
-      features:
-        - If not registered by 5/1/26
-        - July 23–25, 2026 (Thu–Sat)
-        - Includes worship, devotions, and all camp activities
+  - name: Early Registration
+    price: $205
+    wufoo_form_hash: pk06viz1mq9r6i
+    features:
+      - Register by 5/1/26
+      - June 29-July 2, 2026 (Monday-Thursday)
+      - Includes worship, devotions, and all camp activities
+  - name: Late Registration
+    price: $170
+    wufoo_form_hash: pk06viz1mq9r6i
+    features:
+      - If not registered by 5/1/26
+      - July 23–25, 2026 (Thu–Sat)
+      - Includes worship, devotions, and all camp activities
 faqs:
   - question: When will registration open?
-    answer: Registration details and dates will be announced soon. Check back regularly or contact our office for updates.
+    answer: Registration is NOW OPEN!
   - question: Who can attend Bloom Girls Camp?
-    answer: Bloom Girls Camp is designed for girls within the specified grade levels announced for the 2026 season.
+    answer: Bloom Girls Camp is designed for girls completed 1st grade-6th grade
   - question: What should campers bring?
-    answer: A full packing list will be provided after registration, including clothing, toiletries, Bible, and personal essentials.
+    answer: >-
+      A full packing list will be provided after registration, including
+      clothing, toiletries, Bible, and personal essentials.
   - question: Is it safe for my child?
-    answer: Safety is a top priority. All staff and counselors are trained, and structured supervision is provided throughout the week.
+    answer: >-
+      Safety is a top priority. All staff and counselors are trained, and
+      structured supervision is provided throughout the week.
   - question: How do I get more information?
-    answer: You can contact Clara Springs directly by phone or through our contact page for more details.
-wufoo_username: "clarasprings"
+    answer: >-
+      You can contact Clara Springs directly by phone or through our contact
+      page for more details.
+wufoo_username: clarasprings
 camp_forms:
-  - label: "Church Group Registration"
-    wufoo_form_hash: "x13orro1sl4v3u"
-    note: "Registering multiple campers from the same church?"
-  - label: "Individual Registration (Print & Mail)"
-    url: ""
-  - label: "Church Group Registration (Print & Mail)"
-    url: "/assets/documents/Summer_2026_Group_Reservation.pdf"
-  - label: "Permission Form"
-    url: "/assets/documents/2026_PermissionForm.pdf"
-    note: "Must be turned in the day of camp by all campers"
+  - label: Church Group Registration
+    wufoo_form_hash: x13orro1sl4v3u
+    note: Registering multiple campers from the same church?
+  - label: Individual Registration (Print & Mail)
+    url: ''
+  - label: Church Group Registration (Print & Mail)
+    url: /assets/documents/Summer_2026_Group_Reservation.pdf
+  - label: Permission Form
+    url: /assets/documents/2026_PermissionForm.pdf
+    note: Must be turned in the day of camp by all campers
 nav_hide: false
 ---
-
 <section class="pages section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row">
